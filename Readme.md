@@ -1,7 +1,7 @@
 # Личный проект «Погнали» 
 
 * Студент: [Дмитрий Антушев](https://up.htmlacademy.ru/adaptive/23/user/787247).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
