@@ -125,8 +125,8 @@
               Длительность <span class="form__label-text"></span>
             </label>
             <input class="form__input" name="time" type="text" id="time" value="3">
-            <label id="is-child">
-              <input class="form__checkbox" name="is-child" type="checkbox" for="is-child">
+            <label for="is-child">
+              <input class="form__checkbox" name="is-child" type="checkbox" id="is-child">
             </label>
 
             <div class="calendar">
@@ -208,13 +208,123 @@
             </div>
             <button class="button" type="button">Следующий шаг</button>
           </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              Шаг 2. Маршрут
+            </legend>
+            <p class="form__text">
+              Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
+            </p>
+            <div class="form__wrapper-country">
+              <input class="form__input" name="country-1" type="text">
+              <div class="form__country-flag"></div>
+            </div>
+            <div class="form__wrapper-country">
+              <input class="form__input" name="country-2" type="text">
+              <div class="form__country-flag"></div>
+            </div>
+            <div class="form__wrapper-country form__wrapper-country--active">
+              <table class="form__table form__table--countries">
+                <tr class="form__tr">
+                  <td class="form__td">А</td>
+                  <td class="form__td">Б</td>
+                  <td class="form__td">В</td>
+                  <td class="form__td">Г</td>
+                  <td class="form__td">Д</td>
+                </tr>
+                <tr class="form__tr">
+                  <td class="form__td">Е</td>
+                  <td class="form__td">З</td>
+                  <td class="form__td">И</td>
+                  <td class="form__td">К</td>
+                  <td class="form__td">Л</td>
+                </tr>
+                <tr class="form__tr">
+                  <td class="form__td">М</td>
+                  <td class="form__td">Н</td>
+                  <td class="form__td">О</td>
+                  <td class="form__td">П</td>
+                  <td class="form__td">Р</td>
+                </tr>
+                <tr class="form__tr">
+                  <td class="form__td">С</td>
+                  <td class="form__td">Т</td>
+                  <td class="form__td">У</td>
+                  <td class="form__td">Ф</td>
+                  <td class="form__td">Х</td>
+                </tr>
+                <tr class="form__tr">
+                  <td class="form__td">Ч</td>
+                  <td class="form__td">Ш</td>
+                  <td class="form__td">Э</td>
+                  <td class="form__td">Ю</td>
+                  <td class="form__td">Я</td>
+                </tr>
+              </table>
+
+              <ul class="from__countries-list">
+                <li class="form__countries-item">Австралия</li>
+                <li class="form__countries-item">Австрия</li>
+                <li class="form__countries-item">Азербайджан</li>
+                <li class="form__countries-item">Албания</li>
+                <li class="form__countries-item">Алжир</li>
+                <li class="form__countries-item">Ангола</li>
+                <li class="form__countries-item">Андора</li>
+                <li class="form__countries-item">Антигуа и Барбуда</li>
+                <li class="form__countries-item">Аргентина</li>
+                <li class="form__countries-item">Армения</li>
+                <li class="form__countries-item">Афганистан</li>
+              </ul>
+            </div>
+            <button class="button" type="button">Следующий шаг</button>
+            <button class="button" type="button">На шаг назад</button>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              Шаг 3. Развлечения
+            </legend>
+            <p class="form__text">
+              Наконец, расскажите о своих планах времяпровождения.
+              Можно описать в свободной форме и ставить тэги.
+            </p>
+            <p class="form__text-country">Босния и Герцеговина</p>
+            <textarea class="form__textarea" placeholder="План действий" name="plan-text"></textarea>
+            <p class="header">Чехия</p>
+            <textarea class="form__textarea">
+              Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+            </textarea>
+            <button class="button" type="submit">Отправить</button>
+            <button class="button" type="submit">На шаг назад</button>
+          </fieldset>
         </form>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <h2 class="page-footer__header header">Погнали?</h2>
 
+      <ul class="socials-list">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="facebook.com"></a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="vk.com"></a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="instagram.com"></a>
+        </li>
+      </ul>
+
+      <div class="page-footer__authors">
+        <span class="page-footer__text">Разработано</span>
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__img" src="#" width="27" height="33" alt="Логотип html academy">
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
