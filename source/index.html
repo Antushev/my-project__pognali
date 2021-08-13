@@ -23,7 +23,7 @@
                 <a class="menu__link">Направления</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link">Попутчики</a>
+                <a href="catalog.html" class="menu__link">Попутчики</a>
               </li>
             </ul>
           </nav>
@@ -55,11 +55,13 @@
         <h1 class="header">В путешествие с крутыми попутчиками!</h1>
 
         <section class="quote">
+          <h2 class="header visually-hidden">Цитата</h2>
           <q class="quote__text">Лучшее приложение, что я видел в жизни!</q>
           <cite class="quote__author">Мурат Эльтазин главный редактор газеты "гаджетлайф"</cite>
         </section>
 
         <section class="steps">
+          <h2 class="header visually-hidden">Пошаговый алгоритм действий</h2>
           <ul class="steps__list">
             <li class="steps__item">Выберите направление</li>
             <li class="steps__item">Изучите идеи путешественников</li>
@@ -113,7 +115,7 @@
             </li>
 
             <li class="directions-list__item">
-              <img class="directions-list__img" src="#" width="270" heigh="110" alt="Франция">
+              <img class="directions-list__img" src="#" width="270" height="110" alt="Франция">
               <div class="directions-list__text-wrapper">
                 <p class="directions-list__country">Франция</p>
                 <p class="directions-list__tagline">Трэ бьем, манифик</p>
@@ -145,42 +147,42 @@
           </header>
 
           <ul class="travelers-list">
-            <li class="travelers-list__item">
-              <div class="travelers-list__img-wrapper">
-                <img class="travelers-list__img" src="#" width="270" height="270" alt="Таня Фирсова">
+            <li class="travelers-list__item traveler">
+              <div class="traveler__img-wrapper">
+                <img class="traveler__img" src="#" width="270" height="270" alt="Таня Фирсова">
               </div>
-              <div class="travelers-list__text-wrapper">
+              <div class="traveler__text-wrapper">
                 <ul class="country-list">
                   <li class="country-list__item country-list__item--sri-lanka"></li>
                   <li class="country-list__item country-list__item--thailand"></li>
                   <li class="country-list__item country-list__item--seychelles"></li>
                 </ul>
-                <p class="travelers-list__name">Таня Фирсова</p>
-                <p class="travelers-list__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-                <ul class="transport-list">
-                  <li class="transport-list__item transport-list__item--plane transport-list__item--active"></li>
-                  <li class="transport-list__item transport-list__item--bus"></li>
-                  <li class="transport-list__item transport-list__item--bicycle"></li>
-                  <li class="transport-list__item transport-list__item--run"></li>
+                <p class="traveler__name">Таня Фирсова</p>
+                <p class="traveler__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                <ul class="transport">
+                  <li class="transport__item transport__item--plane transport__item--active" aria-label="Самолёт"></li>
+                  <li class="transport__item transport__item--bus" aria-label="Автобус"></li>
+                  <li class="transport__item transport__item--bicycle" aria-label="Велосипед"></li>
+                  <li class="transport__item transport__item--run" aria-label="Пешком"></li>
                 </ul>
               </div>
             </li>
-            <li class="travelers-list__item">
-              <div class="travelers-list__img-wrapper">
-                <img class="travelers-list__img" src="#" width="270" height="270" alt="Петя Дёмин">
+            <li class="travelers-list__item traveler">
+              <div class="traveler__img-wrapper traveler__img-wrapper">
+                <img class="traveler__img traveler__img" src="#" width="270" height="270" alt="Петя Дёмин">
               </div>
-              <div class="travelers-list__text-wrapper">
+              <div class="traveler__text-wrapper">
                 <ul class="country-list">
                   <li class="country-list__item country-list__item--belgium"></li>
                   <li class="country-list__item country-list__item--czech"></li>
                 </ul>
-                <p class="travelers-list__name">Петя Демин</p>
-                <p class="travelers-list__tags">#бургер #бар #футбол #концерт #крафт</p>
-                <ul class="transport-list">
-                  <li class="transport-list__item transport-list__item-plane transport-list__item--active"></li>
-                  <li class="transport-list__item transport-list__item--bus transport-list__item--active"></li>
-                  <li class="transport-list__item transport-list__item--bicycle"></li>
-                  <li class="transport-list__item transport-list__item--run transport-list__item--active"></li>
+                <p class="traveler__name">Петя Демин</p>
+                <p class="tags traveler__tags">#бургер #бар #футбол #концерт #крафт</p>
+                <ul class="transport">
+                  <li class="transport__item transport__item--plane transport__item--active"></li>
+                  <li class="transport__item transport__item--bus transport__item--active"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run transport__item--active"></li>
                 </ul>
               </div>
             </li>
@@ -248,7 +250,7 @@
 
       <section class="map">
         <h2 class="map__header visually-hidden">Карта маршрута</h2>
-        <div class="map__wrapper">
+        <div class="map__wrapper container">
           <address class="map__address">Ул. Большая конюшенная, 19/8</address>
           <button class="button">Проложить маршрут</button>
         </div>

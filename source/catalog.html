@@ -5,6 +5,338 @@
   <title>Title</title>
 </head>
 <body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__menu-wrapper">
+        <a>
+          <img class="logo" src="#logo" width="96" height="15" alt="Погнали">
+        </a>
+        <button class="page-header__menu-button"></button>
+      </div>
+      <h1 class="header">Направления</h1>
+      <div class="menu visually-hidden">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link">О сервисе</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Направления</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
 
+        <button class="button" type="button">Авторизация</button>
+
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="facebook.com"></a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="vk.com"></a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="instagram.com"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="countries-filter">
+      <div class="countries-filter__menu">
+        <button class="button">Фильтрация по странам:</button>
+      </div>
+      <div class="countries-filter__wrapper visually-hidden">
+        <ul class="countries-filter__list countries-filter__list--bold">
+          <li class="countries-filter__item countries-filter__item--active">Европа</li>
+          <li class="countries-filter__item">Азия</li>
+          <li class="countries-filter__item">Америка</li>
+          <li class="countries-filter__item">Острова</li>
+        </ul>
+
+        <table class="countries-filter__table">
+          <tr class="countries-filter__tr">
+            <td class="countries-filter">А</td>
+            <td class="countries-filter">Б</td>
+            <td class="countries-filter">В</td>
+            <td class="countries-filter">Г</td>
+            <td class="countries-filter">Д</td>
+          </tr>
+          <tr class="countries-filter__tr">
+            <td class="countries-filter">Е</td>
+            <td class="countries-filter">З</td>
+            <td class="countries-filter">И</td>
+            <td class="countries-filter">К</td>
+            <td class="countries-filter">Л</td>
+          </tr>
+          <tr class="countries-filter__tr">
+            <td class="countries-filter">М</td>
+            <td class="countries-filter">Н</td>
+            <td class="countries-filter">О</td>
+            <td class="countries-filter">П</td>
+            <td class="countries-filter">Р</td>
+          </tr>
+          <tr class="countries-filter__tr">
+            <td class="countries-filter">С</td>
+            <td class="countries-filter">Т</td>
+            <td class="countries-filter">У</td>
+            <td class="countries-filter">Ф</td>
+            <td class="countries-filter">Х</td>
+          </tr>
+          <tr class="countries-filter__tr">
+            <td class="countries-filter">Ч</td>
+            <td class="countries-filter">Ш</td>
+            <td class="countries-filter">Э</td>
+            <td class="countries-filter">Ю</td>
+            <td class="countries-filter">Я</td>
+          </tr>
+        </table>
+
+        <ul class="countries-filter__list">
+          <li class="countries-filter__item">Австралия</li>
+          <li class="countries-filter__item">Австрия</li>
+          <li class="countries-filter__item">Азербайджан</li>
+          <li class="countries-filter__item">Албания</li>
+          <li class="countries-filter__item">Алжир</li>
+          <li class="countries-filter__item">Ангола</li>
+          <li class="countries-filter__item">Андора</li>
+          <li class="countries-filter__item">Антигуа и Барбуда</li>
+          <li class="countries-filter__item">Аргентина</li>
+          <li class="countries-filter__item">Армения</li>
+          <li class="countries-filter__item">Афганистан</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="filter-traveler">
+      <h2 class="header">Подберите идеального попутчика</h2>
+      <form class="form form--filter-traveler">
+        <ul class="form__list">
+          <li class="form__item"><span class="form__span">Хобби</span></li>
+          <li class="form__item">
+            <span class="form__span">Музыка</span>
+            <label>
+              <input class="form__checkbox" name="hard-rock" type="checkbox"> Тяжелый рок
+            </label>
+            <label>
+              <input class="form__checkbox" name="russian-rap" type="checkbox"> Русский реп
+            </label>
+            <label>
+              <input class="form__checkbox" name="eurodance" type="checkbox"> Евроденс
+            </label>
+          </li>
+          <li class="form__item"><span class="form__span">Еда</span></li>
+          <li class="form__item">
+            <span class="form__span">Транспорт</span>
+            <ul class="transport">
+              <li class="transport__item transport__item--plane transport__item--active" aria-label="Самолёт"></li>
+              <li class="transport__item transport__item--bus transport__item--active" aria-label="Автобус"></li>
+              <li class="transport__item transport__item--bicycle" aria-label="Велосипед"></li>
+              <li class="transport__item transport__item--run transport__item--active" aria-label="Пешком"></li>
+            </ul>
+          </li>
+          <li class="form__item">
+            <span class="form__span">Левел</span>
+            <div class="form__range">
+              <input class="form__input" name="left-range" type="text" value="30">
+              <input class="form__input" name="right-range" type="text" value="100">
+              <div class="form__range-line"></div>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </section>
+
+    <section class="travelers">
+      <h2 class="header visually-hidden">Список попутчиков</h2>
+      <ul class="travelers-list">
+        <li class="travelers-list__item traveler">
+          <div class="travelers-list__wrapper-name">
+            <div class="traveler__img-wrapper">
+              <img class="traveler__img" src="#" width="70" height="70" alt="Таня Фирсова">
+            </div>
+            <p class="traveler__name">Таня Фирсова</p>
+            <span class="traveler__distance">1,5 м</span>
+          </div>
+          <p class="traveler__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+
+          <div class="traveler__wrapper-list">
+            <p class="traveler__header">Хочет посетить:</p>
+            <ul class="country-list">
+              <li class="country-list__item country-list__item--sri-lanka">Шри-Ланка</li>
+              <li class="country-list__item country-list__item--thailand">Таиланд</li>
+              <li class="country-list__item country-list__item--seychelles">Сейшелы</li>
+            </ul>
+          </div>
+
+          <div class="transport transport--profile">
+            <p class="traveler__header">Транспорт:</p>
+            <ul class="transport__list">
+              <li class="transport__item transport__item-plane transport__item--active"></li>
+              <li class="transport__item transport__item--bus"></li>
+              <li class="transport__item transport__item--bicycle"></li>
+              <li class="transport__item transport__item--run"></li>
+            </ul>
+          </div>
+
+          <div class="traveler__level-wrapper">
+            <p class="traveler__header">Левел</p>
+            <div class="traveler__level">99</div>
+          </div>
+          <button class="button" type="button">Позвать!</button>
+        </li>
+        <li class="travelers-list__item traveler">
+          <div class="travelers-list__wrapper-name">
+            <div class="traveler__img-wrapper">
+              <img class="traveler__img" src="#" width="70" height="70" alt="Петя Демин">
+            </div>
+            <p class="traveler__name">Петя Демин</p>
+            <span class="traveler__distance">1500</span>
+          </div>
+          <p class="traveler__tags">#бургер #бар #футбол #концерт #крафт</p>
+
+          <div class="traveler__wrapper-list">
+            <p class="traveler__header">Хочет посетить:</p>
+            <ul class="country-list">
+              <li class="country-list__item country-list__item--belgium">Бельгия</li>
+              <li class="country-list__item country-list__item--czech">Чехия</li>
+            </ul>
+          </div>
+
+          <div class="transport transport--profile">
+            <p class="traveler__header">Транспорт:</p>
+            <ul class="transport__list">
+              <li class="transport__item transport__item-plane transport__item--active"></li>
+              <li class="transport__item transport__item--bus transport__item--active"></li>
+              <li class="transport__item transport__item--bicycle"></li>
+              <li class="transport__item transport__item--run transport__item--active"></li>
+            </ul>
+          </div>
+
+          <div class="traveler__level-wrapper">
+            <p class="traveler__header">Левел</p>
+            <div class="traveler__level">80</div>
+          </div>
+          <button class="button">Позвать!</button>
+        </li>
+        <li class="travelers-list__item traveler">
+          <div class="travelers-list__wrapper-name">
+            <div class="traveler__img-wrapper">
+              <img class="traveler__img" src="#" width="70" height="70" alt="Марк Смолов">
+            </div>
+            <p class="traveler__name">Марк Смолов</p>
+            <span class="traveler__distance">170</span>
+          </div>
+          <p class="traveler__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+
+          <div class="traveler__wrapper-list">
+            <p class="traveler__header">Хочет посетить:</p>
+            <ul class="country-list">
+              <li class="country-list__item country-list__item--usa">США</li>
+              <li class="country-list__item country-list__item--australia">Австралия</li>
+              <li class="country-list__item country-list__item--dominica">Доминикана</li>
+            </ul>
+          </div>
+
+          <div class="transport transport--profile">
+            <p class="traveler__header">Транспорт:</p>
+            <ul class="transport__list">
+              <li class="transport__item transport__item-plane transport__item--active"></li>
+              <li class="transport__item transport__item--bus"></li>
+              <li class="transport__item transport__item--bicycle transport__item--active"></li>
+              <li class="transport__item transport__item--run"></li>
+            </ul>
+          </div>
+
+          <div class="traveler__level-wrapper">
+            <p class="traveler__header">Левел</p>
+            <div class="traveler__level">25</div>
+          </div>
+          <button class="button">Позвать!</button>
+        </li>
+        <li class="travelers-list__item traveler">
+          <div class="travelers-list__wrapper-name">
+            <div class="traveler__img-wrapper">
+              <img class="traveler__img" src="#" width="70" height="70" alt="Лариса Роговая">
+            </div>
+            <p class="traveler__name">Лариса Роговая</p>
+            <span class="traveler__distance">23</span>
+          </div>
+          <p class="traveler__tags">#образование #карьера #учеба #линкедин</p>
+
+          <div class="traveler__wrapper-list">
+            <p class="traveler__header">Хочет посетить:</p>
+            <ul class="country-list">
+              <li class="country-list__item country-list__item--great-kingdom">Великобритания</li>
+              <li class="country-list__item country-list__item--germany">Германия</li>
+            </ul>
+          </div>
+
+          <div class="transport transport--profile">
+            <p class="traveler__header">Транспорт:</p>
+            <ul class="transport__list">
+              <li class="transport__item transport__item-plane transport__item--active"></li>
+              <li class="transport__item transport__item--bus transport__item--active"></li>
+              <li class="transport__item transport__item--bicycle"></li>
+              <li class="transport__item transport__item--run"></li>
+            </ul>
+          </div>
+
+          <div class="traveler__level-wrapper">
+            <p class="traveler__header">Левел</p>
+            <div class="traveler__level">50</div>
+          </div>
+          <button class="button">Позвать!</button>
+        </li>
+      </ul>
+
+      <div class="travelers__pagination">
+        <button class="button">Показать ещё</button>
+        <div class="travelers__pagination-wrapper">
+          <div class="travelers__pagination-arrow travelers__pagination-arrow--left"></div>
+          <div class="travelers__pagination-arrow travelers__pagination-arrow--right"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <h2 class="page-footer__header header">Погнали?</h2>
+
+      <ul class="socials-list">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="facebook.com"></a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="vk.com"></a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="instagram.com"></a>
+        </li>
+      </ul>
+
+      <div class="page-footer__authors">
+        <span class="page-footer__text">Разработано</span>
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__img" src="#" width="27" height="33" alt="Логотип html academy">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
