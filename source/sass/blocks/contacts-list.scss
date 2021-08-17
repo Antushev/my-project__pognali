@@ -1,0 +1,11 @@
+.contacts-list {
+  @include clear-list();
+
+  font-weight: 700;
+}
+
+.contacts-list__link {
+  color: $text-header-menu;
+}
+
+
