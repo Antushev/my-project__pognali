@@ -4,7 +4,23 @@
   background-color: $basic-blue;
 }
 
+.page-header__wrapper {
+
+}
+
 .page-header__menu-wrapper {
+  margin-bottom: 70px;
   padding-top: 20px;
-  padding-bottom: 20px;
+}
+
+.page-header__wrapper-contacts {
+  display: flex;
+}
+
+.page-header__header {
+  margin-bottom: 245px;
+
+  font-size: $font-size-h1-mobile;
+  font-weight: bold;
+  text-align: center;
 }
