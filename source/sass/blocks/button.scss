@@ -1,0 +1,18 @@
+.button {
+  text-align: center;
+
+  border: none;
+
+  &--yellow {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    background-color: $basic-yellow;
+    border-radius: 25px;
+  }
+}
+
