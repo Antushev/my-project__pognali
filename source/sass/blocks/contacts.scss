@@ -1,11 +1,9 @@
-.contacts-list {
+.contacts__list {
   @include clear-list();
 
   font-weight: 700;
 }
 
-.contacts-list__link {
+.contacts__link {
   color: $text-header-menu;
 }
-
-
