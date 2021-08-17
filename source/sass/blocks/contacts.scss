@@ -4,6 +4,14 @@
   font-weight: 700;
 }
 
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .contacts__link {
   color: $text-header-menu;
+}
+
+.contacts--yellow .contacts__link {
+  color: $basic-yellow;
 }
