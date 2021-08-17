@@ -1,3 +1,17 @@
 .header {
   margin: 0;
+
+  font-weight: bold;
+
+  &--2 {
+    font-size: 24px;
+  }
+
+  &--orange {
+    color: $text-header-orange;
+  }
+
+  &--center {
+    text-align: center;
+  }
 }

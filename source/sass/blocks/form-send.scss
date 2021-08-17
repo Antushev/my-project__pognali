@@ -1,0 +1,24 @@
+.form-send {
+  background-color: $background-section-form-send;
+  color: $basic-white;
+}
+
+.form-send__wrapper {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.form-send__header {
+  margin-bottom: 20px;
+}
+
+.form-send__text {
+  margin: 0;
+
+  font-weight: 300;
+  text-align: center;
+
+  &--before-form {
+    margin-bottom: 30px;
+  }
+}

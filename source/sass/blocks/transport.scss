@@ -1,0 +1,5 @@
+.transport__list {
+  @include clear-list();
+
+  display: flex;
+}

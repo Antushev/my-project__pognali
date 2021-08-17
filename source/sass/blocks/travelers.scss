@@ -1,0 +1,27 @@
+.travelers {
+  background-color: $background-section-dark;
+}
+
+.travelers__wrapper {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  color: $basic-white;
+}
+
+.travelers__header-section {
+  margin-bottom: 50px;
+}
+
+.travelers__button {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+
+  border-radius: 10px;
+}
+
