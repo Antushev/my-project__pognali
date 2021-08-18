@@ -1,11 +1,19 @@
 .travelers {
   background-color: $background-section-dark;
+
+  &--catalog {
+    background-color: $background-section-travelers-catalog;
+  }
 }
 
 .travelers__wrapper {
   padding-top: 80px;
   padding-bottom: 40px;
   color: $basic-white;
+}
+
+.travelers--catalog .travelers__wrapper {
+  padding-top: 20px;
 }
 
 .travelers__header-section {

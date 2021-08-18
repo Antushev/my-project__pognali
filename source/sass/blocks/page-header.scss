@@ -4,13 +4,13 @@
   background-color: $basic-blue;
 }
 
-.page-header__wrapper {
-
-}
-
 .page-header__menu-wrapper {
   margin-bottom: 70px;
   padding-top: 20px;
+
+  &--common {
+    margin-bottom: 10px;
+  }
 }
 
 .page-header__wrapper-contacts {
