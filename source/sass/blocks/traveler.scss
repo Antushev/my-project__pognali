@@ -58,3 +58,16 @@
   justify-content: space-between;
   margin-bottom: 10px;
 }
+
+.traveler--catalog .traveler__button {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: $font-size-button-traveler-catalog;
+  font-weight: 700;
+  color: $basic-blue;
+  text-transform: uppercase;
+
+  border-radius: 20px;
+}

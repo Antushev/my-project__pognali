@@ -1,7 +1,5 @@
 .travelers-list {
   @include clear-list();
-
-  margin-bottom: 20px;
 }
 
 .travelers-list__item:not(:last-child) {

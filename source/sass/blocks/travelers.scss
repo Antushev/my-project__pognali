@@ -12,6 +12,10 @@
   color: $basic-white;
 }
 
+.travelers--catalog .travelers__travelers-list {
+  margin-bottom: 10px;
+}
+
 .travelers--catalog .travelers__wrapper {
   padding-top: 20px;
 }
@@ -31,5 +35,22 @@
   text-align: left;
 
   border-radius: 10px;
+
+  &--pagination {
+    text-align: center;
+  }
 }
 
+.travelers__button-pagination {
+  width: 100%;
+
+  font-size: $font-size-catalog-pagination;
+  font-weight: 700;
+  color: $basic-blue-light;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.travelers--catalog .travelers__pagination-wrapper {
+  display: flex;
+}
