@@ -24,3 +24,16 @@
   font-weight: bold;
   text-align: center;
 }
+
+.page-header__button {
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+
+  font-size: $font-size-button-text-header-auth;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-radius: 25px;
+}

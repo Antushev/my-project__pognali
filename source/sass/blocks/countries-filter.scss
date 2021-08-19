@@ -71,3 +71,34 @@
     background-color: $basic-blue-light;
   }
 }
+
+/* form.html */
+
+.countries-filter--form {
+  background-color: $basic-white;
+
+  border: 1px solid $border-countries-filter;
+}
+
+.countries-filter--form .countries-filter__table {
+  margin-bottom: 15px;
+
+  border-collapse: collapse;
+}
+
+.countries-filter--form .countries-filter__td {
+  width: 49.5px;
+  height: 49.5px;
+
+  border: 1px solid $border-countries-filter;
+}
+
+.countries-filter--form .countries-filter__list {
+  padding-left: 15px;
+
+  color: $special-grey;
+}
+
+.countries-filter--form .countries-filter__item {
+  opacity: 1;
+}

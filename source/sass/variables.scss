@@ -7,6 +7,7 @@ $basic-yellow: #ffd74b;
 $special-grey: #444444;
 $special-blue-light: #dfe3f0;
 $basic-black: #000000;
+$basic-red: #ff5c23;
 
 
 /* Colors background */
@@ -28,6 +29,8 @@ $background-section-travelers-catalog: #e5e5e5;
 $background-section-traveler-info-form: #edeff6;
 $background-section-add-plan: #d4d9eb;
 
+$background-calendar-td-access: #cbced9;
+
 /* Colors text */
 
 $text-white: #ffffff;
@@ -38,10 +41,8 @@ $text-header-menu: #192144;
 $text-header-orange: #ff8d30;
 $text-yellow-button: #1d2e5b;
 $text-no-background-button: #132576;
-
 $text-yellow-contacts: #ffd74b;
 $text-footer-logo: #192144;
-
 $text-filter-countries: #192144;
 
 /* Colors element */
@@ -57,7 +58,10 @@ $border-button-map: #192144;
 $border-block-author: #f2f2f2;
 $button-filter-color: #d6daed;
 $border-item-filter-traveler: #f3c72b;
-$border-input-filter-traveler: #cbced9;
+$border-input: #cbced9;
+$border-textarea: #cbced9;
+$border-calendar-month: #d6d9e6;
+$border-countries-filter: #cbced9;
 
 /* Colors icon */
 
@@ -88,6 +92,13 @@ $font-size-catalog-pagination: 17px;
 $font-size-header-country-form: 16px;
 $font-size-text-form-plans: 14px;
 $font-size-button-plans: 14px;
+$font-size-legend-form: 20px;
+$font-size-calendar-month: 20px;
+$font-size-calendar-th: 14px;
+$font-size-button-add-plan: 17px;
+$font-size-input-change-country: 14px;
+$font-size-text-country-add-plan: 18px;
+$font-size-button-text-header-auth: 17px;
 
 /* Sizes of display */
 

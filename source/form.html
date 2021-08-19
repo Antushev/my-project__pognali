@@ -121,30 +121,43 @@
     </section>
 
     <section class="add-plan">
-      <h2 class="header visually-hidden">Добавить план</h2>
-      <div class="add-plan__wrapper">
-        <form class="form">
+      <div class="add-plan__wrapper container">
+        <h2 class="add-plan__main-header header header--2">Добавить план</h2>
+        <form class="form form--add-plan">
           <fieldset class="form__fieldset">
-            <legend class="form__legend">
-              Шаг 1. Даты пребывания
-            </legend>
+            <h3 class="form__legend header">
+              Шаг 1.<br>Даты пребывания
+            </h3>
             <p class="form__text">
               Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку,
               и её предполагаемую длительность.
             </p>
-            <label for="count-people" class="form__label">
-              Ищу попутчиков <span class="form__label-text">Чел</span>
-            </label>
-            <input class="form__input" id="count-people" name="count-people" type="text"  value="2">
-            <label for="time" class="form__label">
-              Длительность <span class="form__label-text"></span>
-            </label>
-            <input class="form__input" id="time" name="time" type="text" value="3">
-            <label for="is-child">
-              <input class="form__checkbox" id="is-child" name="is-child" type="checkbox">
+
+            <div class="form__input-wrapper">
+              <div class="form__label-wrapper">
+                <label class="form__label" for="count-people">
+                  Ищу попутчиков
+                </label>
+                <span class="form__label-text">Чел.</span>
+              </div>
+              <input class="form__input form__input--date-block" id="count-people" name="count-people" type="text"  value="2">
+            </div>
+
+            <div class="form__input-wrapper">
+              <div class="form__label-wrapper">
+                <label for="time" class="form__label">
+                  Длительность <span class="form__label-text"></span>
+                </label>
+                <span class="form__label-text">Дн.</span>
+              </div>
+              <input class="form__input" id="time" name="time" type="text" value="3">
+            </div>
+
+            <label class="form__label-checkbox" for="is-child">
+              <input class="form__checkbox" id="is-child" name="is-child" type="checkbox"> Можно с детьми
             </label>
 
-            <div class="calendar">
+            <div class="form__calendar calendar">
               <div class="calendar__month-wrapper">
                 <div class="calendar__arrow calendar__arrow-left"></div>
                 <span class="calendar__month-name">Март 2019</span>
@@ -159,8 +172,8 @@
                     <th class="calendar__th">С</th>
                     <th class="calendar__th">Ч</th>
                     <th class="calendar__th">П</th>
-                    <th class="calendar__th">С</th>
-                    <th class="calendar__th">В</th>
+                    <th class="calendar__th calendar__th--red">С</th>
+                    <th class="calendar__th calendar__th--red">В</th>
                   </tr>
                 </thead>
                 <tbody class="calendar__tbody">
@@ -168,7 +181,7 @@
                     <td class="calendar__td">23</td>
                     <td class="calendar__td">24</td>
                     <td class="calendar__td">25</td>
-                    <td class="calendar__td">26</td>
+                    <td class="calendar__td ">26</td>
                     <td class="calendar__td">27</td>
                     <td class="calendar__td">28</td>
                     <td class="calendar__td">1</td>
@@ -204,10 +217,10 @@
                     <td class="calendar__td">23</td>
                     <td class="calendar__td">24</td>
                     <td class="calendar__td">25</td>
-                    <td class="calendar__td">26</td>
-                    <td class="calendar__td calendar__td--check calendar__td--active">27</td>
+                    <td class="calendar__td calendar__td--check calendar__td--active">26</td>
+                    <td class="calendar__td calendar__td--check">27</td>
                     <td class="calendar__td calendar__td--check">28</td>
-                    <td class="calendar__td calendar__td--check calendar__td--access">29</td>
+                    <td class="calendar__td  calendar__td--access">29</td>
                   </tr>
                   <tr class="calendar__tr">
                     <td class="calendar__td calendar__td--access">30</td>
@@ -221,96 +234,105 @@
                 </tbody>
               </table>
             </div>
-            <button class="button" type="button">Следующий шаг</button>
+            <button class="form__button button button--yellow" type="button">Следующий шаг</button>
           </fieldset>
+
           <fieldset class="form__fieldset">
-            <legend class="form__legend">
+            <h3 class="form__legend header">
               Шаг 2. Маршрут
-            </legend>
+            </h3>
             <p class="form__text">
               Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
             </p>
-            <div class="form__wrapper-country">
-              <input class="form__input" name="country-1" type="text">
+            <div class="form__country-wrapper">
+              <input class="form__input form__input--country" name="country-1" type="text" value="Чехия">
               <div class="form__country-flag"></div>
             </div>
-            <div class="form__wrapper-country">
-              <input class="form__input" name="country-2" type="text">
+            <div class="form__country-wrapper">
+              <input class="form__input form__input--country" name="country-2" type="text" value="Босния и Герцеговина">
               <div class="form__country-flag"></div>
             </div>
-            <div class="countries-filter form__wrapper-country form__wrapper-country--active">
-              <table class="countries-filter__table">
-                <tr class="countries-filter__tr">
-                  <td class="countries-filter">А</td>
-                  <td class="countries-filter">Б</td>
-                  <td class="countries-filter">В</td>
-                  <td class="countries-filter">Г</td>
-                  <td class="countries-filter">Д</td>
-                </tr>
-                <tr class="countries-filter__tr">
-                  <td class="countries-filter">Е</td>
-                  <td class="countries-filter">З</td>
-                  <td class="countries-filter">И</td>
-                  <td class="countries-filter">К</td>
-                  <td class="countries-filter">Л</td>
-                </tr>
-                <tr class="countries-filter__tr">
-                  <td class="countries-filter">М</td>
-                  <td class="countries-filter">Н</td>
-                  <td class="countries-filter">О</td>
-                  <td class="countries-filter">П</td>
-                  <td class="countries-filter">Р</td>
-                </tr>
-                <tr class="countries-filter__tr">
-                  <td class="countries-filter">С</td>
-                  <td class="countries-filter">Т</td>
-                  <td class="countries-filter">У</td>
-                  <td class="countries-filter">Ф</td>
-                  <td class="countries-filter">Х</td>
-                </tr>
-                <tr class="countries-filter__tr">
-                  <td class="countries-filter">Ч</td>
-                  <td class="countries-filter">Ш</td>
-                  <td class="countries-filter">Э</td>
-                  <td class="countries-filter">Ю</td>
-                  <td class="countries-filter">Я</td>
-                </tr>
-              </table>
+            <div class="form__country-wrapper form__wrapper-country--active">
+              <label>
+                <input class="form__input form__input--change-country" name="country-2" type="text" value="Выберите страну">
+              </label>
+              <div class="countries-filter countries-filter--form">
+                <table class="countries-filter__table">
+                  <tr class="countries-filter__tr">
+                    <td class="countries-filter__td">А</td>
+                    <td class="countries-filter__td">Б</td>
+                    <td class="countries-filter__td">В</td>
+                    <td class="countries-filter__td">Г</td>
+                    <td class="countries-filter__td">Д</td>
+                  </tr>
+                  <tr class="countries-filter__tr">
+                    <td class="countries-filter__td">Е</td>
+                    <td class="countries-filter__td">З</td>
+                    <td class="countries-filter__td">И</td>
+                    <td class="countries-filter__td">К</td>
+                    <td class="countries-filter__td">Л</td>
+                  </tr>
+                  <tr class="countries-filter__tr">
+                    <td class="countries-filter__td">М</td>
+                    <td class="countries-filter__td">Н</td>
+                    <td class="countries-filter__td">О</td>
+                    <td class="countries-filter__td">П</td>
+                    <td class="countries-filter__td">Р</td>
+                  </tr>
+                  <tr class="countries-filter__tr">
+                    <td class="countries-filter__td">С</td>
+                    <td class="countries-filter__td">Т</td>
+                    <td class="countries-filter__td">У</td>
+                    <td class="countries-filter__td">Ф</td>
+                    <td class="countries-filter__td">Х</td>
+                  </tr>
+                  <tr class="countries-filter__tr">
+                    <td class="countries-filter__td">Ч</td>
+                    <td class="countries-filter__td">Ш</td>
+                    <td class="countries-filter__td">Э</td>
+                    <td class="countries-filter__td">Ю</td>
+                    <td class="countries-filter__td">Я</td>
+                  </tr>
+                </table>
 
-              <ul class="countries-filter__list">
-                <li class="countries-filter__item">Австралия</li>
-                <li class="countries-filter__item">Австрия</li>
-                <li class="countries-filter__item">Азербайджан</li>
-                <li class="countries-filter__item">Албания</li>
-                <li class="countries-filter__item">Алжир</li>
-                <li class="countries-filter__item">Ангола</li>
-                <li class="countries-filter__item">Андора</li>
-                <li class="countries-filter__item">Антигуа и Барбуда</li>
-                <li class="countries-filter__item">Аргентина</li>
-                <li class="countries-filter__item">Армения</li>
-                <li class="countries-filter__item">Афганистан</li>
-              </ul>
+                <ul class="countries-filter__list">
+                  <li class="countries-filter__item">Австралия</li>
+                  <li class="countries-filter__item">Австрия</li>
+                  <li class="countries-filter__item">Азербайджан</li>
+                  <li class="countries-filter__item">Албания</li>
+                  <li class="countries-filter__item">Алжир</li>
+                  <li class="countries-filter__item">Ангола</li>
+                  <li class="countries-filter__item">Андора</li>
+                  <li class="countries-filter__item">Антигуа и Барбуда</li>
+                  <li class="countries-filter__item">Аргентина</li>
+                  <li class="countries-filter__item">Армения</li>
+                  <li class="countries-filter__item">Афганистан</li>
+                </ul>
+              </div>
             </div>
-            <button class="button" type="button">Следующий шаг</button>
-            <button class="button" type="button">На шаг назад</button>
+            <button class="form__button button button--yellow" type="button">Следующий шаг</button>
+            <button class="form__button form__button--no-background button button--no-background" type="button">На шаг назад</button>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__legend">
+            <h3 class="form__legend header">
               Шаг 3. Развлечения
+            </h3>
             </legend>
             <p class="form__text">
               Наконец, расскажите о своих планах времяпровождения.
               Можно описать в свободной форме и ставить тэги.
             </p>
-            <p class="form__text-country">Босния и Герцеговина</p>
-            <textarea class="form__textarea" placeholder="План действий" name="plan-text"></textarea>
-            <p class="header">Чехия</p>
-            <textarea class="form__textarea">
-              Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-            </textarea>
-            <button class="button" type="submit">Отправить</button>
-            <button class="button" type="submit">На шаг назад</button>
+            <div class="form__textarea-wrapper">
+              <p class="form__text-country">Босния и Герцеговина</p>
+              <textarea class="form__textarea" name="plan-text" placeholder="План действий" rows="8"></textarea>
+
+              <p class="form__text-country">Чехия</p>
+              <textarea class="form__textarea" rows="8">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+              </textarea>
+            </div>
+            <button class="form__button button button--yellow" type="submit">Отправить</button>
+            <button class="form__button form__button--no-background  button button--no-background" type="submit">На шаг назад</button>
           </fieldset>
         </form>
       </div>
@@ -318,10 +340,10 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <h2 class="page-footer__header header">Погнали?</h2>
+    <div class="page-footer__wrapper container">
+      <h2 class="page-footer__header header header--center">Погнали?</h2>
 
-      <div class="socials">
+      <div class="socials socials--center">
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link" href="facebook.com"></a>

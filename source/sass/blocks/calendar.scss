@@ -1,0 +1,53 @@
+.calendar__month-wrapper {
+  margin-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  font-size: $font-size-calendar-month;
+  font-weight: 700;
+  color: $basic-blue-light;
+  text-align: center;
+
+  border-top: 1px solid $border-calendar-month;
+  border-bottom: 1px solid $border-calendar-month;
+}
+
+.calendar__table {
+  border-collapse: collapse;
+}
+
+.calendar__th {
+  font-size: $font-size-calendar-th;
+  font-weight: 400;
+
+  &--red {
+    color: $basic-red;
+  }
+}
+
+.calendar__td {
+  width: 32px;
+  height: 32px;
+
+  color: $special-grey;
+  text-align: center;
+  vertical-align: middle;
+
+  border: 1px solid $border-calendar-month;
+
+  &--check {
+    color: $basic-white;
+
+    background-color: $basic-blue-light;
+  }
+
+  &--access {
+    color: $basic-blue-light;
+
+    background-color: $background-calendar-td-access;
+  }
+
+  &--active {
+    outline: 2px solid $basic-red;
+  }
+}

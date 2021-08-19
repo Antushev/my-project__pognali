@@ -12,6 +12,12 @@
   color: $basic-white;
 }
 
+.travelers__travelers-list {
+  margin-bottom: 20px;
+}
+
+/* catalog.html */
+
 .travelers--catalog .travelers__travelers-list {
   margin-bottom: 10px;
 }
@@ -20,7 +26,7 @@
   padding-top: 20px;
 }
 
-.travelers__header-section {
+.travelers--catalog .travelers__header-section {
   margin-bottom: 50px;
 }
 
@@ -41,7 +47,7 @@
   }
 }
 
-.travelers__button-pagination {
+.travelers--catalog .travelers__button-pagination {
   width: 100%;
 
   font-size: $font-size-catalog-pagination;
@@ -54,3 +60,4 @@
 .travelers--catalog .travelers__pagination-wrapper {
   display: flex;
 }
+

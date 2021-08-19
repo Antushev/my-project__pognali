@@ -35,7 +35,7 @@
 
   text-align: center;
 
-  border: 1px solid $border-input-filter-traveler;
+  border: 1px solid $border-input;
 
   &:first-child {
     border-top-left-radius: 4px;
@@ -46,4 +46,148 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
+}
+
+/* form.html */
+
+.form--add-plan .form__fieldset {
+  padding: 20px;
+
+  background-color: $basic-white;
+  border: none;
+  border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form--add-plan .form__legend {
+  font-size: $font-size-legend-form;
+  font-weight: 700;
+
+  color: $basic-blue-light;
+}
+
+.form--add-plan .form__text {
+  color: $special-grey;
+}
+
+.form__input-wrapper:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form--add-plan .form__label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.form--add-plan .form__label {
+  font-weight: 500;
+  color: $basic-blue-light;
+  text-transform: uppercase;
+}
+
+.form--add-plan .form__label-text {
+  font-weight: 500;
+  color: $basic-blue-light;
+  text-transform: uppercase;
+
+  opacity: 0.3;
+}
+
+.form--add-plan .form__input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-weight: 500;
+  color: $basic-blue-light;
+  text-align: center;
+
+  border: 1px solid $border-input;
+  border-radius: 4px;
+}
+
+.form--add-plan .form__label-checkbox {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form--add-plan .form__calendar {
+  margin-bottom: 20px;
+}
+
+.form--add-plan .form__button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: $font-size-button-add-plan;
+  font-weight: 700;
+  color: $basic-blue-light;
+  text-transform: uppercase;
+
+  border-radius: 20px;
+
+  &--no-background {
+    margin-bottom: 0;
+  }
+}
+
+.form--add-plan .form__country-wrapper {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form--add-plan .form__input--country {
+  padding-left: 10px;
+
+  font-size: $font-size-input-change-country;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.form--add-plan .form__input--change-country {
+  padding-left: 10px;
+
+  font-weight: 500;
+  color: $basic-white;
+  text-align: left;
+
+  background-color: $basic-blue-light;
+
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form--add-plan .form__textarea {
+  width: 100%;
+  padding: 10px;
+
+  color: $special-grey;
+
+  border: 1px solid $border-textarea;
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.form--add-plan .form__textarea-wrapper {
+  margin-bottom: 15px;
+}
+
+.form--add-plan .form__text-country {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: $font-size-text-country-add-plan;
+  font-weight: 500;
+  color: $basic-blue-light;
 }
