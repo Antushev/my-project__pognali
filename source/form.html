@@ -66,19 +66,20 @@
     <section class="traveler-info">
       <div class="traveler-info__wrapper">
         <h2 class="header visually-hidden">Профиль</h2>
-        <div class="traveler-info__wrapper traveler container">
+
+        <div class="traveler-info__wrapper traveler traveler--form container">
           <div class="traveler__img-wrapper">
             <div class="traveler__level">80 level</div>
             <img class="traveler__img" src="#" width="100" height="100" alt="Петя Демин">
           </div>
-          <button class="button traveler__button">Сменить фото</button>
-          <div class="tags">
-            <h3 class="header">Тэги</h3>
+          <button class="traveler__button button">Сменить фото</button>
+          <div class="traveler__tags-wrapper">
+            <h3 class="traveler__header header">Тэги</h3>
             <p class="tags traveler__tags">#бургер #бар #футбол #концерт #крафт</p>
           </div>
 
           <div class="transport transport--profile">
-            <h3 class="header">Транспорт</h3>
+            <h3 class="traveler__header header">Транспорт</h3>
             <ul class="transport__list">
               <li class="transport__item transport__item-plane transport__item--active" aria-label="Самолёт"></li>
               <li class="transport__item transport__item--bus transport__item--active" aria-label="Автобус"></li>
@@ -87,30 +88,35 @@
             </ul>
           </div>
       </div>
+      </div>
     </section>
 
     <section class="plans">
-      <div class="plans__wrapper">
-        <h2 class="header">Мои планы</h2>
+      <div class="plans__wrapper container">
+        <h2 class="plans__main-header header header--2">Мои планы</h2>
 
         <ul class="plans__list">
-        <li class="plans__item">
-          <h3 class="header">1. Франция, Италия</h3>
-          <p class="plans__count-people">3 попутчика</p>
-          <p class="plans__date">
-            <time datetime="2021-03-26">26 мар</time>-<time datetime="2021-03-29">29 мар</time>
-          </p>
-          <button class="button" type="button">Изменить</button>
-        </li>
-        <li class="plans__item">
-          <h3 class="header">2. Таиланд, Индонезия</h3>
-          <p class="plans__count-people">1 попутчика</p>
-          <p class="plans__date">
-            <time datetime="2021-07-01">1 июл</time>-<time datetime="2021-01-15">15 июл</time>
-          </p>
-          <button class="button" type="button">Изменить</button>
-        </li>
-      </ul>
+          <li class="plans__item">
+            <h3 class="plans__header header">1. Франция, Италия</h3>
+            <div class="plans__text-wrapper">
+              <p class="plans__text">3 попутчика</p>
+              <p class="plans__text">
+                <time datetime="2021-03-26">26 мар</time>-<time datetime="2021-03-29">29 мар</time>
+              </p>
+            </div>
+            <button class="plans__button button" type="button">Изменить</button>
+          </li>
+          <li class="plans__item">
+            <h3 class="plans__header header">2. Таиланд, Индонезия</h3>
+            <div class="plans__text-wrapper">
+              <p class="plans__text">1 попутчика</p>
+              <p class="plans__text">
+                <time datetime="2021-07-01">1 июл</time>-<time datetime="2021-01-15">15 июл</time>
+              </p>
+            </div>
+            <button class="plans__button button" type="button">Изменить</button>
+          </li>
+        </ul>
       </div>
     </section>
 
