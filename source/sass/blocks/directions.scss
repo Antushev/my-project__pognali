@@ -1,0 +1,66 @@
+.directions {
+  background-color: $background-section-directions;
+}
+
+.directions__wrapper {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.directions__header-section {
+  margin-bottom: 60px;
+}
+
+.directions__list {
+  @include clear-list();
+
+  margin-bottom: 30px;
+}
+
+.directions__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.directions__text {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  background-color: $basic-white;
+  border-radius: 10px;
+}
+
+.directions__country {
+  margin: 0;
+
+  font-size: $font-size-country-name-mobile;
+  font-weight: 700;
+}
+
+.directions__tagline {
+  margin: 0;
+
+  font-weight: 500;
+  color: $text-grey;
+
+  opacity: 0.4;
+}
+
+.directions__count {
+  color: $text-grey;
+
+  opacity: 0.4;
+}
+
+.directions__button {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+
+  border-radius: 10px;
+}

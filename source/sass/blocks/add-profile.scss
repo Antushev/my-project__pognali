@@ -1,0 +1,24 @@
+.add-profile {
+  background-color: $background-section-tariffs;
+}
+
+.add-profile__wrapper {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+}
+
+.add-profile__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-right: 20px;
+}
+
+.add-profile__tariffs-list {
+  margin-bottom: 30px;
+}
+
+.add-profile__button {
+  color: $text-no-background-button;
+}

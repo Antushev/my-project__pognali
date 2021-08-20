@@ -1,0 +1,19 @@
+.country-list {
+  @include clear-list();
+
+  display: flex;
+}
+
+.country-list--catalog {
+  flex-direction: column;
+
+  font-size: $font-size-country-list-catalog;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.country-list--catalog .country-list__item {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}

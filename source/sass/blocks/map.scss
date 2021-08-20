@@ -1,0 +1,30 @@
+.map__wrapper-color {
+  background-color: $basic-yellow;
+}
+
+.map__wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  color: $basic-blue-light;
+}
+
+.map__address {
+  margin-bottom: 45px;
+
+  font-style: normal;
+  font-size: $font-size-text-address-map-mobile;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.map__button {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-size: $font-size-text-button-map;
+  font-weight: 700;
+
+  border-radius: 10px;
+}

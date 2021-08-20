@@ -1,0 +1,62 @@
+.travelers {
+  background-color: $background-section-dark;
+
+  &--catalog {
+    background-color: $background-section-travelers-catalog;
+  }
+}
+
+.travelers__wrapper {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  color: $basic-white;
+}
+
+.travelers__travelers-list {
+  margin-bottom: 20px;
+}
+
+/* catalog.html */
+
+.travelers--catalog .travelers__travelers-list {
+  margin-bottom: 10px;
+}
+
+.travelers--catalog .travelers__wrapper {
+  padding-top: 20px;
+}
+
+.travelers--catalog .travelers__header-section {
+  margin-bottom: 50px;
+}
+
+.travelers__button {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+
+  border-radius: 10px;
+
+  &--pagination {
+    text-align: center;
+  }
+}
+
+.travelers--catalog .travelers__button-pagination {
+  width: 100%;
+
+  font-size: $font-size-catalog-pagination;
+  font-weight: 700;
+  color: $basic-blue-light;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.travelers--catalog .travelers__pagination-wrapper {
+  display: flex;
+}

@@ -1,0 +1,106 @@
+/* Colors basic */
+
+$basic-white: #ffffff;
+$basic-blue: #161c35;
+$basic-blue-light: #1d2e5b;
+$basic-yellow: #ffd74b;
+$special-grey: #444444;
+$special-blue-light: #dfe3f0;
+$basic-black: #000000;
+$basic-red: #ff5c23;
+
+
+/* Colors background */
+
+$background-section-dark: #192144;
+$background-section-light: #edeff6;
+$background-section-yellow: #ffd74b;
+$background-section-white: #ffffff;
+
+$background-header-menu: #182044;
+$background-section-tariffs: #e6e8f1;
+$background-section-directions: #edeff6;
+$background-section-plans: #dfe3f0;
+$background-section-add-plan: #d4d9eb;
+$background-section-filter: #e2e5f2;
+$background-section-form-send: #192144;
+$background-section-filter-traveler: #e5e5e5;
+$background-section-travelers-catalog: #e5e5e5;
+$background-section-traveler-info-form: #edeff6;
+$background-section-add-plan: #d4d9eb;
+
+$background-calendar-td-access: #cbced9;
+
+/* Colors text */
+
+$text-white: #ffffff;
+$text-grey: #444444;
+$text-basic-blue-light: #1d2e5b;
+$text-basic-blue: #161c35;
+$text-header-menu: #192144;
+$text-header-orange: #ff8d30;
+$text-yellow-button: #1d2e5b;
+$text-no-background-button: #132576;
+$text-yellow-contacts: #ffd74b;
+$text-footer-logo: #192144;
+$text-filter-countries: #192144;
+
+/* Colors element */
+
+$button-contact-background-phone: #ff8d30;
+$button-contact-background-mail: #ffbd30;
+$block-color-background-step-1: #ff8d30;
+$block-color-background-step-2: #ffa530;
+$block-color-background-step-3: #ffbd30;
+$block-color-background-step-4: #ffd74b;
+$border-line-tariffs: #e1e3e9;
+$border-button-map: #192144;
+$border-block-author: #f2f2f2;
+$button-filter-color: #d6daed;
+$border-item-filter-traveler: #f3c72b;
+$border-input: #cbced9;
+$border-textarea: #cbced9;
+$border-calendar-month: #d6d9e6;
+$border-countries-filter: #cbced9;
+
+/* Colors icon */
+
+$icons-contacts: #161c35;
+$icons-contacts-footer: #192144;
+$icons-transport: #1d2e5b;
+$icons-arrow-buttons: #1d2e5b;
+
+/* Font-family */
+
+$main-font-family-mobile: "BloggerSans", "Tahoma", sans-serif;
+
+/* Font-size */
+
+$font-size-text-mobile: 16px;
+$font-size-h1-mobile: 36px;
+$font-size-h2-mobile: 24px;
+$font-size-country-name-mobile: 21px;
+$font-size-traveler-name-mobile: 21px;
+$font-size-menu-item-mobile: 30px;
+$font-size-text-items-steps-mobile: 18px;
+$font-size-text-address-map-mobile: 28px;
+$font-size-text-button-map: 24px;
+$font-size-country-list-catalog: 15px;
+$font-size-button-traveler-catalog: 17px;
+$font-size-button-traveler-form: 20px;
+$font-size-catalog-pagination: 17px;
+$font-size-header-country-form: 16px;
+$font-size-text-form-plans: 14px;
+$font-size-button-plans: 14px;
+$font-size-legend-form: 20px;
+$font-size-calendar-month: 20px;
+$font-size-calendar-th: 14px;
+$font-size-button-add-plan: 17px;
+$font-size-input-change-country: 14px;
+$font-size-text-country-add-plan: 18px;
+$font-size-button-text-header-auth: 17px;
+
+/* Sizes of display */
+
+$tabled-width: 768px;
+$desktop-width: 1440px;

@@ -1,0 +1,39 @@
+.page-header {
+  color: $basic-white;
+
+  background-color: $basic-blue;
+}
+
+.page-header__menu-wrapper {
+  margin-bottom: 70px;
+  padding-top: 20px;
+
+  &--common {
+    margin-bottom: 10px;
+  }
+}
+
+.page-header__wrapper-contacts {
+  display: flex;
+}
+
+.page-header__header {
+  margin-bottom: 245px;
+
+  font-size: $font-size-h1-mobile;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-header__button {
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+
+  font-size: $font-size-button-text-header-auth;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-radius: 25px;
+}

@@ -1,0 +1,19 @@
+.tariffs-list {
+  @include clear-list();
+
+  font-weight: 300;
+}
+
+.tariffs-list__item {
+  padding-top: 10px;
+
+  border-top: 1px solid $border-line-tariffs;
+}
+
+.tariffs-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.tariffs-list__item:last-child {
+  border-bottom: 1px solid $border-line-tariffs;
+}

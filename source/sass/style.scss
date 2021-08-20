@@ -1,1 +1,38 @@
-// Начните писать стили здесь
+@import "../css/normalize";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "global-style.scss";
+
+/* Blocks */
+
+@import "blocks/container.scss";
+@import "blocks/button.scss";
+@import "blocks/header.scss";
+@import "blocks/page-header.scss";
+@import "blocks/menu.scss";
+@import "blocks/contacts.scss";
+@import "blocks/socials.scss";
+@import "blocks/quote.scss";
+@import "blocks/steps.scss";
+@import "blocks/about.scss";
+@import "blocks/directions.scss";
+@import "blocks/header-section.scss";
+@import "blocks/traveler.scss";
+@import "blocks/travelers-list.scss";
+@import "blocks/travelers.scss";
+@import "blocks/country-list.scss";
+@import "blocks/transport.scss";
+@import "blocks/tariffs-list.scss";
+@import "blocks/add-profile.scss";
+@import "blocks/form-send.scss";
+@import "blocks/form-email.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/countries-filter.scss";
+@import "blocks/filter-traveler.scss";
+@import "blocks/form.scss";
+@import "blocks/traveler-info.scss";
+@import "blocks/plans.scss";
+@import "blocks/add-plan.scss";
+@import "blocks/calendar.scss";
