@@ -2,6 +2,10 @@
   @include clear-list();
 
   font-weight: 700;
+
+  @media (min-width: $tabled-width) {
+    font-size: $font-size-contacts-tabled;
+  }
 }
 
 .contacts__item:not(:last-child) {
@@ -14,4 +18,8 @@
 
 .contacts--yellow .contacts__link {
   color: $basic-yellow;
+}
+
+.contacts--no-text .contacts__text {
+  display: none;
 }

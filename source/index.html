@@ -11,42 +11,53 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__menu-wrapper">
-        <a>
-          <img class="logo" src="#logo" width="96" height="15" alt="Погнали">
-        </a>
+        <div class="page-header__menu-inner container">
+          <div class="page-header__logo">
+            <a>
+              <img class="logo" src="#logo" width="96" height="15" alt="Погнали">
+            </a>
+          </div>
 
-        <button class="page-header__menu-button"></button>
+          <div class="page-header__toggle-button">
+            <button class="page-header__menu-button" type="button"></button>
+          </div>
 
-        <div class="menu visually-hidden">
-          <nav class="menu__nav">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link">О сервисе</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link">Направления</a>
-              </li>
-              <li class="menu__item">
-                <a  class="menu__link" href="catalog.html">Попутчики</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="page-header__menu-block menu">
+            <nav class="page-header__menu menu__nav">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link">О сервисе</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link">Направления</a>
+                </li>
+                <li class="menu__item">
+                  <a  class="menu__link" href="catalog.html">Попутчики</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-          <button class="menu__button button button--yellow" type="button">Авторизация</button>
+          <div class="page-header__contacts-button">
+            <button class="page-header__button-auth button button--yellow" type="button">Авторизация</button>
+          </div>
 
-          <div class="contacts">
+          <div class="page-header__contacts contacts contacts--no-text">
             <ul class="contacts__list">
               <li class="contacts__item">
-                <a class="contacts__link" href="tel:88005558628">8 800 555-86-28</a>
+                <a class="contacts__link" href="tel:88005558628">
+                  <span class="contacts__text">8 800 555-86-28</span>
+                </a>
               </li>
               <li class="contacts__item">
-                <a class="contacts__link" href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="contacts__link" href="mail:mail@htmlacademy.ru">
+                  <span class="contacts__text">mail@htmlacademy.ru</span>
+                </a>
               </li>
             </ul>
           </div>
 
-
-          <div class="socials">
+          <div class="page-header__socials socials">
             <ul class="socials__list">
               <li class="socials__item">
                 <a class="socials__link" href="facebook.com"></a>
@@ -62,34 +73,65 @@
         </div>
       </div>
 
-      <div class="page-header__wrapper container">
+      <div class="page-header__wrapper">
+
         <h1 class="header page-header__header">В путешествие <br> с крутыми попутчиками!</h1>
 
-        <div class="page-header__wrapper-contacts">
-          <button class="page-header__button button button--yellow" type="button">Авторизация</button>
+        <div class="page-header__menu-wrapper page-header__menu-wrapper--bottom-menu">
+          <div class="page-header__menu-inner container">
+            <div class="page-header__logo">
+              <a>
+                <img class="logo" src="#logo" width="96" height="15" alt="Погнали">
+              </a>
+            </div>
 
-          <div class="contacts">
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <a class="contacts__link" href="tel:88005558628"></a>
-              </li>
-              <li class="contacts__item">
-                <a class="contacts__link" href="mail:mail@htmlacademy.ru"></a>
-              </li>
-            </ul>
+            <div class="page-header__menu-block menu menu--bottom-menu">
+              <nav class="page-header__menu menu__nav">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link">О сервисе</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link">Направления</a>
+                  </li>
+                  <li class="menu__item">
+                    <a  class="menu__link" href="catalog.html">Попутчики</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="page-header__contacts-button page-header__contacts-button">
+              <button class="page-header__button-auth button button--yellow" type="button">Авторизация</button>
+            </div>
+
+            <div class="page-header__contacts contacts contacts--no-text">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:88005558628">
+                    <span class="contacts__text">8 800 555-86-28</span>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="mail:mail@htmlacademy.ru">
+                    <span class="contacts__text">mail@htmlacademy.ru</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <section class="quote">
-          <div class="quote__wrapper">
+        <section class="page-header__quote quote">
+          <div class="quote__wrapper container">
             <h2 class="header visually-hidden">Цитата</h2>
-            <q class="quote__text">Лучшее приложение, что я видел в жизни!</q>
-            <cite class="quote__author">Мурат Эльтазин главный редактор газеты "гаджетлайф"</cite>
+            <div class="quote__text">Лучшее приложение, что я видел в жизни!</div>
+            <div class="quote__author">Мурат Эльтазин<br> главный редактор газеты "гаджетлайф"</div>
           </div>
         </section>
 
-        <section class="steps">
-          <div class="steps__wrapper">
+        <section class="page-header__steps steps">
+          <div class="steps__wrapper container">
             <h2 class="header visually-hidden">Пошаговый алгоритм действий</h2>
             <ul class="steps__list">
               <li class="steps__item">Выберите направление</li>
@@ -115,7 +157,8 @@
             близкого по духу — скорее
             зовите в совместный трип!
           </p>
-          <button class="about__button button visually-hidden" type="button">Подробнее</button>
+
+          <button class="about__button button" type="button">Подробнее</button>
         </div>
       </section>
 
