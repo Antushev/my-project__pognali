@@ -7,6 +7,11 @@
   padding-bottom: 50px;
 
   color: $basic-blue-light;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .map__address {
@@ -16,6 +21,15 @@
   font-size: $font-size-text-address-map-mobile;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $tabled-width) {
+    font-size: $font-size-address-tabled;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 25px;
+  }
 }
 
 .map__button {
@@ -27,4 +41,12 @@
   font-weight: 700;
 
   border-radius: 10px;
+
+  @media (min-width: $tabled-width) {
+    font-size: $font-size-button-address-tabled;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+  }
 }

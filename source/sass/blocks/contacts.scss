@@ -23,3 +23,18 @@
 .contacts--no-text .contacts__text {
   display: none;
 }
+
+.contacts--form-send .contacts__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.contacts--form-send .contacts__item {
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
