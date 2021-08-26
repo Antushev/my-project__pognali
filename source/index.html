@@ -148,17 +148,19 @@
       <section class="about">
         <div class="about__wrapper container">
           <h2 class="header header--2 header--orange">О сервисе</h2>
+
           <p class="about__text">
             Любое путешествие веселее
             с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
           </p>
+
           <p class="about__text about__text--bold">
             А если найдете кого-то
             близкого по духу — скорее
             зовите в совместный трип!
           </p>
 
-          <button class="about__button button" type="button">Подробнее</button>
+          <button class="about__button button button--with-arrow button--yellow" type="button">Подробнее</button>
         </div>
       </section>
 
@@ -175,53 +177,60 @@
             </p>
           </header>
 
-          <ul class="directions__list">
-            <li class="directions__item">
-              <img class="directions__img" src="#" width="270" height="110" alt="Таиланд">
-              <div class="directions__text">
-                <div class="directions__text-wrapper">
-                  <p class="directions__country">Таиланд</p>
-                  <p class="directions__tagline">Джунгли зовут</p>
+          <div class="direction__list-wrapper">
+            <ul class="directions__list">
+              <li class="directions__item">
+                <img class="directions__img" src="#" width="270" height="110" alt="Таиланд">
+                <div class="directions__text">
+                  <div class="directions__text-wrapper">
+                    <p class="directions__country">Таиланд</p>
+                    <p class="directions__tagline">Джунгли зовут</p>
+                  </div>
+                  <div class="directions__count">18321</div>
                 </div>
-                <div class="directions__count">18321</div>
-              </div>
-            </li>
+              </li>
 
-            <li class="directions__item">
-              <img class="directions__img" src="#" width="270" height="110" alt="Франция">
-              <div class="directions__text">
-                <div class="directions__text-wrapper">
-                  <p class="directions__country">Франция</p>
-                  <p class="directions__tagline">Трэ бьем, манифик</p>
+              <li class="directions__item">
+                <img class="directions__img" src="#" width="270" height="110" alt="Франция">
+                <div class="directions__text">
+                  <div class="directions__text-wrapper">
+                    <p class="directions__country">Франция</p>
+                    <p class="directions__tagline">Трэ бьем, манифик</p>
+                  </div>
+                  <div class="directions__count">12518</div>
                 </div>
-                <div class="directions__count">12518</div>
-              </div>
-            </li>
+              </li>
 
-            <li class="directions__item">
-              <img class="directions__img" src="#" width="270" height="110" alt="Чехия">
-              <div class="directions__text">
-                <div class="directions__text-wrapper">
-                  <p class="directions__country">Чехия</p>
-                  <p class="directions__tagline">Закоулки старой Европы</p>
+              <li class="directions__item">
+                <img class="directions__img" src="#" width="270" height="110" alt="Чехия">
+                <div class="directions__text">
+                  <div class="directions__text-wrapper">
+                    <p class="directions__country">Чехия</p>
+                    <p class="directions__tagline">Закоулки старой Европы</p>
+                  </div>
+                  <div class="directions__count">5326</div>
                 </div>
-                <div class="directions__count">5326</div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+
           <button class="directions__button button button--yellow" type="button">Показать все</button>
         </div>
       </section>
 
       <section class="travelers">
         <div class="travelers__wrapper container">
-          <header class="travelers__header-section header-section">
-            <h2 class="header-section__header header header--orange">Попутчики</h2>
-            <p class="header-section__text">
-              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-            </p>
-            <p class="header-section__text header-section__text--bold">Теперь можно легко найти единомышленников</p>
-          </header>
+          <div class="travelers__header-wrapper">
+            <header class="travelers__header-section header-section">
+              <h2 class="header-section__header header header--orange">Попутчики</h2>
+              <p class="header-section__text">
+                Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+              </p>
+              <p class="header-section__text header-section__text--bold">Теперь можно легко найти единомышленников</p>
+            </header>
+
+            <button class="travelers__button button button--yellow" type="button">Показать всех</button>
+          </div>
 
           <ul class="travelers__travelers-list travelers-list">
             <li class="travelers-list__item traveler">
@@ -268,8 +277,6 @@
               </div>
             </li>
           </ul>
-
-          <button class="travelers__button button button--yellow" type="button">Показать всех</button>
         </div>
       </section>
 

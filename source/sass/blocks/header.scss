@@ -4,7 +4,11 @@
   font-weight: bold;
 
   &--2 {
-    font-size: 24px;
+    font-size: $font-size-header-index-mobile;
+
+    @media (min-width: $tabled-width) {
+      font-size: $font-size-header-index-tabled;
+    }
   }
 
   &--filter-traveler {

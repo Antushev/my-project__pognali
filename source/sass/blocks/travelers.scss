@@ -10,10 +10,42 @@
   padding-top: 80px;
   padding-bottom: 40px;
   color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.travelers__header-section {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .travelers__travelers-list {
   margin-bottom: 20px;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}
+
+.travelers-list__item {
+  @media (min-width: $tabled-width) {
+    width: 280px;
+  }
+}
+
+.travelers__button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 280px;
+  }
 }
 
 /* catalog.html */
