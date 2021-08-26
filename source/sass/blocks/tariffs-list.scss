@@ -5,13 +5,23 @@
 }
 
 .tariffs-list__item {
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   border-top: 1px solid $border-line-tariffs;
-}
 
-.tariffs-list__item:not(:last-child) {
-  margin-bottom: 30px;
+  &--hidden-block {
+    @media (min-width: $tabled-width) {
+      font-size: $font-size-add-profile-list-hidden-block;
+    }
+  }
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: $font-size-add-profile-list;
+  }
 }
 
 .tariffs-list__item:last-child {
