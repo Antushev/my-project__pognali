@@ -5,6 +5,11 @@
 .page-footer__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__authors {
