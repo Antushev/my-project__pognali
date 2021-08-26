@@ -11,42 +11,53 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__menu-wrapper">
-        <a>
-          <img class="logo" src="#logo" width="96" height="15" alt="Погнали">
-        </a>
+        <div class="page-header__menu-inner container">
+          <div class="page-header__logo">
+            <a>
+              <img class="logo" src="#logo" width="96" height="15" alt="Погнали">
+            </a>
+          </div>
 
-        <button class="page-header__menu-button"></button>
+          <div class="page-header__toggle-button">
+            <button class="page-header__menu-button" type="button"></button>
+          </div>
 
-        <div class="menu visually-hidden">
-          <nav class="menu__nav">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link">О сервисе</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link">Направления</a>
-              </li>
-              <li class="menu__item">
-                <a  class="menu__link" href="catalog.html">Попутчики</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="page-header__menu-block menu">
+            <nav class="page-header__menu menu__nav">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link">О сервисе</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link">Направления</a>
+                </li>
+                <li class="menu__item">
+                  <a  class="menu__link" href="catalog.html">Попутчики</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-          <button class="menu__button button button--yellow" type="button">Авторизация</button>
+          <div class="page-header__contacts-button">
+            <button class="page-header__button-auth button button--yellow" type="button">Авторизация</button>
+          </div>
 
-          <div class="contacts">
+          <div class="page-header__contacts contacts contacts--no-text">
             <ul class="contacts__list">
               <li class="contacts__item">
-                <a class="contacts__link" href="tel:88005558628">8 800 555-86-28</a>
+                <a class="contacts__link" href="tel:88005558628">
+                  <span class="contacts__text">8 800 555-86-28</span>
+                </a>
               </li>
               <li class="contacts__item">
-                <a class="contacts__link" href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="contacts__link" href="mail:mail@htmlacademy.ru">
+                  <span class="contacts__text">mail@htmlacademy.ru</span>
+                </a>
               </li>
             </ul>
           </div>
 
-
-          <div class="socials">
+          <div class="page-header__socials socials">
             <ul class="socials__list">
               <li class="socials__item">
                 <a class="socials__link" href="facebook.com"></a>
@@ -62,34 +73,65 @@
         </div>
       </div>
 
-      <div class="page-header__wrapper container">
+      <div class="page-header__wrapper">
+
         <h1 class="header page-header__header">В путешествие <br> с крутыми попутчиками!</h1>
 
-        <div class="page-header__wrapper-contacts">
-          <button class="page-header__button button button--yellow" type="button">Авторизация</button>
+        <div class="page-header__menu-wrapper page-header__menu-wrapper--bottom-menu">
+          <div class="page-header__menu-inner container">
+            <div class="page-header__logo">
+              <a>
+                <img class="logo" src="#logo" width="96" height="15" alt="Погнали">
+              </a>
+            </div>
 
-          <div class="contacts">
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <a class="contacts__link" href="tel:88005558628"></a>
-              </li>
-              <li class="contacts__item">
-                <a class="contacts__link" href="mail:mail@htmlacademy.ru"></a>
-              </li>
-            </ul>
+            <div class="page-header__menu-block menu menu--bottom-menu">
+              <nav class="page-header__menu menu__nav">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link">О сервисе</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link">Направления</a>
+                  </li>
+                  <li class="menu__item">
+                    <a  class="menu__link" href="catalog.html">Попутчики</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="page-header__contacts-button page-header__contacts-button">
+              <button class="page-header__button-auth button button--yellow" type="button">Авторизация</button>
+            </div>
+
+            <div class="page-header__contacts contacts contacts--no-text">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:88005558628">
+                    <span class="contacts__text">8 800 555-86-28</span>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="mail:mail@htmlacademy.ru">
+                    <span class="contacts__text">mail@htmlacademy.ru</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <section class="quote">
-          <div class="quote__wrapper">
+        <section class="page-header__quote quote">
+          <div class="quote__wrapper container">
             <h2 class="header visually-hidden">Цитата</h2>
-            <q class="quote__text">Лучшее приложение, что я видел в жизни!</q>
-            <cite class="quote__author">Мурат Эльтазин главный редактор газеты "гаджетлайф"</cite>
+            <div class="quote__text">Лучшее приложение, что я видел в жизни!</div>
+            <div class="quote__author">Мурат Эльтазин<br> главный редактор газеты "гаджетлайф"</div>
           </div>
         </section>
 
-        <section class="steps">
-          <div class="steps__wrapper">
+        <section class="page-header__steps steps">
+          <div class="steps__wrapper container">
             <h2 class="header visually-hidden">Пошаговый алгоритм действий</h2>
             <ul class="steps__list">
               <li class="steps__item">Выберите направление</li>
@@ -106,16 +148,19 @@
       <section class="about">
         <div class="about__wrapper container">
           <h2 class="header header--2 header--orange">О сервисе</h2>
+
           <p class="about__text">
             Любое путешествие веселее
             с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
           </p>
+
           <p class="about__text about__text--bold">
             А если найдете кого-то
             близкого по духу — скорее
             зовите в совместный трип!
           </p>
-          <button class="about__button button visually-hidden" type="button">Подробнее</button>
+
+          <button class="about__button button button--with-arrow button--yellow" type="button">Подробнее</button>
         </div>
       </section>
 
@@ -132,53 +177,60 @@
             </p>
           </header>
 
-          <ul class="directions__list">
-            <li class="directions__item">
-              <img class="directions__img" src="#" width="270" height="110" alt="Таиланд">
-              <div class="directions__text">
-                <div class="directions__text-wrapper">
-                  <p class="directions__country">Таиланд</p>
-                  <p class="directions__tagline">Джунгли зовут</p>
+          <div class="directions__list-wrapper">
+            <ul class="directions__list">
+              <li class="directions__item">
+                <img class="directions__img" src="#" width="270" height="110" alt="Таиланд">
+                <div class="directions__text">
+                  <div class="directions__text-wrapper">
+                    <p class="directions__country">Таиланд</p>
+                    <p class="directions__tagline">Джунгли зовут</p>
+                  </div>
+                  <div class="directions__count">18321</div>
                 </div>
-                <div class="directions__count">18321</div>
-              </div>
-            </li>
+              </li>
 
-            <li class="directions__item">
-              <img class="directions__img" src="#" width="270" height="110" alt="Франция">
-              <div class="directions__text">
-                <div class="directions__text-wrapper">
-                  <p class="directions__country">Франция</p>
-                  <p class="directions__tagline">Трэ бьем, манифик</p>
+              <li class="directions__item">
+                <img class="directions__img" src="#" width="270" height="110" alt="Франция">
+                <div class="directions__text">
+                  <div class="directions__text-wrapper">
+                    <p class="directions__country">Франция</p>
+                    <p class="directions__tagline">Трэ бьем, манифик</p>
+                  </div>
+                  <div class="directions__count">12518</div>
                 </div>
-                <div class="directions__count">12518</div>
-              </div>
-            </li>
+              </li>
 
-            <li class="directions__item">
-              <img class="directions__img" src="#" width="270" height="110" alt="Чехия">
-              <div class="directions__text">
-                <div class="directions__text-wrapper">
-                  <p class="directions__country">Чехия</p>
-                  <p class="directions__tagline">Закоулки старой Европы</p>
+              <li class="directions__item">
+                <img class="directions__img" src="#" width="270" height="110" alt="Чехия">
+                <div class="directions__text">
+                  <div class="directions__text-wrapper">
+                    <p class="directions__country">Чехия</p>
+                    <p class="directions__tagline">Закоулки старой Европы</p>
+                  </div>
+                  <div class="directions__count">5326</div>
                 </div>
-                <div class="directions__count">5326</div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+
           <button class="directions__button button button--yellow" type="button">Показать все</button>
         </div>
       </section>
 
       <section class="travelers">
         <div class="travelers__wrapper container">
-          <header class="travelers__header-section header-section">
-            <h2 class="header-section__header header header--orange">Попутчики</h2>
-            <p class="header-section__text">
-              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-            </p>
-            <p class="header-section__text header-section__text--bold">Теперь можно легко найти единомышленников</p>
-          </header>
+          <div class="travelers__header-wrapper">
+            <header class="travelers__header-section header-section">
+              <h2 class="header-section__header header header--orange">Попутчики</h2>
+              <p class="header-section__text">
+                Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+              </p>
+              <p class="header-section__text header-section__text--bold">Теперь можно легко найти единомышленников</p>
+            </header>
+
+            <button class="travelers__button button button--yellow" type="button">Показать всех</button>
+          </div>
 
           <ul class="travelers__travelers-list travelers-list">
             <li class="travelers-list__item traveler">
@@ -225,44 +277,67 @@
               </div>
             </li>
           </ul>
-
-          <button class="travelers__button button button--yellow" type="button">Показать всех</button>
         </div>
       </section>
 
       <section class="add-profile">
         <div class="add-profile__wrapper container">
-          <div class="add-profile__hidden visually-hidden">
-            <h2 class="add-profile__header header">Бизнес-тарифы</h2>
-
-            <ul class="tariffs-list tariffs-list--business">
-              <li class="tariffs-list__item">Реклама у блоггера 300000 руб./пост</li>
-              <li class="tariffs-list__item">Накрутка подписчиков от 1 руб./шт.</li>
-              <li class="tariffs-list__item">Лайки от ботов от 20 коп./лайк</li>
-              <li class="tariffs-list__item">Ваш продакт-плейсмент Индивидуально</li>
-            </ul>
-
-            <button class="add-profile__button button" type="button">Закрыть окно</button>
-          </div>
-
           <header class="add-profile__header-wrapper">
             <h2 class="add-profile__header header header--2 header--orange">Добавьте свой профиль</h2>
-            <img class="add-profile__header-img" src="#" width="100" height="100" alt="Изображение телефона">
           </header>
 
+          <div class="add-profile__img-wrapper">
+            <img class="add-profile__header-img" src="#" width="100" height="100" alt="Изображение телефона">
+          </div>
+
           <ul class="add-profile__tariffs-list tariffs-list">
-            <li class="tariffs-list__item">Базовое размещение бесплатно</li>
-            <li class="tariffs-list__item">Вывод на первых позициях 99 руб./мес.</li>
-            <li class="tariffs-list__item">Кастомный цвет карточки 59 руб./мес.</li>
+            <li class="tariffs-list__item">
+              <div class="tariffs-list__text">Базовое размещение</div>
+              <div class="tariffs-list__text">бесплатно</div>
+            </li>
+            <li class="tariffs-list__item">
+              <div class="tariffs-list__text">Вывод на первых позициях</div>
+              <div class="tariffs-list__text">99 руб./мес.</div>
+            </li>
+            <li class="tariffs-list__item">
+              <div class="tariffs-list__text">Кастомный цвет карточки</div>
+              <div class="tariffs-list__text">59 руб./мес.</div>
+            </li>
           </ul>
 
           <button class="add-profile__button button button--bold button--no-background" type="button">Показать тарифы для бизнеса</button>
+
+          <div class="add-profile__hidden-block visually-hidden">
+            <h2 class="add-profile__header header header--2 header--orange header--center">Бизнес-тарифы</h2>
+
+            <ul class="tariffs-list tariffs-list--business">
+              <li class="tariffs-list__item tariffs-list__item--hidden-block">
+                <div class="tariffs-list__text">Реклама у блоггера</div>
+                300000 руб./пост
+              </li>
+              <li class="tariffs-list__item tariffs-list__item--hidden-block">
+                <div class="tariffs-list__text">Накрутка подписчиков</div>
+                <div class="tariffs-list__text">от 1 руб./шт.</div>
+              </li>
+              <li class="tariffs-list__item tariffs-list__item--hidden-block">
+                <div class="tariffs-list__text">Лайки от ботов</div>
+                <div class="tariffs-list__text">от 20 коп./лайк</div>
+              </li>
+              <li class="tariffs-list__item tariffs-list__item--hidden-block">
+                <div class="tariffs-list__text">Ваш продакт-плейсмент</div>
+                <div class="tariffs-list__text">Индивидуально</div>
+              </li>
+            </ul>
+
+            <button class="add-profile__button add-profile__button--hidden-block button" type="button">Закрыть окно</button>
+          </div>
         </div>
       </section>
 
       <section class="form-send">
         <div class="form-send__wrapper container">
           <h2 class="form-send__header header header--2 header--orange header--center">Заинтересовались?</h2>
+
           <p class="form-send__text form-send__text--before-form">
             Зарегестрируйтесь, это быстро и бесплатно!
             Уже зарегестрированы?
@@ -280,7 +355,7 @@
 
           <p class="form-send__text form-send__text--after-form">Остались вопросы? Мы с радостью на них ответим</p>
 
-          <div class="contacts contacts--yellow">
+          <div class="form-send__contacts contacts contacts--yellow contacts--form-send">
             <ul class="contacts__list">
               <li class="contacts__item">
                 <a class="contacts__link" href="tel:88005558628">8 800 555-86-28</a>
@@ -295,6 +370,7 @@
 
       <section class="map">
         <h2 class="map__header visually-hidden">Карта маршрута</h2>
+
         <div class="map__wrapper-color">
           <div class="map__wrapper container">
             <address class="map__address">Ул. Большая конюшенная, 19/8</address>

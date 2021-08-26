@@ -4,25 +4,220 @@
   background-color: $basic-blue;
 }
 
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .page-header__menu-wrapper {
-  margin-bottom: 70px;
-  padding-top: 20px;
+  &--open {
+    background-color: $basic-white;
+
+    color: $text-header-menu;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.page-header__menu-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &--menu-open {
+    background-color: $basic-white;
+  }
 
   &--common {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 
-.page-header__wrapper-contacts {
-  display: flex;
+.page-header__logo {
+  order: 1;
+
+  @media (min-width: $tabled-width) {
+    order: 1;
+
+    width: 33.33%;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.page-header__toggle-button {
+  order: 2;
+
+  @media (min-width: $tabled-width) {
+    order: 2;
+
+    width: 33.33%;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+
+    display: none;
+  }
+}
+
+.page-header__menu-block {
+  order: 3;
+
+  display: none;
+  padding-top: 70px;
+  padding-left: 40px;
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: $tabled-width) {
+    order: 4;
+
+    width: 100%;
+    padding: 0;
+    padding-left: 50px;
+    margin-bottom: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    order: 3;
+  }
+}
+
+.page-header__contacts-button {
+  order: 4;
+
+  display: none;
+  width: 100%;
+  margin-bottom: 50px;
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: $tabled-width) {
+    order: 3;
+
+    display: block;
+    width: 33.33%;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 5;
+
+    display: block;
+    margin: 0;
+  }
+}
+
+.page-header__button-auth {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: $font-size-button-menu;
+  font-weight: 700;
+  color: $basic-blue;
+  text-transform: uppercase;
+
+  border-radius: 25px;
+
+  @media (min-width: $tabled-width) {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+  }
+}
+
+.page-header__contacts {
+  order: 5;
+
+  display: none;
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: $tabled-width) {
+    order: 5;
+
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+
+    display: block;
+  }
+}
+
+.page-header__socials {
+  order: 6;
+
+  display: none;
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: $tabled-width) {
+    order: 6;
+
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 6;
+
+    display: none;
+  }
 }
 
 .page-header__header {
-  margin-bottom: 245px;
+  order: 1;
 
   font-size: $font-size-h1-mobile;
   font-weight: bold;
   text-align: center;
+
+  @media (min-width: $tabled-width) {
+    font-size: $font-size-h1-tabled;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 60px;
+
+    text-align: left;
+  }
 }
 
 .page-header__button {
@@ -36,4 +231,71 @@
   text-transform: uppercase;
 
   border-radius: 25px;
+}
+
+.page-header__quote {
+  order: 3;
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+
+    width: 50%;
+    padding-top: 70px;
+  }
+}
+
+.page-header__steps {
+  order: 4;
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+/* Bottom menu in header */
+
+.page-header__menu-wrapper--bottom-menu {
+  order: 2;
+
+  @media (min-width: $tabled-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+
+    display: flex;
+    align-self: stretch;
+
+    background-color: $basic-white;
+  }
+}
+
+.page-header__menu-wrapper--bottom-menu .page-header__menu-inner {
+  display: flex;
+}
+
+.page-header__menu-wrapper--bottom-menu .page-header__logo {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__menu-wrapper--bottom-menu .page-header__toggle-button {
+  display: none;
+}
+
+.page-header__menu-wrapper--bottom-menu .page-header__contacts {
+  display: block;
+
+  color: $basic-white;
+}
+
+.page-header__menu-wrapper--bottom-menu .page-header__contacts-button {
+  display: block;
 }

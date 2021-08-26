@@ -1,14 +1,13 @@
 .menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 70px;
-  padding-left: 25px;
-  padding-right: 25px;
 
   color: $text-header-menu;
 
   background-color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    background: none;
+  }
 }
 
 .menu__list {
@@ -16,14 +15,87 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
 
   font-size: $font-size-menu-item-mobile;
   font-weight: 500;
   text-transform: uppercase;
+
+  @media (min-width: $tabled-width) {
+    font-size: $font-size-menu-item-tabled;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+
+    font-size: $font-size-menu-item-desktop;
+    font-weight: 500;
+    color: $basic-white;
+
+    background: none;
+  }
+}
+
+.menu__item {
+  width: 100%;
+
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      margin-right: 40px;
+    }
+  }
+
+  @media (min-width: $tabled-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+
+    text-align: center;
+  }
+}
+
+.menu__link {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+  }
 }
 
 .menu__button {
+  width: 100%;
   margin-bottom: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: $font-size-button-menu;
+  font-weight: 700;
+  color: $basic-blue;
+  text-transform: uppercase;
+
+  border-radius: 25px;
+
+  @media (min-width: $tabled-width) {
+    display: none;
+  }
+}
+
+/* Bottom menu in header */
+
+.menu--bottom-menu .menu__link {
+  color: $text-header-menu-bottom;
 }

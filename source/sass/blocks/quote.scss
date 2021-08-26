@@ -1,7 +1,18 @@
 .quote__wrapper {
-  width: 200px;
-  padding-top: 50px;
   padding-left: 30px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    padding-right: 60px;
+  }
 }
 
 .quote__text {
@@ -15,4 +26,8 @@
   display: block;
 
   font-weight: 700;
+
+  @media (min-width: $tabled-width) {
+    font-size: $font-size-author-tabled;
+  }
 }
