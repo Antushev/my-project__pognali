@@ -74,9 +74,67 @@
 
 /* form.html */
 
-.traveler--form .traveler__img-wrapper {
+.traveler--form {
   display: flex;
   justify-content: space-between;
+  flex-flow: wrap;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
+}
+
+.traveler--form .traveler__level {
+  order: 1;
+
+  width: 50%;
+
+  @media (min-width: $tabled-width) {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.traveler--form .traveler__img-wrapper {
+  order: 2;
+
+  width: 50%;
+
+  @media (min-width: $tabled-width) {
+    order: 3;
+
+    width: 94px;
+    height: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+
+    width: 190px;
+    height: 190px;
+  }
+}
+
+.traveler--form .traveler__button-wrapper {
+  order: 3;
+
+  width: 100%;
+
+  @media (min-width: $tabled-width) {
+    order: 4;
+
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+
+    display: flex;
+  }
 }
 
 .traveler--form .traveler__button {
@@ -92,16 +150,92 @@
 
   background-color: $special-blue-light;
   border-radius: 20px;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.traveler--form .traveler__button-hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .traveler--form .traveler__header {
   color: $basic-blue-light;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tabled-width) {
+    font-size: 20px;
+  }
+}
+
+.traveler--form .traveler__tags-wrapper {
+  order: 4;
+
+  padding: 10px;
+  margin-bottom: 20px;
+
+  text-align: left;
+
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  @media (min-width: $tabled-width) {
+    order: 5;
+
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+
+    width: 732px;
+    margin-right: auto;
+  }
 }
 
 .traveler--form .traveler__tags {
+  width: 100%;
+  margin: 0;
+
   color: $special-grey;
 
   opacity: 0.6;
+}
+
+.traveler--form .traveler__transport-wrapper {
+  order: 5;
+
+  width: 100%;
+
+  @media (min-width: $tabled-width) {
+    order: 2;
+
+    width: 308px;
+    height: 95px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 5;
+
+    width: 384px;
+  }
 }

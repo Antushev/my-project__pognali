@@ -321,6 +321,10 @@
   @media (min-width: $tabled-width) {
     font-size: $font-size-header-inner-page-tabled;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
 }
 
 .page-header__wrapper--inner-page .page-header__return-button {

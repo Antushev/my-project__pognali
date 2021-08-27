@@ -26,6 +26,15 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px;
+  }
 }
 
 .plans__header {
@@ -33,10 +42,27 @@
 
   font-size: $font-size-header-country-form;
   color: $basic-blue-light;
+
+  @media (min-width: $tabled-width) {
+    width: 100%;
+    margin-bottom: 50px;
+
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin-bottom: 0;
+  }
 }
 
 .plans__text-wrapper {
   margin-bottom: 15px;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    margin-bottom: 0;
+  }
 }
 
 .plans__text {
@@ -46,6 +72,14 @@
   font-weight: 500;
   color: $basic-blue-light;
   text-transform: uppercase;
+
+  @media (min-width: $tabled-width) {
+    font-size: 20px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .plans__button {
@@ -57,4 +91,10 @@
   text-transform: uppercase;
 
   opacity: 0.3;
+
+  @media (min-width: $tabled-width) {
+    margin-left: auto;
+
+    font-size: 20px;
+  }
 }

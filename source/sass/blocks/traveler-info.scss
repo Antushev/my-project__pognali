@@ -3,6 +3,12 @@
 }
 
 .traveler-info__wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.traveler-info__profile-wrapper {
+  @media (min-width: $desktop-width) {
+    margin-top: -200px;
+  }
 }
