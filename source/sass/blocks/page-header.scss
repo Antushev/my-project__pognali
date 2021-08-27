@@ -299,3 +299,42 @@
 .page-header__menu-wrapper--bottom-menu .page-header__contacts-button {
   display: block;
 }
+
+/* catalog.html */
+
+.page-header__wrapper--inner-page {
+  padding-bottom: 30px;
+
+  @media (min-width: $tabled-width) {
+    flex-flow: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+}
+
+.page-header__wrapper--inner-page .page-header__header {
+  font-size: $font-size-header-inner-page-mobile;
+  text-align: left;
+
+  @media (min-width: $tabled-width) {
+    font-size: $font-size-header-inner-page-tabled;
+  }
+}
+
+.page-header__wrapper--inner-page .page-header__return-button {
+  order: 2;
+
+  display: none;
+
+  @media (min-width: $tabled-width) {
+    display: block;
+
+    font-size: $font-size-return-button-catalog-tabled;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

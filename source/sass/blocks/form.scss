@@ -7,6 +7,13 @@
   padding-bottom: 15px;
 
   border-top: 1px solid $border-item-filter-traveler;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    align-items: center;
+
+    border: none;
+  }
 }
 
 .form__span {
@@ -14,12 +21,34 @@
 
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $tabled-width) {
+    width: 120px;
+
+    font-size: 20px;
+  }
 }
 
-.form__list-music {
+.form__list-inner {
   @include clear-list();
 
   padding-top: 10px;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    padding-top: 0;
+
+    font-size: 20px;
+  }
+}
+
+.form__item-inner {
+  @media (min-width: $tabled-width) {
+    width: 155px;
+  }
 }
 
 .form__range {
