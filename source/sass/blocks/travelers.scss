@@ -51,11 +51,30 @@
 /* catalog.html */
 
 .travelers--catalog .travelers__travelers-list {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tabled-width) {
+    flex-direction: column;
+  }
+}
+
+.travelers--catalog .travelers-list__item {
+  @media (min-width: $tabled-width) {
+    width: 100%;
+  }
 }
 
 .travelers--catalog .travelers__wrapper {
   padding-top: 20px;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .travelers--catalog .travelers__header-section {
@@ -79,16 +98,69 @@
   }
 }
 
+.travelers--catalog .travelers__pagination {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: $basic-white;
+  border-radius: 20px;
+
+  @media (min-width: $tabled-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.travelers--catalog .travelers__pagination-wrapper {
+  display: flex;
+}
+
 .travelers--catalog .travelers__button-pagination {
   width: 100%;
+  margin-bottom: 15px;
 
   font-size: $font-size-catalog-pagination;
   font-weight: 700;
   color: $basic-blue-light;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
-.travelers--catalog .travelers__pagination-wrapper {
-  display: flex;
+.travelers--catalog .travelers__pagination-arrow {
+  width: 50%;
+
+  color: $basic-blue;
+  text-align: center;
+}
+
+.travelers--catalog .travelers__pagination-list {
+  @include clear-list();
+
+  display: none;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+  }
+}
+
+.travelers--catalog .travelers__number-pagination {
+  @media (min-width: $tabled-width) {
+    color: $basic-blue-light;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 }

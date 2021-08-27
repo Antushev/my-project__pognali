@@ -2,6 +2,10 @@
   padding-top: 40px;
 
   background-color: $background-section-filter-traveler;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .filter-traveler__wrapper {

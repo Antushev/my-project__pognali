@@ -1,0 +1,27 @@
+.page-content__wrapper {
+  background-color: $special-blue-light;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
+}
+
+.page-content__inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.page-content__filter-traveler {
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
+}
+
+.page-content__travelers {
+  @media (min-width: $desktop-width) {
+    width: 950px;
+  }
+}
