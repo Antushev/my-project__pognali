@@ -8,10 +8,21 @@
 .add-plan__wrapper {
   padding-top: 20px;
   padding-bottom: 30px;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
 }
 
 .add-plan__main-header {
   margin-bottom: 30px;
 
   color: $basic-blue-light;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
 }

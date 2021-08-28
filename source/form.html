@@ -81,9 +81,9 @@
       </div>
     </header>
 
-    <main class="page-content">
+    <main class="page-content page-content--form">
       <section class="traveler-info">
-        <div class="traveler-info__wrapper">
+        <div class="traveler-info__wrapper container">
           <h2 class="header visually-hidden">Профиль</h2>
 
           <div class="traveler-info__profile-wrapper traveler traveler--form container">
@@ -108,10 +108,10 @@
               <div class="transport transport--profile">
                 <h3 class="traveler__header header">Транспорт</h3>
                 <ul class="transport__list">
-                  <li class="transport__item transport__item-plane transport__item--active" aria-label="Самолёт"></li>
-                  <li class="transport__item transport__item--bus transport__item--active" aria-label="Автобус"></li>
-                  <li class="transport__item transport__item--bicycle" aria-label="Велосипед"></li>
-                  <li class="transport__item transport__item--run transport__item--active" aria-label="Пешком"></li>
+                  <li class="transport__item transport__item-plane transport__item--active"></li>
+                  <li class="transport__item transport__item--bus transport__item--active"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run transport__item--active"></li>
                 </ul>
               </div>
             </div>
@@ -150,40 +150,42 @@
 
       <section class="add-plan">
         <div class="add-plan__wrapper container">
-          <h2 class="add-plan__main-header header header--2">Добавить план</h2>
+          <h2 class="add-plan__main-header header header--2">Добавить план:</h2>
+
           <form class="form form--add-plan">
             <fieldset class="form__fieldset">
               <h3 class="form__legend header">
                 Шаг 1.<br>Даты пребывания
               </h3>
+
               <p class="form__text">
                 Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку,
                 и её предполагаемую длительность.
               </p>
 
-              <div class="form__input-wrapper">
-                <div class="form__label-wrapper">
+              <div class="form__inputs-wrapper">
+                <div class="form__input-wrapper form__input-wrapper--find-people">
                   <label class="form__label" for="count-people">
-                    Ищу попутчиков
+                    Ищу попутчиков:
                   </label>
                   <span class="form__label-text">Чел.</span>
+                  <input class="form__input form__input--find-people" id="count-people" name="count-people" type="text"  value="2">
                 </div>
-                <input class="form__input form__input--date-block" id="count-people" name="count-people" type="text"  value="2">
-              </div>
 
-              <div class="form__input-wrapper">
-                <div class="form__label-wrapper">
+                <div class="form__input-wrapper form__input-wrapper--duration">
                   <label for="time" class="form__label">
-                    Длительность <span class="form__label-text"></span>
+                    Длительность: <span class="form__label-text"></span>
                   </label>
                   <span class="form__label-text">Дн.</span>
+                  <input class="form__input" id="time" name="time" type="text" value="3">
                 </div>
-                <input class="form__input" id="time" name="time" type="text" value="3">
-              </div>
 
-              <label class="form__label-checkbox" for="is-child">
-                <input class="form__checkbox" id="is-child" name="is-child" type="checkbox"> Можно с детьми
-              </label>
+                <div class="form__input-wrapper form__input-wrapper--may-child">
+                  <label class="form__label-checkbox" for="is-child">
+                    <input class="form__checkbox" id="is-child" name="is-child" type="checkbox"> Можно с детьми
+                  </label>
+                </div>
+              </div>
 
               <div class="form__calendar calendar">
                 <div class="calendar__month-wrapper">
@@ -245,15 +247,25 @@
                       <td class="calendar__td">23</td>
                       <td class="calendar__td">24</td>
                       <td class="calendar__td">25</td>
-                      <td class="calendar__td calendar__td--check calendar__td--active">26</td>
+                      <td class="calendar__td calendar__td--check calendar__td--active">
+                        26
+                        <p class="calendar__td-text">Заезд</p>
+                      </td>
                       <td class="calendar__td calendar__td--check">27</td>
-                      <td class="calendar__td calendar__td--check">28</td>
+                      <td class="calendar__td calendar__td--check">
+                        28
+                        <p class="calendar__td-text">
+                          Выезд
+                        </p>
+                      </td>
                       <td class="calendar__td  calendar__td--access">29</td>
                     </tr>
                     <tr class="calendar__tr">
                       <td class="calendar__td calendar__td--access">30</td>
                       <td class="calendar__td calendar__td--access">31</td>
-                      <td class="calendar__td calendar__td--access">1</td>
+                      <td class="calendar__td calendar__td--access">
+                        1 <span class="calendar__td-span">апр</span>
+                      </td>
                       <td class="calendar__td calendar__td--access">2</td>
                       <td class="calendar__td calendar__td--access">3</td>
                       <td class="calendar__td calendar__td--access">4</td>
@@ -262,6 +274,7 @@
                   </tbody>
                 </table>
               </div>
+
               <button class="form__button button button--yellow" type="button">Следующий шаг</button>
             </fieldset>
 
@@ -269,25 +282,38 @@
               <h3 class="form__legend header">
                 Шаг 2. Маршрут
               </h3>
+
               <p class="form__text">
                 Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
               </p>
+
               <div class="form__country-wrapper">
-                <input class="form__input form__input--country" name="country-1" type="text" value="Чехия">
-                <div class="form__country-flag"></div>
+                <div class="form__country-inner">
+                  <label>
+                    <input class="form__input form__input--country" name="country-1" type="text" value="Чехия">
+                  </label>
+                  <div class="form__country-flag"></div>
+                </div>
               </div>
+
               <div class="form__country-wrapper">
-                <input class="form__input form__input--country" name="country-2" type="text" value="Босния и Герцеговина">
-                <div class="form__country-flag"></div>
+                <div class="form__country-inner">
+                  <label>
+                    <input class="form__input form__input--country" name="country-2" type="text" value="Босния и Герцеговина">
+                  </label>
+                  <div class="form__country-flag">1</div>
+                </div>
               </div>
+
               <div class="form__country-wrapper form__country-wrapper--active">
                 <label>
-                  <input class="form__input form__input--change-country" name="country-2" type="text" value="Выберите страну">
+                  <input class="form__input form__input--country form__input--change-country" name="country-2" type="text" value="Выберите страну">
                 </label>
+
                 <div class="countries-filter countries-filter--form">
                   <table class="countries-filter__table">
                     <tr class="countries-filter__tr">
-                      <td class="countries-filter__td">А</td>
+                      <td class="countries-filter__td countries-filter__td--active">А</td>
                       <td class="countries-filter__td">Б</td>
                       <td class="countries-filter__td">В</td>
                       <td class="countries-filter__td">Г</td>
@@ -338,28 +364,49 @@
                   </ul>
                 </div>
               </div>
-              <button class="form__button button button--yellow" type="button">Следующий шаг</button>
-              <button class="form__button form__button--no-background button button--no-background" type="button">На шаг назад</button>
+
+              <div class="form__button-wrapper">
+                <button class="form__button button button--yellow" type="button">Следующий шаг</button>
+
+                <button class="form__button form__button--no-background button button--no-background" type="button">
+                  На шаг назад
+                </button>
+              </div>
+
             </fieldset>
 
             <fieldset class="form__fieldset">
               <h3 class="form__legend header">
                 Шаг 3. Развлечения
               </h3>
+
               <p class="form__text">
                 Наконец, расскажите о своих планах времяпровождения.
                 Можно описать в свободной форме и ставить тэги.
               </p>
+
               <div class="form__textarea-wrapper">
-                <p class="form__text-country">Босния и Герцеговина</p>
+                <div class="form__text-textarea">
+                  <p class="form__text-country">Босния и Герцеговина</p>
+                  <div class="form__country-flag"></div>
+                </div>
                 <textarea class="form__textarea" name="plan-text" placeholder="План действий" rows="8"></textarea>
 
-                <p class="form__text-country">Чехия</p>
+                <div class="form__text-textarea">
+                  <p class="form__text-country">Чехия</p>
+                  <div class="form__country-flag"></div>
+                </div>
                 <textarea class="form__textarea" rows="8">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
                 </textarea>
               </div>
-              <button class="form__button button button--yellow" type="submit">Отправить</button>
-              <button class="form__button form__button--no-background  button button--no-background" type="submit">На шаг назад</button>
+
+              <div class="form__button-wrapper">
+                <button class="form__button button button--yellow" type="submit">Отправить</button>
+
+                <button class="form__button form__button--no-background  button button--no-background" type="submit">
+                  На шаг назад
+                </button>
+              </div>
             </fieldset>
           </form>
         </div>
