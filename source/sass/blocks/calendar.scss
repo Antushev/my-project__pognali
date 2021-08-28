@@ -10,6 +10,11 @@
 
   border-top: 1px solid $border-calendar-month;
   border-bottom: 1px solid $border-calendar-month;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .calendar__table {
@@ -17,6 +22,8 @@
 }
 
 .calendar__th {
+  padding-bottom: 10px;
+
   font-size: $font-size-calendar-th;
   font-weight: 400;
 
@@ -29,19 +36,21 @@
   width: 32px;
   height: 32px;
 
-  color: $special-grey;
+  color: fade-out($special-grey, 0.3);
   text-align: center;
   vertical-align: middle;
 
   border: 1px solid $border-calendar-month;
 
   &--check {
+    font-weight: 500;
     color: $basic-white;
 
     background-color: $basic-blue-light;
   }
 
   &--access {
+    font-weight: 500;
     color: $basic-blue-light;
 
     background-color: $background-calendar-td-access;
@@ -49,5 +58,39 @@
 
   &--active {
     outline: 2px solid $basic-red;
+  }
+
+  @media (min-width: $tabled-width) {
+    width: 85px;
+    height: 69px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 144px;
+    height: 72px;
+    padding: 14px;
+
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+  }
+}
+
+.calendar__td-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+  }
+}
+
+.calendar__td-span {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }

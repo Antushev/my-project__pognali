@@ -7,6 +7,17 @@
   padding-bottom: 15px;
 
   border-top: 1px solid $border-item-filter-traveler;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    align-items: center;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .form__span {
@@ -14,12 +25,38 @@
 
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $tabled-width) {
+    width: 120px;
+
+    font-size: 20px;
+  }
 }
 
-.form__list-music {
+.form__list-inner {
   @include clear-list();
 
   padding-top: 10px;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    padding-top: 0;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.form__item-inner {
+  @media (min-width: $tabled-width) {
+    width: 155px;
+  }
 }
 
 .form__range {
@@ -60,6 +97,29 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $tabled-width) {
+    padding: 40px;
+
+    border-radius: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-right: 160px;
+    padding-bottom: 100px;
+    padding-left: 160px;
+
+    border-radius: 60px;
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
 }
 
 .form--add-plan .form__legend {
@@ -67,34 +127,98 @@
   font-weight: 700;
 
   color: $basic-blue-light;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 30px;
+
+    font-size: 36px;
+  }
 }
 
 .form--add-plan .form__text {
+  margin-top: 0;
+
   color: $special-grey;
+
+  @media (min-width: $tabled-width) {
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+
+    border-bottom: 1px solid #e1e3e9;
+  }
 }
 
-.form__input-wrapper:not(:last-child) {
-  margin-bottom: 15px;
+.form--add-plan .form__inputs-wrapper {
+  @media (min-width: $tabled-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+    border-top: 1px solid #e1e3e9;
+  }
 }
 
-.form--add-plan .form__label-wrapper {
+.form--add-plan .form__input-wrapper {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
   display: flex;
+  flex-flow: wrap;
   justify-content: space-between;
-  margin-bottom: 5px;
-}
+  align-items: center;
 
-.form--add-plan .form__label {
-  font-weight: 500;
-  color: $basic-blue-light;
-  text-transform: uppercase;
-}
+  @media (min-width: $tabled-width) {
+    &--find-people {
+      order: 1;
 
-.form--add-plan .form__label-text {
-  font-weight: 500;
-  color: $basic-blue-light;
-  text-transform: uppercase;
+      padding-top: 25px;
 
-  opacity: 0.3;
+      border-top: 1px solid #e1e3e9;
+    }
+
+    &--duration {
+      order: 3;
+
+      padding-top: 25px;
+
+      border-top: 1px solid #e1e3e9;
+    }
+
+    &--may-child {
+      order: 2;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+
+    &--find-people {
+      border: none;
+    }
+
+    &--duration {
+      width: 100%;
+
+      border: none;
+    }
+
+    &--may-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .form--add-plan .form__input {
@@ -108,15 +232,124 @@
 
   border: 1px solid $border-input;
   border-radius: 4px;
+
+  &--country {
+    padding-left: 10px;
+
+    font-size: $font-size-input-change-country;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &--change-country {
+    padding-left: 10px;
+
+    font-weight: 500;
+    color: $basic-white;
+    text-align: left;
+
+    background-color: $basic-blue-light;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  @media (min-width: $tabled-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-size: 20px;
+
+    &--country {
+      width: 370px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+
+    width: auto;
+    margin-right: 35px;
+
+    &--country {
+      width: 730px;
+    }
+  }
+}
+
+.form--add-plan .form__label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.form--add-plan .form__label {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  color: $basic-blue-light;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+
+    width: 220px;
+
+    font-size: 20px;
+  }
+}
+
+.form--add-plan .form__label-text {
+  font-weight: 500;
+  color: $basic-blue-light;
+  text-transform: uppercase;
+
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+
+    font-size: 20px;
+
+    opacity: 1;
+  }
 }
 
 .form--add-plan .form__label-checkbox {
   display: block;
   margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
 }
 
 .form--add-plan .form__calendar {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.form--add-plan .form__button-wrapper {
+  @media (min-width: $tabled-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form--add-plan .form__button {
@@ -135,6 +368,23 @@
   &--no-background {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tabled-width) {
+    width: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 30px;
+
+    font-weight: 700;
+    text-align: left;
+    text-transform: none;
+  }
 }
 
 .form--add-plan .form__country-wrapper {
@@ -143,26 +393,11 @@
   }
 }
 
-.form--add-plan .form__input--country {
-  padding-left: 10px;
-
-  font-size: $font-size-input-change-country;
-  font-weight: 500;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.form--add-plan .form__input--change-country {
-  padding-left: 10px;
-
-  font-weight: 500;
-  color: $basic-white;
-  text-align: left;
-
-  background-color: $basic-blue-light;
-
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.form--add-plan .form__country-inner {
+  @media (min-width: $tabled-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form--add-plan .form__textarea {
@@ -177,10 +412,25 @@
   &:not(:last-child) {
     margin-bottom: 25px;
   }
+
+  @media (min-width: $tabled-width) {
+    padding: 20px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    height: 142px;
+  }
 }
 
 .form--add-plan .form__textarea-wrapper {
   margin-bottom: 15px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .form--add-plan .form__text-country {
@@ -190,4 +440,17 @@
   font-size: $font-size-text-country-add-plan;
   font-weight: 500;
   color: $basic-blue-light;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+.form--add-plan .form__country-flag {
+  @media (min-width: $tabled-width) {
+    width: 120px;
+  }
 }
