@@ -255,6 +255,9 @@
   }
 }
 
+/* Open menu */
+
+
 /* Bottom menu in header */
 
 .page-header__menu-wrapper--bottom-menu {
@@ -341,4 +344,28 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+/* No js settings */
+
+.page-header--no-js .page-header__menu-wrapper:first-child {
+  background-color: $basic-white;
+
+  color: $text-header-menu;
+}
+
+.page-header--no-js .page-header__menu-block--main {
+  display: block;
+}
+
+.page-header--no-js .page-header__contacts-button--main {
+  display: block;
+}
+
+.page-header--no-js .page-header__contacts--main {
+  display: block;
+}
+
+.page-header--no-js .page-header__socials--main {
+  display: block;
 }
