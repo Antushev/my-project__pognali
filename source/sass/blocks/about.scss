@@ -1,10 +1,14 @@
 .about {
-  background-color: $background-section-dark;
+  position: relative;
+
+  background: $background-section-dark;
 
   color: $basic-white;
 
   border-bottom-right-radius: $border-radius-section-mobile;
   border-bottom-left-radius: $border-radius-section-mobile;
+
+  z-index: 100;
 
   @media (min-width: $tabled-width) {
     border-bottom-right-radius: $border-radius-section-tabled;

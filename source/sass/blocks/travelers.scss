@@ -1,12 +1,16 @@
 .travelers {
+  position: relative;
+
   background-color: $background-section-dark;
+
+  border-bottom-right-radius: $border-radius-section-mobile;
+  border-bottom-left-radius: $border-radius-section-mobile;
+
+  z-index: 98;
 
   &--catalog {
     background-color: $background-section-travelers-catalog;
   }
-
-  border-bottom-right-radius: $border-radius-section-mobile;
-  border-bottom-left-radius: $border-radius-section-mobile;
 
   @media (min-width: $tabled-width) {
     border-bottom-right-radius: $border-radius-section-tabled;

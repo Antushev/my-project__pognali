@@ -1,8 +1,12 @@
 .directions {
+  position: relative;
+
   background-color: $background-section-directions;
 
   border-bottom-right-radius: $border-radius-section-mobile;
   border-bottom-left-radius: $border-radius-section-mobile;
+
+  z-index: 99;
 
   @media (min-width: $tabled-width) {
     border-bottom-right-radius: $border-radius-section-tabled;
