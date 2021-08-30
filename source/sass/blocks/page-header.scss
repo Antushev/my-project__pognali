@@ -17,11 +17,7 @@
 }
 
 .page-header__menu-wrapper {
-  &--open {
-    background-color: $basic-white;
-
-    color: $text-header-menu;
-  }
+  position: relative;
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -86,10 +82,6 @@
   padding-top: 70px;
   padding-left: 40px;
 
-  &--open {
-    display: block;
-  }
-
   @media (min-width: $tabled-width) {
     order: 4;
 
@@ -114,10 +106,6 @@
   display: none;
   width: 100%;
   margin-bottom: 50px;
-
-  &--open {
-    display: block;
-  }
 
   @media (min-width: $tabled-width) {
     order: 3;
@@ -161,10 +149,6 @@
 
   display: none;
 
-  &--open {
-    display: block;
-  }
-
   @media (min-width: $tabled-width) {
     order: 5;
 
@@ -182,10 +166,6 @@
   order: 6;
 
   display: none;
-
-  &--open {
-    display: block;
-  }
 
   @media (min-width: $tabled-width) {
     order: 6;
@@ -257,6 +237,27 @@
 
 /* Open menu */
 
+.page-header--open .page-header__menu-wrapper--main {
+  background-color: $basic-white;
+
+  color: $text-header-menu;
+}
+
+.page-header--open .page-header__menu-block--main {
+  display: block;
+}
+
+.page-header--open .page-header__contacts-button--main {
+  display: block;
+}
+
+.page-header--open .page-header__contacts--main {
+  display: block;
+}
+
+.page-header--open .page-header__socials--main {
+  display: block;
+}
 
 /* Bottom menu in header */
 
