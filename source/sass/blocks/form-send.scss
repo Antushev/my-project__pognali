@@ -1,6 +1,20 @@
 .form-send {
-  background-color: $background-section-form-send;
   color: $basic-white;
+
+  background-color: $background-section-form-send;
+
+  border-bottom-right-radius: $border-radius-section-mobile;
+  border-bottom-left-radius: $border-radius-section-mobile;
+
+  @media (min-width: $tabled-width) {
+    border-bottom-right-radius: $border-radius-section-tabled;
+    border-bottom-left-radius: $border-radius-section-tabled;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-right-radius: $border-radius-section-desktop;
+    border-bottom-left-radius: $border-radius-section-desktop;
+  }
 }
 
 .form-send__wrapper {
