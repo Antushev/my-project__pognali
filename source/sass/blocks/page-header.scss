@@ -1,7 +1,8 @@
 .page-header {
   color: $basic-white;
 
-  background-color: $basic-blue;
+  background: url("../../img/traveller-illustration-mobile.png") no-repeat 80px 222px,
+    $basic-blue url("../../img/globe-back-mobile.png") no-repeat;
 }
 
 .page-header__wrapper {
@@ -18,6 +19,7 @@
 
 .page-header__menu-wrapper {
   position: relative;
+  margin-bottom: 27px;
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -28,8 +30,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   &--menu-open {
     background-color: $basic-white;
@@ -62,6 +64,11 @@
 .page-header__toggle-button {
   order: 2;
 
+  position: relative;
+
+  width: 25px;
+  height: 14px;
+
   @media (min-width: $tabled-width) {
     order: 2;
 
@@ -72,6 +79,48 @@
     order: 2;
 
     display: none;
+  }
+}
+
+.page-header__menu-button {
+  display: block;
+
+  width: 25px;
+  height: 3px;
+  padding: 0;
+  margin: 0;
+
+  background: none;
+  border: none;
+
+  &::before {
+    content: " ";
+
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: $basic-white;
+
+    border-radius: 1.5px;
+  }
+
+  &::after {
+    content: " ";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: $basic-white;
+
+    border-radius: 1.5px;
   }
 }
 
@@ -183,6 +232,8 @@
 .page-header__header {
   order: 1;
 
+  margin-bottom: 215px;
+
   font-size: $font-size-h1-mobile;
   font-weight: bold;
   text-align: center;
@@ -215,6 +266,8 @@
 
 .page-header__quote {
   order: 3;
+
+  background-color: $basic-blue;
 
   @media (min-width: $desktop-width) {
     order: 2;
@@ -280,6 +333,8 @@
 
 .page-header__menu-wrapper--bottom-menu .page-header__menu-inner {
   display: flex;
+
+  padding: 0;
 }
 
 .page-header__menu-wrapper--bottom-menu .page-header__logo {
@@ -302,6 +357,8 @@
 
 .page-header__menu-wrapper--bottom-menu .page-header__contacts-button {
   display: block;
+
+  margin-bottom: 0;
 }
 
 /* catalog.html */
