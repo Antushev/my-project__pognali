@@ -5,7 +5,7 @@
   let pageHeader = document.querySelector('.page-header');
   let buttonOpenMenu = pageHeader.querySelector('.page-header__toggle-button');
   buttonOpenMenu.addEventListener('click', () => {
-    if (!pageHeader.querySelector('.page-header--open')) {
+    if (!pageHeader.classList.contains('page-header--open')) {
       pageHeader.classList.add('page-header--open');
     } else {
       pageHeader.classList.remove('page-header--open');
