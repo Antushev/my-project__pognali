@@ -1,7 +1,15 @@
 .socials__list {
+  @include clear-list();
+
   display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-.socials--center .socials__list {
-  justify-content: center;
+/* Menu top */
+
+.socials--menu-top .socials__item {
+  &:not(:last-child) {
+    margin-right: 27px;
+  }
 }
