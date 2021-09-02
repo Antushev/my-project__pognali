@@ -24,11 +24,15 @@
 
 .page-header__menu-wrapper {
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 44px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-bottom: 13px;
+    margin-bottom: 35px;
   }
 }
 
@@ -58,7 +62,8 @@
   @media (min-width: $desktop-width) {
     align-items: center;
     flex-wrap: nowrap;
-    padding-top: 30px;
+    padding-top: 42px;
+    padding-bottom: 15px;
   }
 }
 
@@ -74,7 +79,9 @@
   @media (min-width: $desktop-width) {
     order: 1;
 
-    width: 300px;
+    min-width: 300px;
+    margin-right: 44px;
+    padding-left: 1px;
   }
 }
 
@@ -188,8 +195,9 @@
   @media (min-width: $desktop-width) {
     order: 5;
 
-    display: block;
+    display: flex;
     margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -209,6 +217,10 @@
     padding-top: 15px;
     padding-right: 10px;
     padding-bottom: 15px;
+
+    @media (min-width: $tabled-width) {
+      padding-bottom: 13px;
+    }
   }
 
   @media (min-width: $tabled-width) {
@@ -313,7 +325,7 @@
     order: 2;
 
     width: 50%;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     padding-top: 62px;
   }
 }
@@ -329,7 +341,7 @@
     order: 3;
 
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 27px;
   }
 }
 
@@ -427,6 +439,8 @@
 
     display: flex;
     align-self: stretch;
+    padding-top: 14px;
+    padding-bottom: 15px;
 
     background-color: $basic-white;
   }
@@ -462,6 +476,10 @@
   width: 190px;
   height: 40px;
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .page-header__menu-wrapper--bottom-menu .page-header__contacts {
@@ -474,6 +492,14 @@
   display: block;
 
   color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    bottom: 0;
+    left: 0;
+
+    width: 200px;
+  }
 }
 
 /* catalog.html */

@@ -25,21 +25,23 @@
 }
 
 .about__wrapper {
-  padding-top: 35px;
+  padding-top: 39px;
   padding-left: 24px;
-  padding-bottom: 88px;
+  padding-bottom: 62px;
   padding-right: 20px;
 
   @media (min-width: $tabled-width) {
+    padding-top: 35px;
+    padding-bottom: 88px;
     padding-left: 34px;
   }
 }
 
 .about__header {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tabled-width) {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 }
 

@@ -33,6 +33,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0;
+    padding-top: 3px;
 
     font-size: $font-size-menu-item-desktop;
     font-weight: 500;
@@ -52,7 +53,7 @@
 
     @media (min-width: $desktop-width) {
       margin: 0;
-      margin-right: 40px;
+      margin-right: 34px;
     }
   }
 
