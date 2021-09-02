@@ -29,7 +29,7 @@
   font-weight: 700;
   color: $basic-blue;
 
-  border-radius: 10px;
+  border-radius: 15px;
 
   &:not(:first-child) {
     margin-top: -80px;
@@ -45,11 +45,15 @@
 
   &:last-child {
     margin-top: -60px;
+
+    @media (min-width: $tabled-width) {
+      margin: 0;
+    }
   }
 
   &:nth-child(even) {
     @media (min-width: $tabled-width) {
-      margin-left: -30px;
+      margin-left: -21px;
     }
 
     @media (min-width: $desktop-width) {
@@ -61,10 +65,19 @@
   @media (min-width: $tabled-width) {
     width: 50%;
     height: 140px;
+    padding-top: 26px;
+    padding-right: 82px;
+    padding-bottom: 30px;
+    padding-left: 33px;
+
+    font-size: 24px;
   }
 
   @media (min-width: $desktop-width) {
     height: auto;
+    padding-left: 30px;
+
+    line-height: 1;
   }
 }
 
@@ -73,8 +86,19 @@
 
   background-color: $block-color-background-step-1;
 
+  @media (min-width: $tabled-width) {
+    width: 365px;
+    height: 140px;
+
+    border-bottom-left-radius: 0;
+  }
+
   @media (min-width: $desktop-width) {
     width: 345px;
+    height: 107px;
+    padding-left: 35px;
+
+    border-radius: 15px;
   }
 }
 
@@ -83,8 +107,18 @@
 
   background-color: $block-color-background-step-2;
 
+  @media (min-width: $tabled-width) {
+    width: 375px;
+    height: 107px;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   @media (min-width: $desktop-width) {
     width: 375px;
+
+    border-radius: 15px;
   }
 }
 
@@ -93,8 +127,18 @@
 
   background-color: $block-color-background-step-3;
 
+  @media (min-width: $tabled-width) {
+    width: 365px;
+    height: 140px;
+
+    border-top-left-radius: 0;
+  }
+
   @media (min-width: $desktop-width) {
+    height: 107px;
     width: 375px;
+
+    border-radius: 15px;
   }
 }
 
@@ -103,7 +147,18 @@
 
   background-color: $block-color-background-step-4;
 
+  @media (min-width: $tabled-width) {
+    width: 344px;
+    height: 140px;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
   @media (min-width: $desktop-width) {
+    height: 107px;
     width: 315px;
+
+    border-radius: 15px;
   }
 }
