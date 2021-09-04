@@ -9,6 +9,9 @@
   z-index: 99;
 
   @media (min-width: $tabled-width) {
+    background: url("../../img/flags-back.png") no-repeat 440px 129px,
+      $background-section-directions url("../../img/directions-rectangle.png") no-repeat 40px 455px;
+
     border-bottom-right-radius: $border-radius-section-tabled;
     border-bottom-left-radius: $border-radius-section-tabled;
   }
@@ -20,31 +23,52 @@
 }
 
 .directions__wrapper {
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 92px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 115px;
+    padding-bottom: 81px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
-    max-height: 700px;
+    max-height: 800px;
+    padding-top: 200px;
+    padding-bottom: 102px;
+    padding-left: 36px;
   }
 }
 
 .directions__header-section {
   margin-bottom: 60px;
 
+  @media (min-width: $tabled-width) {
+    margin-bottom: 107px;
+  }
+
   @media (min-width: $desktop-width) {
     order: 2;
     width: 600px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    padding-left: 82px;
 
     align-self: center;
   }
 }
 
 .directions__list-wrapper {
+  margin-bottom: 27px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 40px;
+    padding-right: 36px;
+    padding-left: 35px;
+  }
+
   @media (min-width: $desktop-width) {
     order: 1;
 
@@ -52,9 +76,22 @@
   }
 }
 
+.directions__button-wrapper {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+
+    justify-content: flex-start;
+    padding-left: 83px;
+  }
+}
+
+
 .directions__button {
   width: 100%;
-  padding-left: 20px;
+  padding-left: 23px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -64,9 +101,18 @@
 
   border-radius: 10px;
 
-  @media (min-width: $desktop-width) {
-    order: 3;
+  @media (min-width: $tabled-width) {
+    max-width: 618px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 33px;
 
+    font-size: 24px;
+
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 275px;
 
     font-size: 24px;
@@ -76,24 +122,39 @@
 .directions__list {
   @include clear-list();
 
-  margin-bottom: 30px;
-
   @media (min-width: $desktop-width) {
     width: 560px;
   }
 }
 
-.directions__item:not(:last-child) {
-  margin-bottom: 30px;
+.directions__item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+
+    @media (min-width: $tabled-width) {
+      margin-bottom: 4px;
+    }
+  }
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
-.directions__text {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
+.directions__img-wrapper {
+  @media (min-width: $tabled-width) {
+    display: flex;
+  }
+}
 
-  background-color: $basic-white;
-  border-radius: 10px;
+.directions__img {
+  z-index: 1;
+
+  @media (min-width: $tabled-width) {
+    width: 185px;
+    height: 140px;
+  }
 }
 
 .directions__country {
@@ -101,6 +162,53 @@
 
   font-size: $font-size-country-name-mobile;
   font-weight: 700;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 3px;
+
+    font-size: $font-size-country-name-tabled;
+  }
+}
+
+.directions__text {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+  padding-top: 23px;
+  padding-right: 25px;
+  padding-bottom: 23px;
+  padding-left: 24px;
+
+
+  background-color: $basic-white;
+  border-radius: 10px;
+
+  z-index: 2;
+
+  &--no-padding {
+    padding-bottom: 5px;
+
+    @media (min-width: $tabled-width) {
+      padding-bottom: 23px;
+    }
+  }
+
+  @media (min-width: $tabled-width) {
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 140px;
+    margin: 0;
+    padding-top: 26px;
+    padding-left: 30px;
+
+    border-radius: 20px 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+  }
 }
 
 .directions__tagline {
@@ -110,12 +218,32 @@
   color: $text-grey;
 
   opacity: 0.4;
+
+  @media (min-width: $tabled-width) {
+    font-size: 20px;
+  }
+}
+
+.directions__tagline-br {
+  @media (min-width: $tabled-width) {
+    display: none;
+  }
 }
 
 .directions__count {
+  padding-top: 4px;
+
+  font-weight: 700;
   color: $text-grey;
 
   opacity: 0.4;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 1px;
+    padding-left: 28px;
+
+    font-size: 20px;
+  }
 }
 
 .direction__break {

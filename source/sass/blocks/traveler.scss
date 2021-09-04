@@ -1,8 +1,15 @@
+.traveler__img-wrapper {
+  line-height: 0;
+}
+
 .traveler__text-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 23px;
+  padding-left: 25px;
 
   color: $basic-blue-light;
 
@@ -13,12 +20,16 @@
 
 .traveler__name {
   margin: 0;
+  margin-bottom: 14px;
 
   font-size: $font-size-traveler-name-mobile;
   font-weight: 700;
 }
 
 .traveler__tags {
+  margin: 0;
+  margin-bottom: 17px;
+
   text-align: center;
 }
 

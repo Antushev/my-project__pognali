@@ -29,7 +29,7 @@
     @media (min-width: $desktop-width) {
       &::before {
         top: -25px;
-        left: -8px;
+        left: -25px;
 
         width: 50px;
         height: 50px;
@@ -54,8 +54,8 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        top: -25px;
-        left: 42px;
+        top: -23px;
+        left: 25px;
 
         width: 50px;
         height: 50px;
@@ -177,11 +177,44 @@
 
   &:not(:last-child) {
     margin-bottom: 27px;
+
+    @media (min-width: $tabled-width) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &--phone-menu {
+    @media (min-width: $tabled-width) {
+      &::before {
+        position: absolute;
+        top: 13px;
+        left: 7px;
+
+        width: 68px;
+        height: 68px;
+      }
+    }
+  }
+
+  &--mail-menu {
+    @media (min-width: $tabled-width) {
+      &::before {
+        position: absolute;
+        left: 7px;
+
+        width: 68px;
+        height: 68px;
+      }
+    }
   }
 }
 
 .contacts--menu-top .contacts__text {
   padding-left: 30px;
+
+  @media (min-width: $tabled-width) {
+    padding-left: 68px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;

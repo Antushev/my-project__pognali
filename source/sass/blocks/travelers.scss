@@ -24,7 +24,7 @@
 }
 
 .travelers__wrapper {
-  padding-top: 80px;
+  padding-top: 89px;
   padding-bottom: 40px;
   color: $basic-white;
 
@@ -35,6 +35,8 @@
 }
 
 .travelers__header-section {
+  margin-bottom: 55px;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
   }

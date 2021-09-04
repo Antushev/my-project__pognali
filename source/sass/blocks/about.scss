@@ -19,21 +19,30 @@
   }
 
   @media (min-width: $desktop-width) {
+    background: url("../../img/about-desktop.png") no-repeat 749px -6px,
+      $background-section-dark url("../../img/about-rectangle-desktop.png") no-repeat 60px -23px;
+
     border-bottom-right-radius: $border-radius-section-desktop;
     border-bottom-left-radius: $border-radius-section-desktop;
   }
 }
 
 .about__wrapper {
-  padding-top: 39px;
+  padding-top: 38px;
   padding-left: 24px;
-  padding-bottom: 62px;
+  padding-bottom: 63px;
   padding-right: 20px;
 
   @media (min-width: $tabled-width) {
     padding-top: 35px;
     padding-bottom: 88px;
     padding-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
+    padding-bottom: 161px;
+    padding-left: 70px;
   }
 }
 
@@ -42,6 +51,10 @@
 
   @media (min-width: $tabled-width) {
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
   }
 }
 
@@ -61,6 +74,7 @@
 
   @media (min-width: $desktop-width) {
     width: 620px;
+    margin-bottom: 40px;
   }
 
 
@@ -71,6 +85,11 @@
       margin-bottom: 55px;
 
       font-size: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 410px;
+      margin-bottom: 88px;
     }
   }
 }

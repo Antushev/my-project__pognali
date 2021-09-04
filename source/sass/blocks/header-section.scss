@@ -1,6 +1,10 @@
 .header-section {
-  padding-left: 30px;
-  padding-right: 40px;
+  padding-left: 24px;
+  padding-right: 31px;
+
+  @media (min-width: $tabled-width) {
+    padding-left: 34px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0;
@@ -8,10 +12,10 @@
 }
 
 .header-section__header {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tabled-width) {
-    margin-bottom: 40px;
+    margin-bottom: 56px;
   }
 }
 
@@ -22,13 +26,13 @@
   line-height: 22px;
 
   &--bold {
-    margin-top: 25px;
+    margin-top: 21px;
 
     font-weight: 700;
   }
 
   @media (min-width: $tabled-width) {
-    width: 380px;
+    width: 379px;
 
     line-height: 33px;
     font-size: 28px;

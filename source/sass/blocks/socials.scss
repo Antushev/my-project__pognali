@@ -10,6 +10,10 @@
 
 .socials--menu-top .socials__item {
   &:not(:last-child) {
-    margin-right: 27px;
+    margin-right: 36px;
+  }
+
+  &:nth-child(2) {
+    margin-top: -1.5px;
   }
 }
