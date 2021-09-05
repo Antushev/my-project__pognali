@@ -1,5 +1,5 @@
 (function() {
-   let noJsBlock = document.querySelector('.page-header--no-js');
+  let noJsBlock = document.querySelector('.page-header--no-js');
   noJsBlock.classList.remove('page-header--no-js');
 
   let pathOfWhiteLogo = '../img/logo-full.svg';
@@ -35,5 +35,4 @@
       modal.classList.remove('add-profile__hidden-block--open');
     }
   });
-
 }());
