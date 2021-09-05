@@ -1,6 +1,6 @@
 .header-section {
   padding-left: 24px;
-  padding-right: 31px;
+  padding-right: 19px;
 
   @media (min-width: $tabled-width) {
     padding-left: 34px;
@@ -25,16 +25,39 @@
   font-weight: 300;
   line-height: 22px;
 
-  &--bold {
-    margin-top: 21px;
-
-    font-weight: 700;
-  }
-
   @media (min-width: $tabled-width) {
     width: 379px;
 
     line-height: 33px;
     font-size: 28px;
+  }
+
+  &--bold {
+    margin-top: 21px;
+
+    font-weight: 700;
+
+    @media (min-width: $tabled-width) {
+      margin-top: 44px;
+
+      font-size: 21px;
+      line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 43px;
+      padding-left: 1px;
+    }
+  }
+
+  &--travelers {
+    @media (min-width: $tabled-width) {
+      width: 425px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 427px;
+      padding-left: 1px;
+    }
   }
 }
