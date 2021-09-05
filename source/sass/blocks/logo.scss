@@ -1,0 +1,17 @@
+.logo {
+  @media (min-width: $tabled-width) {
+    padding-top: 6px;
+  }
+}
+
+.logo__img {
+  @media (min-width: $tabled-width) {
+    width: 169px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 50px;
+  }
+}

@@ -4,10 +4,13 @@ $basic-white: #ffffff;
 $basic-blue: #161c35;
 $basic-blue-light: #1d2e5b;
 $basic-yellow: #ffd74b;
-$special-grey: #444444;
-$special-blue-light: #dfe3f0;
+$basic-grey: #cccccc;
 $basic-black: #000000;
 $basic-red: #ff5c23;
+$special-yellow-dark: #ffbd30;
+$special-orange: #ff8d30;
+$special-grey: #444444;
+$special-blue-light: #dfe3f0;
 
 
 /* Colors background */
@@ -83,13 +86,14 @@ $font-size-h1-mobile: 36px;
 $font-size-h1-tabled: 60px;
 $font-size-h2-mobile: 24px;
 $font-size-country-name-mobile: 21px;
+$font-size-country-name-tabled: 24px;
 $font-size-traveler-name-mobile: 21px;
 $font-size-menu-item-mobile: 30px;
 $font-size-menu-item-tabled: 60px;
 $font-size-menu-item-desktop: 20px;
 $font-size-text-items-steps-mobile: 18px;
-$font-size-text-address-map-mobile: 28px;
-$font-size-text-button-map: 24px;
+$font-size-text-address-map-mobile: 16px;
+$font-size-text-button-map: 18px;
 $font-size-country-list-catalog: 15px;
 $font-size-button-traveler-catalog: 17px;
 $font-size-button-traveler-form: 20px;
@@ -118,6 +122,12 @@ $font-size-button-address-tabled: 24px;
 $font-size-header-inner-page-mobile: 36px;
 $font-size-header-inner-page-tabled: 60px;
 $font-size-return-button-catalog-tabled: 20px;
+
+/* Other elements properties */
+
+$border-radius-section-mobile: 30px;
+$border-radius-section-tabled: 55px;
+$border-radius-section-desktop: 60px;
 
 /* Sizes of display */
 

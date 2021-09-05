@@ -25,3 +25,15 @@
     width: 950px;
   }
 }
+
+.page-content__section-top {
+  margin-top: -25px;
+
+  @media (min-width: $tabled-width) {
+    margin-top: -50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -40px;
+  }
+}

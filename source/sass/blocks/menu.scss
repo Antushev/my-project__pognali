@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 
   font-size: $font-size-menu-item-mobile;
   font-weight: 500;
@@ -33,6 +33,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0;
+    padding-top: 3px;
 
     font-size: $font-size-menu-item-desktop;
     font-weight: 500;
@@ -48,11 +49,15 @@
   text-align: center;
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
+
+    @media (min-width: $tabled-width) {
+      margin-bottom: 2px;
+    }
 
     @media (min-width: $desktop-width) {
       margin: 0;
-      margin-right: 40px;
+      margin-right: 34px;
     }
   }
 

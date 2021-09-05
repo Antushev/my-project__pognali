@@ -1,5 +1,15 @@
 .transport__list {
   @include clear-list();
-
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.transport__item {
+  width: 20px;
+  height: 20px;
+
+  &:not(:last-child) {
+    margin-right: 13px;
+  }
 }

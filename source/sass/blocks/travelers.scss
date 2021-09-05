@@ -1,5 +1,34 @@
 .travelers {
-  background-color: $background-section-dark;
+  position: relative;
+
+  background: url("../../img/smolov-back.png") no-repeat 151px 60px,
+    url("../../img/travelers-back-background.png") no-repeat 0 60px,
+    $background-section-dark url("../../img/rogovaya-back.png") no-repeat 0 332px;
+
+
+  border-bottom-right-radius: $border-radius-section-mobile;
+  border-bottom-left-radius: $border-radius-section-mobile;
+
+  z-index: 98;
+
+  @media (min-width: $tabled-width) {
+    background: url("../../img/smolov-back-desktop.png") no-repeat 40px 475px,
+      url("../../img/back-travelers-desktop.png") no-repeat 30px 121px,
+      $background-section-dark url("../../img/rogovaya-back-desktop.png") no-repeat 408px 130px;
+
+
+    border-bottom-right-radius: $border-radius-section-tabled;
+    border-bottom-left-radius: $border-radius-section-tabled;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../../img/smolov-back-desktop.png") no-repeat 548px 173px,
+      url("../../img/back-travelers-desktop.png") no-repeat 59px 109px,
+      $background-section-dark url("../../img/rogovaya-back-desktop.png") no-repeat 191px 425px;
+
+    border-bottom-right-radius: $border-radius-section-desktop;
+    border-bottom-left-radius: $border-radius-section-desktop;
+  }
 
   &--catalog {
     background-color: $background-section-travelers-catalog;
@@ -7,19 +36,36 @@
 }
 
 .travelers__wrapper {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 89px;
+  padding-bottom: 31px;
   color: $basic-white;
 
+  @media (min-width: $tabled-width) {
+    padding-top: 185px;
+    padding-bottom: 87px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 790px;
+    padding-top: 161px;
+    padding-left: 68px;
   }
 }
 
 .travelers__header-section {
+  margin-bottom: 55px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 63px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    order: 1;
+
+    margin-bottom: 89px;
   }
 }
 
@@ -28,23 +74,85 @@
 
   @media (min-width: $tabled-width) {
     display: flex;
+    margin-bottom: 70px;
+    padding-left: 34px;
 
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+
+    padding-top: 12px;
+    padding-left: 195px;
   }
 }
 
 .travelers-list__item {
+  &:not(:last-child) {
+    @media (min-width: $tabled-width) {
+      margin-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 60px;
+    }
+  }
+
   @media (min-width: $tabled-width) {
-    width: 280px;
+    width: 285px;
+  }
+}
+
+.travelers__button-wrapper {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+
+    justify-content: flex-start;
+    padding-left: 4px;
   }
 }
 
 .travelers__button {
-  display: none;
+  width: 100%;
+  padding-left: 23px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+
+  border-radius: 10px;
+
+  @media (min-width: $tabled-width) {
+    max-width: 616px;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    padding-left: 30px;
+
+    font-size: 24px;
+
+    border-radius: 20px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: block;
     max-width: 280px;
+  }
+}
+
+.travelers__br {
+  @media (min-width: $tabled-width) {
+    display: none;
+  }
+
+  &--tabled {
+    @media (min-width: $tabled-width) {
+      display: block;
+    }
   }
 }
 
