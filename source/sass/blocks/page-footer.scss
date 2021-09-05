@@ -1,8 +1,13 @@
 .page-footer {
+  position: relative;
+  margin-top: -30px;
+
   background-color: $basic-white;
 
   border-top-right-radius: $border-radius-section-mobile;
   border-top-left-radius: $border-radius-section-mobile;
+
+  z-index: 96;
 
   @media (min-width: $tabled-width) {
     border-top-right-radius: $border-radius-section-tabled;

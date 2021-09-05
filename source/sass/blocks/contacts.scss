@@ -144,6 +144,8 @@
   display: none;
 }
 
+/* Form send */
+
 .contacts--form-send .contacts__list {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -152,10 +154,25 @@
 }
 
 .contacts--form-send .contacts__item {
-  @media (min-width: $desktop-width) {
-    &:not(:last-child) {
-      margin-right: 30px;
+  padding-left: 27px;
+
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    margin-bottom: 27px;
+
+    @media (min-width: $tabled-width) {
+      margin-bottom: 35px;
     }
+  }
+
+  @media (min-width: $tabled-width) {
+    padding-left: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    padding-left: 10px;
   }
 }
 

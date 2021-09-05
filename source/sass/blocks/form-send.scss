@@ -22,12 +22,30 @@
 }
 
 .form-send__wrapper {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 97px;
+  padding-bottom: 42px;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 120px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 143px;
+    padding-bottom: 96px;
+  }
 }
 
 .form-send__header {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .form-send__text {
@@ -35,18 +53,89 @@
 
   font-weight: 300;
   text-align: center;
+  line-height: 22px;
+
+  @media (min-width: $tabled-width) {
+    font-size: 28px;
+  }
 
   &--before-form {
     margin-bottom: 30px;
+    padding: 0 35px;
+    padding-left: 27px;
+
+    text-align: center;
+
+    @media (min-width: $tabled-width) {
+      margin-bottom: 67px;
+      padding-left: 21px;
+
+      line-height: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 62px;
+      padding-left: 37px;
+
+      line-height: 31px;
+    }
   }
 
   &--after-form {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+
+    @media (min-width: $tabled-width) {
+      margin-bottom: 66px;
+      padding-left: 8px;
+
+      letter-spacing: 0.01em;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 80px;
+      padding-left: 0;
+    }
+  }
+}
+
+.form-send__br {
+  &--mobile {
+    display: block;
+
+    @media (min-width: $tabled-width) {
+      display: none;
+    }
+  }
+
+  &--tabled {
+    @media (min-width: $tabled-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 }
 
 .form-send__form-email {
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .form-send__contacts {
@@ -54,4 +143,20 @@
 
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tabled-width) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
+
+.form-send__contacts-list {
+  @media (min-width: $desktop-width) {
+    min-width: 645px;
+  }
 }
