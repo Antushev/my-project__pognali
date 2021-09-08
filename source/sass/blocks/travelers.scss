@@ -31,7 +31,8 @@
   }
 
   &--catalog {
-    background-color: $background-section-travelers-catalog;
+    background: none;
+    background-color: $background-section-light;
   }
 }
 
@@ -163,6 +164,7 @@
 
   @media (min-width: $tabled-width) {
     flex-direction: column;
+    padding-left: 0;
   }
 }
 
