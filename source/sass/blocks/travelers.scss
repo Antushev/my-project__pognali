@@ -166,6 +166,12 @@
     flex-direction: column;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+
+    padding-top: 0;
+  }
 }
 
 .travelers--catalog .travelers-list__item {
@@ -183,6 +189,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    max-height: none;
     padding-top: 0;
   }
 }
@@ -222,6 +232,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
 }
 
 .travelers--catalog .travelers__pagination-wrapper {
@@ -239,6 +253,8 @@
   text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
+    order: 2;
+
     margin-bottom: 0;
     padding-top: 40px;
     padding-bottom: 40px;
