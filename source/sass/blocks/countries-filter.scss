@@ -178,7 +178,7 @@
 }
 
 .countries-filter__list--table .countries-filter__item {
-  &:not(:last-child){
+  &:not(:last-child) {
     @media (min-width: $desktop-width) {
       margin-bottom: 7px;
     }
@@ -209,6 +209,7 @@
 .countries-filter__list--countries-hidden .countries-filter__item {
   &:not(:last-child) {
     margin-bottom: 4px;
+
     @media (min-width: $tabled-width) {
       margin-bottom: 7.3px;
     }

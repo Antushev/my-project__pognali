@@ -16,6 +16,4 @@
       modal.classList.remove('add-profile__hidden-block--open');
     }
   });
-}())
-
-
+}());

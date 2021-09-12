@@ -609,10 +609,6 @@
   margin-bottom: 14px;
 }
 
-.traveler--catalog:nth-child(2) .traveler__name {
-
-}
-
 .traveler--catalog:nth-child(2) .traveler__header {
   &--country {
     margin-bottom: 19px;
@@ -702,7 +698,7 @@
   }
 }
 
-.traveler--catalog:nth-child(4) .traveler__img-wrapper{
+.traveler--catalog:nth-child(4) .traveler__img-wrapper {
   padding-top: 3px;
 
   @media (min-width: $desktop-width) {
