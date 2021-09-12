@@ -3,6 +3,18 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  &--traveler-card {
+    @media (min-width: $tabled-width) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+    }
+  }
 }
 
 .transport__item {
@@ -12,6 +24,11 @@
   &:not(:last-child) {
     margin-right: 13px;
   }
+}
+
+.transport__item--active .transport__icon-path {
+  opacity: 1;
+  fill: #101D41;
 }
 
 /* Catalog.html */
@@ -80,5 +97,67 @@
   @media (min-width: $tabled-width) {
     width: 23px;
     height: 22px;
+  }
+}
+
+/* Catalog.html profile */
+
+.transport--profile .transport__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  background-color: #edeff6;
+
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 1.5px;
+  }
+
+  @media (min-width: $tabled-width) {
+    background: none;
+  }
+}
+
+.transport--profile .transport__icon-plane {
+  width: 14px;
+  height: 16px;
+
+  @media (min-width: $tabled-width) {
+    width: 19.69px;
+    height: 20.04px;
+  }
+}
+
+.transport--profile .transport__icon-bus {
+  width: 12.99px;
+  height: 16px;
+
+  @media (min-width: $tabled-width) {
+    width: 26px;
+    height: 25px;
+  }
+}
+
+.transport--profile .transport__icon-bicycle {
+  width: 14.46px;
+  height: 17px;
+
+  @media (min-width: $tabled-width) {
+    width: 26px;
+    height: 25px;
+  }
+}
+
+.transport--profile .transport__icon-run {
+  width: 13.15px;
+  height: 17px;
+
+  @media (min-width: $tabled-width) {
+    width: 22.69px;
+    height: 24px;
   }
 }
