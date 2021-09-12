@@ -3,12 +3,26 @@
 }
 
 .traveler-info__wrapper {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 51px;
+  padding-bottom: 59px;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 131px;
+    padding-bottom: 95px;
+  }
 }
 
 .traveler-info__profile-wrapper {
+  @media (min-width: $tabled-width) {
+    justify-content: flex-start;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-top: -200px;
+    justify-content: flex-end;
+    margin-top: -267px;
+    padding-left: 62px;
+    padding-right: 0;
   }
 }

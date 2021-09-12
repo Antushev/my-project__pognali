@@ -161,3 +161,72 @@
     height: 24px;
   }
 }
+
+
+/* Form.html */
+
+.transport--form .transport__list {
+  justify-content: flex-start;
+}
+
+.transport--form .transport__item {
+  width: 31.52px;
+  height: 31.52px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $basic-white;
+
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $tabled-width) {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+.transport--form .transport__icon-plane {
+  width: 14.53px;
+  height: 14.69px;
+
+  @media (min-width: $tabled-width) {
+    width: 23px;
+    height: 22px;
+  }
+}
+
+.transport--form .transport__icon-bus {
+  width: 16.85px;
+  height: 16.12px;
+
+  @media (min-width: $tabled-width) {
+    width: 23px;
+    height: 22px;
+  }
+}
+
+.transport--form .transport__icon-bicycle {
+  width: 16.86px;
+  height: 16.12px;
+
+  @media (min-width: $tabled-width) {
+    width: 23px;
+    height: 22px;
+  }
+}
+
+.transport--form .transport__icon-run {
+  width: 16.86px;
+  height: 16.12px;
+
+  @media (min-width: $tabled-width) {
+    width: 23px;
+    height: 22px;
+  }
+}

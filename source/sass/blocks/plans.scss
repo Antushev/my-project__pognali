@@ -1,16 +1,46 @@
 .plans {
+  border-top-right-radius: $border-radius-section-mobile;
+  border-top-left-radius: $border-radius-section-mobile;
+
   background-color: $special-blue-light;
+
+  @media (min-width: $tabled-width) {
+    border-top-right-radius: $border-radius-section-tabled;
+    border-top-left-radius: $border-radius-section-tabled;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top-right-radius: $border-radius-section-desktop;
+    border-top-left-radius: $border-radius-section-desktop;
+  }
 }
 
 .plans__wrapper {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 49px;
+    padding-right: 35px;
+    padding-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 64px;
+    padding-right: 0;
+  }
 }
 
 .plans__main-header {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   color: $basic-blue-light;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
 }
 
 .plans__list {
@@ -18,7 +48,10 @@
 }
 
 .plans__item {
-  padding: 20px;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 24px;
 
   background-color: $basic-white;
   border-radius: 10px;
@@ -30,6 +63,10 @@
   @media (min-width: $tabled-width) {
     display: flex;
     flex-flow: wrap;
+    padding-top: 37px;
+    padding-right: 39px;
+    padding-bottom: 12px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,14 +75,14 @@
 }
 
 .plans__header {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 
   font-size: $font-size-header-country-form;
   color: $basic-blue-light;
 
   @media (min-width: $tabled-width) {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
 
     font-size: 24px;
   }
@@ -57,11 +94,20 @@
 }
 
 .plans__text-wrapper {
-  margin-bottom: 15px;
+  margin-bottom: 21px;
+  padding-left: 2px;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
 
   @media (min-width: $tabled-width) {
     display: flex;
     margin-bottom: 0;
+    padding-left: 0;
+
+    letter-spacing: 2px;
   }
 }
 
@@ -73,17 +119,22 @@
   color: $basic-blue-light;
   text-transform: uppercase;
 
+  &:not(:last-child) {
+    margin-bottom: 2px;
+
+    @media (min-width: $tabled-width) {
+      width: 178px;
+    }
+  }
+
   @media (min-width: $tabled-width) {
     font-size: 20px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 }
 
 .plans__button {
   padding: 0;
+  margin-left: 3px;
 
   font-size: $font-size-button-plans;
   font-weight: 500;
@@ -96,5 +147,6 @@
     margin-left: auto;
 
     font-size: 20px;
+    letter-spacing: 2px;
   }
 }
