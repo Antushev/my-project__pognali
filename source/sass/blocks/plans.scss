@@ -1,33 +1,36 @@
 .plans {
-  border-top-right-radius: $border-radius-section-mobile;
-  border-top-left-radius: $border-radius-section-mobile;
+  border-top-right-radius: $border-radius-section-form-mobile;
+  border-top-left-radius: $border-radius-section-form-mobile;
 
   background-color: $special-blue-light;
 
   @media (min-width: $tabled-width) {
-    border-top-right-radius: $border-radius-section-tabled;
-    border-top-left-radius: $border-radius-section-tabled;
+    border-top-right-radius: $border-radius-section-form-tabled;
+    border-top-left-radius: $border-radius-section-form-tabled;
   }
 
   @media (min-width: $desktop-width) {
-    border-top-right-radius: $border-radius-section-desktop;
-    border-top-left-radius: $border-radius-section-desktop;
+    border-top-right-radius: $border-radius-section-form-desktop;
+    border-top-left-radius: $border-radius-section-form-desktop;
   }
 }
 
 .plans__wrapper {
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding-top: 23px;
+  padding-bottom: 55px;
 
   @media (min-width: $tabled-width) {
     padding-top: 49px;
     padding-right: 35px;
+    padding-bottom: 127px;
     padding-left: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 64px;
+    padding-top: 48px;
     padding-right: 0;
+    padding-bottom: 120px;
+    padding-left: 64px;
   }
 }
 
@@ -40,6 +43,10 @@
     margin-bottom: 50px;
 
     font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 7px;
   }
 }
 
@@ -57,7 +64,11 @@
   border-radius: 10px;
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 16px;
+    }
   }
 
   @media (min-width: $tabled-width) {
@@ -70,12 +81,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px;
+    padding-top: 32px;
+    padding-right: 42px;
+    padding-bottom: 37px;
+    padding-left: 95px;
   }
 }
 
 .plans__header {
   margin-bottom: 19px;
+  padding-left: 18px;
 
   font-size: $font-size-header-country-form;
   color: $basic-blue-light;
@@ -83,12 +98,13 @@
   @media (min-width: $tabled-width) {
     width: 100%;
     margin-bottom: 51px;
+    padding-left: 0;
 
     font-size: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 700px;
+    width: 532px;
     margin-bottom: 0;
   }
 }
@@ -120,21 +136,30 @@
   text-transform: uppercase;
 
   &:not(:last-child) {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 
     @media (min-width: $tabled-width) {
       width: 178px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
   }
 
   @media (min-width: $tabled-width) {
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .plans__button {
   padding: 0;
-  margin-left: 3px;
+  margin-left: 2px;
 
   font-size: $font-size-button-plans;
   font-weight: 500;
@@ -148,5 +173,11 @@
 
     font-size: 20px;
     letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+
+    letter-spacing: 1.5px;
   }
 }

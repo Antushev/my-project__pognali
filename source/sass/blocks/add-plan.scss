@@ -1,17 +1,36 @@
 .add-plan {
-  padding-right: 20px;
-  padding-left: 20px;
-
   background-color: $background-section-add-plan;
+
+  border-top-right-radius: $border-radius-section-form-mobile;
+  border-top-left-radius: $border-radius-section-form-mobile;
+
+  @media (min-width: $tabled-width) {
+    border-top-right-radius: $border-radius-section-form-tabled;
+    border-top-left-radius: $border-radius-section-form-tabled;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top-right-radius: $border-radius-section-form-desktop;
+    border-top-left-radius: $border-radius-section-form-desktop;
+  }
 }
 
 .add-plan__wrapper {
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 26px;
+  padding-bottom: 117px;
 
   @media (min-width: $tabled-width) {
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 46px;
+    padding-right: 36px;
+    padding-bottom: 137px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+    padding-right: 0;
+    padding-bottom: 147px;
+    padding-left: 0;
   }
 }
 
@@ -21,8 +40,13 @@
   color: $basic-blue-light;
 
   @media (min-width: $tabled-width) {
-    margin-bottom: 50px;
+    margin-bottom: 57px;
 
     font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+    padding-left: 69px;
   }
 }

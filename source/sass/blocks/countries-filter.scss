@@ -457,26 +457,45 @@
 /* form.html */
 
 .countries-filter--form {
+  position: absolute;
+
+  display: none;
+
   background-color: $basic-white;
 
-  border: 1px solid $border-countries-filter;
+  outline: 1px solid $border-countries-filter;
+
+  border-radius: 0;
 
   @media (min-width: $tabled-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 33px;
+    padding-top: 35px;
+    padding-right: 24px;
+    padding-bottom: 12px;
     padding-left: 27px;
+
+    outline: none;
+
+    box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 19px;
+    padding-bottom: 3px;
+    padding-left: 11px;
     width: 730px;
   }
 }
 
 .countries-filter--form .countries-filter__table {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
   border-collapse: collapse;
+
+  @media (min-width: $tabled-width) {
+    width: 266px;
+  }
 
   @media (min-width: $desktop-width) {
     width: auto;
@@ -487,7 +506,7 @@
 }
 
 .countries-filter--form .countries-filter__td {
-  width: 44px;
+  width: 43.9px;
   height: 41px;
 
   font-size: 14px;
@@ -523,21 +542,43 @@
 }
 
 .countries-filter--form .countries-filter__list {
-  padding-left: 15px;
+  padding-left: 19px;
 
   color: $special-grey;
 
   @media (min-width: $tabled-width) {
+    margin-left: 84px;
+
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 3px;
+    padding-left: 0;
   }
 }
 
 .countries-filter--form .countries-filter__item {
   opacity: 1;
 
+  font-size: 16px;
+  line-height: 22px;
+
   @media (min-width: $tabled-width) {
-    &:not(:last-child) {
+    min-width: 155px;
+
+    font-size: 20px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3.9px;
+
+    @media (min-width: $tabled-width) {
       margin-bottom: 8px;
     }
   }
+
 }
