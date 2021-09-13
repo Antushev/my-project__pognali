@@ -37,8 +37,17 @@
   }
 
   &--business {
+    @include clear-list();
+
     @media (min-width: $desktop-width) {
       width: 100%;
+    }
+
+    &::before {
+      @media (min-width: $tabled-width) {
+        content: "";
+        background: none;
+      }
     }
   }
 }
@@ -222,17 +231,6 @@
 
 .tariffs-list__item:last-child {
   border-bottom: 1px solid $border-line-tariffs;
-}
-
-.tariffs-list--business {
-  @include clear-list();
-
-  &::before {
-    @media (min-width: $tabled-width) {
-      content: "";
-      background: none;
-    }
-  }
 }
 
 .tariffs-list--business .tariffs-list__item {

@@ -596,10 +596,6 @@
     }
   }
 
-  @media (min-width: $tabled-width) {
-
-  }
-
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
   }
@@ -1013,7 +1009,7 @@
 
 .form--add-plan .form__text-textarea {
   display: flex;
-  justify-content: space-between  ;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
 
@@ -1242,7 +1238,6 @@
   @media (min-width: $tabled-width) {
     margin-bottom: 52px;
     padding-left: 41px;
-    paddin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
