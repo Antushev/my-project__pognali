@@ -43,16 +43,17 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 185px;
-    padding-bottom: 87px;
+    padding-bottom: 88px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-height: 790px;
-    padding-top: 161px;
-    padding-left: 0;
+    max-height: 807px;
+    padding-top: 177px;
+    padding-bottom: 67px;
+    padding-left: 70px;
   }
 }
 
@@ -75,7 +76,7 @@
 
   @media (min-width: $tabled-width) {
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 42px;
     padding-left: 34px;
 
     justify-content: flex-start;
@@ -142,6 +143,29 @@
 
   @media (min-width: $desktop-width) {
     max-width: 280px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 53%;
+    right: 19px;
+
+    width: 14px;
+    height: 14px;
+
+    background: url("../../img/icon-arrow-button.svg") no-repeat;
+
+    transform: translateY(-50%);
+
+    @media (min-width: $tabled-width) {
+      right: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 35px;
+    }
   }
 }
 

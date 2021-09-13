@@ -75,6 +75,8 @@
 .page-header__logo {
   order: 1;
 
+  position: relative;
+
   @media (min-width: $tabled-width) {
     order: 1;
 
@@ -87,6 +89,38 @@
     min-width: 300px;
     margin-right: 44px;
     padding-left: 1px;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      width: 60px;
+      height: 2px;
+
+      background-color: $basic-white;
+    }
+  }
+
+  &--blue-line {
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        width: 60px;
+        height: 2px;
+
+        background-color: #192144;
+      }
+    }
   }
 }
 
@@ -259,6 +293,13 @@
     order: 4;
 
     display: block;
+    padding-left: 122px;
+  }
+
+  &--menu-bottom {
+    @media (min-width: $desktop-width) {
+      padding-left: 100px;
+    }
   }
 }
 
@@ -370,7 +411,7 @@
 
 .page-header--open .page-header__menu-inner--main {
   padding-top: 23px;
-  padding-bottom: 37px;
+  padding-bottom: 38px;
 
   @media (min-width: $tabled-width) {
     padding-top: 37px;
@@ -411,7 +452,7 @@
 
   @media (min-width: $tabled-width) {
     margin-top: 90px;
-    margin-bottom: 100px;
+    margin-bottom: 79px;
     padding-left: 57px;
   }
 }
@@ -419,7 +460,7 @@
 .page-header--open .page-header__contacts-button--main {
   display: block;
 
-  margin-bottom: 65px;
+  margin-bottom: 52px;
 
   @media (min-width: $tabled-width) {
     display: flex;
@@ -443,20 +484,21 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-left: 85px;
+  padding-left: 5px;
 
   @media (min-width: $tabled-width) {
-    padding-left: 83px;
+    justify-content: flex-start;
+    padding-left: 82px;
   }
 }
 
 .page-header--open .page-header__contacts {
   display: block;
   width: 100%;
-  margin-bottom: 55px;
+  margin-bottom: 41px;
 
   @media (min-width: $tabled-width) {
-    margin-bottom: 146px;
+    margin-bottom: 129px;
   }
 }
 
@@ -489,6 +531,7 @@
 
 .page-header__menu-wrapper--bottom-menu .page-header__menu-inner {
   display: flex;
+  flex-wrap: nowrap;
 
   padding: 0;
 }
@@ -505,14 +548,13 @@
   order: 5;
 
   position: absolute;
-  bottom: -19px;
-  right: -1px;
+  top: -21px;
+  right: 0;
 
   display: block;
 
   width: 190px;
   height: 40px;
-  margin-bottom: 0;
 
   @media (min-width: $desktop-width) {
     position: static;
@@ -523,8 +565,8 @@
   order: 4;
 
   position: absolute;
-  bottom: 20px;
-  left: 25px;
+  top: -22px;
+  left: 0;
 
   display: block;
 

@@ -9,11 +9,38 @@
 
 .socials--menu-top .socials__item {
   &:not(:last-child) {
-    margin-right: 36px;
+    margin-right: 27px;
+
+    @media (min-width: $tabled-width) {
+      margin-right: 37px;
+    }
   }
 
   &:nth-child(2) {
     margin-top: -1.5px;
+  }
+}
+
+.socials--menu-top .socials__icon {
+  &--facebook {
+    @media (min-width: $tabled-width) {
+      width: 13.52px;
+      height: 27.75px;
+    }
+  }
+
+  &--vk {
+    @media (min-width: $tabled-width) {
+      width: 30px;
+      height: 15.82px;
+    }
+  }
+
+  &--instagram {
+    @media (min-width: $tabled-width) {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 

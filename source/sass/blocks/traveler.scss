@@ -14,10 +14,12 @@
 }
 
 .traveler__text-wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 24px;
+  padding-top: 23px;
   padding-right: 24px;
   padding-bottom: 23px;
   padding-left: 25px;
@@ -30,7 +32,7 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 25px;
-    padding-bottom: 35px;
+    padding-bottom: 32px;
 
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -73,7 +75,23 @@
   }
 }
 
-/* catalog.html */
+/* Index.html */
+
+.traveler--index .traveler__country-list {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.traveler--index .traveler__country-item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+/* Catalog.html */
 
 .traveler--catalog {
   position: relative;

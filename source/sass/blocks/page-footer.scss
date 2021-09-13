@@ -30,6 +30,10 @@
     align-items: center;
     padding-top: 46px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 34px;
+  }
 }
 
 .page-footer__logo {

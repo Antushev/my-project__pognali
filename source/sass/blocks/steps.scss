@@ -29,7 +29,7 @@
   font-weight: 700;
   color: $basic-blue;
 
-  border-radius: 15px;
+  border-radius: 10px;
 
   &:not(:first-child) {
     margin-top: -80px;
@@ -71,6 +71,8 @@
     padding-left: 33px;
 
     font-size: 24px;
+
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,6 +84,8 @@
 }
 
 .steps__item:nth-child(1) {
+  position: relative;
+
   height: 160px;
 
   background-color: $block-color-background-step-1;
@@ -100,9 +104,41 @@
 
     border-radius: 15px;
   }
+
+  &::before {
+    content: "1";
+
+    position: absolute;
+    top: 19px;
+    right: 22px;
+
+    font-size: 18px;
+    color: $basic-white;
+
+    @media (min-width: $tabled-width) {
+      top: auto;
+      right: auto;
+      bottom: 22px;
+      left: 33px;
+
+      font-size: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 27px;
+      right: 64px;
+      bottom: auto;
+      left: auto;
+
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
 }
 
 .steps__item:nth-child(2) {
+  position: relative;
+
   height: 160px;
 
   background-color: $block-color-background-step-2;
@@ -121,9 +157,41 @@
 
     border-radius: 15px;
   }
+
+  &::before {
+    content: "2";
+
+    position: absolute;
+    top: 19px;
+    right: 22px;
+
+    font-size: 18px;
+    color: $basic-white;
+
+    @media (min-width: $tabled-width) {
+      top: auto;
+      right: auto;
+      bottom: 22px;
+      left: 33px;
+
+      font-size: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 27px;
+      right: 64px;
+      bottom: auto;
+      left: auto;
+
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
 }
 
 .steps__item:nth-child(3) {
+  position: relative;
+
   height: 140px;
 
   background-color: $block-color-background-step-3;
@@ -141,9 +209,41 @@
 
     border-radius: 15px;
   }
+
+  &::before {
+    content: "3";
+
+    position: absolute;
+    top: 19px;
+    right: 22px;
+
+    font-size: 18px;
+    color: $basic-white;
+
+    @media (min-width: $tabled-width) {
+      top: auto;
+      right: auto;
+      bottom: 22px;
+      left: 33px;
+
+      font-size: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 27px;
+      right: 64px;
+      bottom: auto;
+      left: auto;
+
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
 }
 
 .steps__item:nth-child(4) {
+  position: relative;
+
   height: 80px;
 
   background-color: $block-color-background-step-4;
@@ -161,5 +261,35 @@
     width: 315px;
 
     border-radius: 15px;
+  }
+
+  &::before {
+    content: "4";
+
+    position: absolute;
+    top: 19px;
+    right: 22px;
+
+    font-size: 18px;
+    color: $basic-white;
+
+    @media (min-width: $tabled-width) {
+      top: auto;
+      right: auto;
+      bottom: 22px;
+      left: 33px;
+
+      font-size: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 27px;
+      right: 32px;
+      bottom: auto;
+      left: auto;
+
+      font-size: 24px;
+      font-weight: bold;
+    }
   }
 }

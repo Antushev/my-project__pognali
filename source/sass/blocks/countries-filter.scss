@@ -69,6 +69,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: flex-start;
+    padding-top: 78px;
     padding-left: 21px;
   }
 }
@@ -459,7 +460,7 @@
 .countries-filter--form {
   position: absolute;
 
-  display: none;
+  display: block;
 
   background-color: $basic-white;
 
