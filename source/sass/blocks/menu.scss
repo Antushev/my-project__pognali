@@ -44,9 +44,22 @@
 }
 
 .menu__item {
+  overflow: hidden;
+
   width: 100%;
 
   text-align: center;
+
+  @media (min-width: $tabled-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+
+    text-align: center;
+  }
 
   &:not(:last-child) {
     margin-bottom: 1px;
@@ -61,15 +74,14 @@
     }
   }
 
-  @media (min-width: $tabled-width) {
-    text-align: left;
+  &:hover {
+    color: $basic-yellow;
+
+    cursor: pointer;
   }
 
-  @media (min-width: $desktop-width) {
-    width: auto;
-    margin: 0;
-
-    text-align: center;
+  &:active {
+    color: rgba($basic-yellow, 0.3);
   }
 }
 
@@ -102,5 +114,14 @@
 /* Bottom menu in header */
 
 .menu--bottom-menu .menu__link {
+  font-weight: 500;
   color: $text-header-menu-bottom;
+
+  &:hover {
+    color: $basic-yellow;
+  }
+
+  &:active {
+    color: rgba($basic-yellow, 0.3);
+  }
 }

@@ -139,6 +139,19 @@
     width: 325px;
   }
 
+  &:hover {
+    color: $basic-white;
+
+    background-color: #192144;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+
+
+    background-color: #192144;
+  }
+
   &::before {
     content: "";
 

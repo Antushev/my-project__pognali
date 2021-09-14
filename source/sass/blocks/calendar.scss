@@ -1,7 +1,12 @@
 .calendar__month-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 22px;
   padding-top: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 
   font-size: $font-size-calendar-month;
   font-weight: 700;
@@ -60,6 +65,35 @@
 
   border: 1px solid $border-calendar-month;
 
+  @media (min-width: $tabled-width) {
+    width: 85px;
+    height: 69px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 144px;
+    height: 70.9px;
+    padding: 14px;
+
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  &:hover {
+    color: $basic-white;
+
+    background-color: #1d2e5b;
+
+    box-shadow: 4px 4px 0 #ff5c23 inset, -4px -4px 0 #ff5c23 inset
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
   &--check {
     font-weight: 500;
     color: $basic-white;
@@ -77,23 +111,6 @@
   &--active {
     outline: 2px solid $basic-red;
   }
-
-  @media (min-width: $tabled-width) {
-    width: 85px;
-    height: 69px;
-
-    font-size: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 144px;
-    height: 70.9px;
-    padding: 14px;
-
-    font-weight: 400;
-    text-align: left;
-    vertical-align: top;
-  }
 }
 
 .calendar__td-text {
@@ -110,5 +127,25 @@
 
   @media (min-width: $desktop-width) {
     display: inline;
+  }
+}
+
+.calendar__icon {
+  width: 19px;
+  height: 21px;
+
+  padding-top: 3px;
+  margin-left: -3px;
+
+  &--right {
+    margin-right: -4px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }

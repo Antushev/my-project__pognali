@@ -679,6 +679,14 @@
     padding-top: 8px;
     padding-right: 62px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header--inner-page .page-header__button {

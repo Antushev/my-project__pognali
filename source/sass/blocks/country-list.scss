@@ -221,11 +221,56 @@
 /* Index.html */
 
 .country-list .country-list__item {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
   width: 35px;
   height: 24px;
+
+  &:hover .country-list__hidden-info {
+    display: flex;
+  }
+}
+
+.country-list .country-list__hidden-info {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+
+  display: none;
+  align-items: center;
+  min-height: 56px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  font-size: 20px;
+  color: $basic-white;
+
+  background-color: #101d41;
+
+  border-radius: 4px;
+
+  transform: translateX(-50%);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: 50%;
+
+    width: 16px;
+    height: 10px;
+
+    background-size: 16px;
+    background: url("../../img/icon-tooltip.svg");
+
+    transform: translateX(-50%);
+  }
 }
 
 /* Catalog.html */
@@ -249,9 +294,12 @@
 }
 
 .country-list--catalog .country-list__item {
+  justify-content: flex-start;
+  width: auto;
   padding-left: 38px;
 
   @media (min-width: $tabled-width) {
+    width: auto;
     padding-left: 43px;
   }
 
@@ -273,3 +321,4 @@
     }
   }
 }
+

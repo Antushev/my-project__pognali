@@ -9,6 +9,7 @@
 
   font-size: 18px;
   font-weight: 700;
+  color: rgba($special-grey, 0.3);
 
   border: none;
   border-top-left-radius: 10px;
@@ -28,6 +29,19 @@
   @media (min-width: $desktop-width) {
     height: 81px;
     width: 880px;
+  }
+
+  &:hover {
+    color: rgba($special-grey, 0.5);
+  }
+
+  &:focus {
+    color: $basic-white;
+
+    background-color: #192144;
+
+    border: 4px solid $basic-white;
+    outline: none;
   }
 }
 
@@ -55,6 +69,10 @@
     height: 81px;
     padding-right: 38px;
     padding-left: 39px;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
   }
 }
 

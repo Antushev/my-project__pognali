@@ -187,7 +187,9 @@
 }
 
 .countries-filter__list--bold .countries-filter__item {
-  color: fade-out($special-grey, 0.4);
+  color: rgba($special-grey, 0.3);
+
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-bottom: 9px;
@@ -202,8 +204,16 @@
     }
   }
 
+  &:hover {
+    color: rgba($special-grey, 0.6)
+  }
+
+  &:active {
+    color: rgba($special-grey, 1);
+  }
+
   &--active {
-    color: fade-out($special-grey, 0);
+    color: rgba($special-grey, 1);
   }
 }
 
@@ -305,6 +315,14 @@
 
     display: none;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .countries-filter__icon-dots {
@@ -367,6 +385,18 @@
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: rgba(#192144, 0.3);
+  }
+
+  &:active .countries-filter__button-icon {
+    opacity: 0.3;
   }
 }
 
@@ -539,6 +569,20 @@
     height: 70px;
 
     vertical-align: middle;
+
+    border-radius: 4px;
+  }
+
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    color: $basic-white;
+
+    background-color: #1d2e5b;
+
+    border: none;
   }
 }
 
@@ -568,10 +612,20 @@
   font-size: 16px;
   line-height: 22px;
 
+  cursor: pointer;
+
   @media (min-width: $tabled-width) {
     min-width: 155px;
 
     font-size: 20px;
+  }
+
+  &:hover {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(#1d2e6b, 0.3);
   }
 
   &:not(:last-child) {

@@ -78,6 +78,16 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 0;
+
+    border-top: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -97,3 +107,4 @@
     padding-top: 11px;
   }
 }
+

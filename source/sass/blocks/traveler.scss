@@ -1,3 +1,15 @@
+.traveler {
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
+  }
+
+  &:hover .traveler__img {
+    transform: scale(1.05, 1.05);
+  }
+}
+
 .traveler__img-wrapper {
   line-height: 0;
 
@@ -51,6 +63,8 @@
   font-size: $font-size-traveler-name-mobile;
   font-weight: 700;
 
+  cursor: pointer;
+
   @media (min-width: $tabled-width) {
     margin-bottom: 23px;
 
@@ -59,6 +73,14 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 22px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -250,6 +272,10 @@
     background-position: center;
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &--active {
     width: 30.64px;
     height: 30.71px;
@@ -266,6 +292,10 @@
 
       background-position: center center;
       background-size: 20.03px 17.14px;
+    }
+
+    &:hover {
+      background-color: #f9d8d8;
     }
   }
 }
@@ -568,6 +598,10 @@
     font-size: 20px;
 
     border-radius: 25px;
+  }
+
+  &:active {
+    color: rgba(#161c35, 0.3);
   }
 }
 
@@ -925,6 +959,14 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
+  &:hover {
+    background-color: #d1d7e9;
+  }
+
+  &:active {
+    color: rgba($basic-blue, 0.3);
+  }
 }
 
 .traveler--form .traveler__button-hidden {
@@ -994,10 +1036,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 10px;
   padding-top: 24px;
   padding-left: 24px;
-  padding-bottom: 26px;
+  padding-bottom: 41px;
   margin-bottom: 26px;
 
   text-align: left;
@@ -1071,4 +1114,32 @@
 
 .traveler--form .traveler__transport {
   width: 200px;
+}
+
+.traveler--form .traveler__input {
+  &:hover {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+
+    color: $special-grey;
+  }
+
+  &:focus {
+    outline: none;
+
+    color: $special-grey;
+  }
+}
+
+.traveler--form .traveler__tags-wrapper {
+  &:hover {
+    border: 1px solid #aeb4cb;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+  }
 }

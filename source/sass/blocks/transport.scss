@@ -18,11 +18,56 @@
 }
 
 .transport__item {
+  position: relative;
+
   width: 20px;
   height: 20px;
 
+  &:hover > .transport__hidden-info {
+    display: flex;
+  }
+
   &:not(:last-child) {
     margin-right: 13px;
+  }
+}
+
+.transport__hidden-info {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+
+  display: none;
+  align-items: center;
+  min-height: 56px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  font-size: 20px;
+  color: $basic-white;
+
+  background-color: #101d41;
+
+  border-radius: 4px;
+
+  transform: translateX(-50%);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: 50%;
+
+    width: 16px;
+    height: 10px;
+
+    background-size: 16px;
+    background: url("../../img/icon-tooltip.svg");
+
+    transform: translateX(-50%);
   }
 }
 
@@ -181,13 +226,30 @@
 
   border-radius: 50%;
 
+  @media (min-width: $tabled-width) {
+    width: 43px;
+    height: 43px;
+  }
+
   &:not(:last-child) {
     margin-right: 0;
   }
 
-  @media (min-width: $tabled-width) {
-    width: 43px;
-    height: 43px;
+  &:hover {
+    filter: drop-shadow(0px 2px 6px rgba(22, 28, 53, 0.17));
+  }
+
+  &:hover .transport__icon {
+    opacity: 0.7;
+  }
+
+  &:active {
+    background-color: #e2e5f2;
+    filter: none;
+  }
+
+  &:active .transport__icon {
+    opacity: 0.3;
   }
 }
 
