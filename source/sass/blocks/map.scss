@@ -132,17 +132,36 @@
 .map__geo {
   position: relative;
 
-  margin-top: -40px;
-  padding-bottom: 63px;
+
+  width: 100%;
+  height: 424px;
+  margin-top: -67px;
+  padding-bottom: 73px;
+
+  background: url("../../img/map.png") no-repeat;
+  background-size: 100% 424px;
+  background-position: 0 15px;
 
   z-index: 94;
 
   @media (min-width: $tabled-width) {
+    width: 100%;
     height: 581px;
+    margin-top: -20px;
+
+    background: url("../../img/map-tabled.png") no-repeat;
+    background-size: 100% 581px;
+    background-position: 0 -25px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 512px;
+    width: 100%;
+    height: 581px;
+    margin-top: -89px;
+
+    background: url("../../img/map-desktop.png") no-repeat;
+    background-size: 100% 581px;
+    background-position: 0 -25px;
   }
 }
 

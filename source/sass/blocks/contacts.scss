@@ -117,6 +117,9 @@
 /* Form send */
 
 .contacts--form-send .contacts__list {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
@@ -124,25 +127,94 @@
 }
 
 .contacts--form-send .contacts__item {
-  padding-left: 27px;
-
   text-transform: uppercase;
 
   &:not(:last-child) {
-    margin-bottom: 27px;
+    margin-bottom: 0;
 
-    @media (min-width: $tabled-width) {
-      margin-bottom: 35px;
+    @media (min-width: $desktop-width) {
+      margin-right: 89px;
     }
   }
 
   @media (min-width: $tabled-width) {
-    padding-left: 125px;
+    padding-left: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 300px;
     padding-left: 10px;
+  }
+}
+
+.contacts--form-send .contacts__text {
+  display: flex;
+}
+
+.contacts--form-send .contacts__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  background-color: #121936;
+  border-radius: 50%;
+
+  @media (min-width: $tabled-width) {
+    width: 68px;
+    height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 90px;
+    height: 90px;
+  }
+}
+
+.contacts--form-send .contacts__icon {
+  &--phone {
+    width: 15.7px;
+    height: 14.83px;
+
+    @media (min-width: $tabled-width) {
+      width: 23.72px;
+      height: 22.41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 31.4px;
+      height: 29.65px;
+    }
+  }
+
+  &--mail {
+    width: 18px;
+    height: 35px;
+
+    @media (min-width: $tabled-width) {
+      width: 27.62px;
+      height: 18.89px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 36.56px;
+      height: 25px;
+    }
+  }
+}
+
+.contacts--form-send .contacts__text-inner {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+
+  @media (min-width: $tabled-width) {
+    padding-left: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 250px;
+    padding-left: 31px;
   }
 }
 
