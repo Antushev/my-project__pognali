@@ -2,6 +2,16 @@
   @include clear-list();
 }
 
-.travelers-list__item:not(:last-child) {
-  margin-bottom: 10px;
+.travelers-list__item {
+  &:not(:last-child) {
+    margin-bottom: 11px;
+
+    @media (min-width: $tabled-width) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 31px;
+    }
+  }
 }

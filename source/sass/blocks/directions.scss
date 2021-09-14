@@ -23,7 +23,7 @@
 }
 
 .directions__wrapper {
-  padding-top: 93px;
+  padding-top: 92px;
   padding-bottom: 35px;
 
   @media (min-width: $tabled-width) {
@@ -36,8 +36,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
-    max-height: 800px;
-    padding-top: 200px;
+    max-height: 805px;
+    padding-top: 215px;
     padding-bottom: 102px;
     padding-left: 36px;
   }
@@ -89,6 +89,8 @@
 }
 
 .directions__button {
+  position: relative;
+
   width: 100%;
   padding-left: 23px;
   padding-top: 20px;
@@ -115,6 +117,29 @@
     width: 275px;
 
     font-size: 24px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 53%;
+    right: 19px;
+
+    width: 14px;
+    height: 14px;
+
+    background: url("../../img/icon-arrow-button.svg") no-repeat;
+
+    transform: translateY(-50%);
+
+    @media (min-width: $tabled-width) {
+      right: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 31px;
+    }
   }
 }
 
@@ -186,14 +211,6 @@
 
   z-index: 2;
 
-  &--no-padding {
-    padding-bottom: 5px;
-
-    @media (min-width: $tabled-width) {
-      padding-bottom: 23px;
-    }
-  }
-
   @media (min-width: $tabled-width) {
     flex-direction: column;
     flex: 1 1 auto;
@@ -207,6 +224,88 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 21px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -13px;
+    left: 24px;
+
+    @media (min-width: $tabled-width) {
+      top: 16px;
+      right: -36px;
+      left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 24px;
+      right: -32px;
+    }
+  }
+
+  &--thailand {
+    &::before {
+      width: 35px;
+      height: 24px;
+
+      background: url("../../img/flag-thailand.png");
+      background-size: 35px 24px;
+
+      @media (min-width: $tabled-width) {
+        width: 70px;
+        height: 47px;
+
+        background: url("../../img/flag-thailand.png");
+        background-size: 70px 47px;
+      }
+    }
+  }
+
+  &--france {
+    &::before {
+      width: 35px;
+      height: 24px;
+
+      background: url("../../img/flag-france.png");
+      background-size: 35px 24px;
+
+      @media (min-width: $tabled-width) {
+        width: 70px;
+        height: 47px;
+
+        background: url("../../img/flag-france.png");
+        background-size: 70px 47px;
+      }
+    }
+  }
+
+  &--czech {
+    &::before {
+      width: 35px;
+      height: 24px;
+
+      background: url("../../img/flag-czech.png");
+      background-size: 35px 24px;
+
+      @media (min-width: $tabled-width) {
+        width: 70px;
+        height: 47px;
+
+        background: url("../../img/flag-czech.png");
+        background-size: 70px 47px;
+      }
+    }
+  }
+
+
+  &--no-padding {
+    padding-bottom: 5px;
+
+    @media (min-width: $tabled-width) {
+      padding-bottom: 23px;
+    }
   }
 }
 
@@ -230,6 +329,8 @@
 }
 
 .directions__count {
+  position: relative;
+
   padding-top: 4px;
 
   font-weight: 700;
@@ -239,9 +340,10 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 1px;
-    padding-left: 28px;
+    padding-left: 0;
 
     font-size: 20px;
+    font-weight: 500;
   }
 }
 
@@ -250,5 +352,12 @@
 
   @media (min-width: $desktop-width) {
     grid-area: br;
+  }
+}
+
+.directions__icon {
+  @media (min-width: $tabled-width) {
+    width: 17.94px;
+    height: 20px;
   }
 }

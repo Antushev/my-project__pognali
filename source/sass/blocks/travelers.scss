@@ -31,7 +31,8 @@
   }
 
   &--catalog {
-    background-color: $background-section-travelers-catalog;
+    background: none;
+    background-color: $background-section-light;
   }
 }
 
@@ -42,16 +43,17 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 185px;
-    padding-bottom: 87px;
+    padding-bottom: 88px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-height: 790px;
-    padding-top: 161px;
-    padding-left: 68px;
+    max-height: 807px;
+    padding-top: 177px;
+    padding-bottom: 67px;
+    padding-left: 70px;
   }
 }
 
@@ -74,7 +76,7 @@
 
   @media (min-width: $tabled-width) {
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 42px;
     padding-left: 34px;
 
     justify-content: flex-start;
@@ -142,6 +144,29 @@
   @media (min-width: $desktop-width) {
     max-width: 280px;
   }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 53%;
+    right: 19px;
+
+    width: 14px;
+    height: 14px;
+
+    background: url("../../img/icon-arrow-button.svg") no-repeat;
+
+    transform: translateY(-50%);
+
+    @media (min-width: $tabled-width) {
+      right: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 35px;
+    }
+  }
 }
 
 .travelers__br {
@@ -159,10 +184,20 @@
 /* catalog.html */
 
 .travelers--catalog .travelers__travelers-list {
-  margin-bottom: 15px;
+  margin-bottom: 23px;
 
   @media (min-width: $tabled-width) {
     flex-direction: column;
+    margin-bottom: 46px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+
+    margin-bottom: 24px;
+
+    padding-top: 0;
   }
 }
 
@@ -173,14 +208,19 @@
 }
 
 .travelers--catalog .travelers__wrapper {
-  padding-top: 20px;
+  padding-top: 28px;
 
   @media (min-width: $tabled-width) {
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    max-height: none;
     padding-top: 0;
   }
 }
@@ -206,35 +246,70 @@
   }
 }
 
+/* Pagination catalog.html */
+
 .travelers--catalog .travelers__pagination {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 88px;
 
   background-color: $basic-white;
   border-radius: 20px;
 
   @media (min-width: $tabled-width) {
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 100px;
+    padding-left: 28px;
+    padding-right: 30px;
 
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+
+    margin-bottom: 66px;
+    padding-right: 38px;
+  }
 }
 
-.travelers--catalog .travelers__pagination-wrapper {
+.travelers--catalog .travelers__pag-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+
+    justify-content: flex-start;
+    margin-bottom: 33px;
+    padding-left: 346px;
+  }
+}
+
+.travelers--catalog .travelers__pag-icon {
+  margin-right: 10px;
+
+  @media (min-width: $tabled-width) {
+    width: 26px;
+    height: 26px;
+    margin-right: 18px;
+  }
 }
 
 .travelers--catalog .travelers__button-pagination {
-  width: 100%;
-  margin-bottom: 15px;
-
   font-size: $font-size-catalog-pagination;
   font-weight: 700;
   color: $basic-blue-light;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tabled-width) {
+    font-size: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
@@ -243,11 +318,35 @@
   }
 }
 
+.travelers--catalog .travelers__pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 51px;
+
+  @media (min-width: $tabled-width) {
+    height: auto;
+  }
+}
+
 .travelers--catalog .travelers__pagination-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
 
   color: $basic-blue;
   text-align: center;
+
+  @media (min-width: $tabled-width) {
+    width: auto;
+  }
+
+  &--left {
+    @media (min-width: $tabled-width) {
+      margin-right: 23px;
+    }
+  }
 }
 
 .travelers--catalog .travelers__pagination-list {
@@ -257,18 +356,27 @@
 
   @media (min-width: $tabled-width) {
     display: flex;
+    align-items: center;
   }
 }
 
 .travelers--catalog .travelers__number-pagination {
+  &--active {
+    background-color: $basic-yellow;
+  }
+
   @media (min-width: $tabled-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
     color: $basic-blue-light;
 
     font-size: 20px;
     font-weight: 700;
 
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+    border-radius: 50%;
   }
 }

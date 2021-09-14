@@ -20,7 +20,7 @@
 }
 
 .map__wrapper {
-  padding-top: 55px;
+  padding-top: 57px;
   padding-bottom: 35px;
 
   color: $basic-blue-light;
@@ -39,7 +39,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 99px;
+    padding-top: 114px;
     padding-right: 74px;
     padding-bottom: 59px;
     padding-left: 343px;
@@ -74,6 +74,8 @@
 }
 
 .map__button {
+  position: relative;
+
   width: 100%;
   min-height: 62px;
   padding-left: 19px;
@@ -96,6 +98,29 @@
   @media (min-width: $desktop-width) {
     width: 325px;
   }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 53%;
+    right: 17px;
+
+    width: 14px;
+    height: 14px;
+
+    background: url("../../img/icon-arrow-button.svg") no-repeat;
+
+    transform: translateY(-50%);
+
+    @media (min-width: $tabled-width) {
+      right: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 31px;
+    }
+  }
 }
 
 .map__br {
@@ -108,6 +133,22 @@
   position: relative;
 
   margin-top: -40px;
+  padding-bottom: 63px;
 
   z-index: 94;
+
+  @media (min-width: $tabled-width) {
+    height: 581px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 512px;
+  }
+}
+
+.map__img {
+  @media (min-width: $tabled-width) {
+    width: 100%;
+    height: 581px;
+  }
 }

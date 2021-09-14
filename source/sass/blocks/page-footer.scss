@@ -1,6 +1,6 @@
 .page-footer {
   position: relative;
-  margin-top: -30px;
+  margin-top: -74px;
 
   background-color: $basic-white;
 
@@ -21,19 +21,79 @@
 }
 
 .page-footer__wrapper {
-  padding-top: 30px;
+  padding-top: 37px;
   padding-bottom: 30px;
 
   @media (min-width: $tabled-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 34px;
+  }
+}
+
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+
+  @media (min-width: $tabled-width) {
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: -3px;
+    padding-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.page-footer__socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+
+  @media (min-width: $tabled-width) {
+    margin-bottom: 0;
+    margin-left: -18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -52px;
   }
 }
 
 .page-footer__authors {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  align-items: center;
+  padding-top: 10px;
 
   border-top: 1px solid $border-block-author;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 0;
+  }
+}
+
+.page-footer__text {
+  @media (min-width: $tabled-width) {
+    margin-top: -5px;
+    margin-right: 24px;
+
+    font-size: 20px;
+  }
+}
+
+.page-footer__link-logo {
+  padding-top: 3px;
+
+  @media (min-width: $tabled-width) {
+    padding-top: 11px;
+  }
 }

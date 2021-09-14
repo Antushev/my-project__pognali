@@ -22,22 +22,22 @@
 }
 
 .form-send__wrapper {
-  padding-top: 97px;
+  padding-top: 94px;
   padding-bottom: 42px;
 
   @media (min-width: $tabled-width) {
     padding-top: 120px;
-    padding-bottom: 76px;
+    padding-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 143px;
+    padding-top: 157px;
     padding-bottom: 96px;
   }
 }
 
 .form-send__header {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 
   @media (min-width: $tabled-width) {
     margin-bottom: 58px;

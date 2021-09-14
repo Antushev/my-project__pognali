@@ -1,9 +1,26 @@
+.page-content {
+  &--catalog {
+    position: relative;
+  }
+}
+
 .page-content__wrapper {
-  background-color: $special-blue-light;
+  position: relative;
+
+  background-color: $background-section-light;
+
+  z-index: 98;
 
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
+    padding-top: 166px;
+    padding-bottom: 86px;
   }
+}
+
+.page-content--catalog .page-content__wrapper {
+  position: relative;
+
+  z-index: 95;
 }
 
 .page-content__inner {
@@ -15,8 +32,13 @@
 }
 
 .page-content__filter-traveler {
+  @media (min-width: $tabled-width) {
+    padding-top: 92px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 285px;
+    padding-top: 0;
   }
 }
 
@@ -34,6 +56,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -40px;
+    margin-top: -55px;
   }
 }
+
+/* catalog.html */

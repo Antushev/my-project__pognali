@@ -35,13 +35,13 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 35px;
-    padding-bottom: 88px;
+    padding-bottom: 168px;
     padding-left: 34px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 33px;
-    padding-bottom: 161px;
+    padding-bottom: 241px;
     padding-left: 70px;
   }
 }
@@ -95,6 +95,8 @@
 }
 
 .about__button {
+  position: absolute;
+
   display: none;
 
   @media (min-width: $tabled-width) {
@@ -103,5 +105,20 @@
     padding-top: 24px;
     padding-bottom: 29px;
     padding-left: 33px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 31px;
+
+    width: 14px;
+    height: 14px;
+
+    background: url("../../img/icon-arrow-button.svg") no-repeat;
+
+    transform: translateY(-50%);
   }
 }
