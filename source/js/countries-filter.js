@@ -1,5 +1,9 @@
 (function () {
   let countriesFilterBlock = document.querySelector('.countries-filter');
+  if (!countriesFilterBlock) {
+    return;
+  }
+
   let buttonMenuCountriesFilter = countriesFilterBlock.querySelector('.countries-filter__button');
   let buttonCloseCountriesFilter = countriesFilterBlock.querySelector('.countries-filter__turn-button');
 
