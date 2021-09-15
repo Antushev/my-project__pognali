@@ -44,22 +44,11 @@
 }
 
 .menu__item {
+  overflow: hidden;
+
   width: 100%;
 
   text-align: center;
-
-  &:not(:last-child) {
-    margin-bottom: 1px;
-
-    @media (min-width: $tabled-width) {
-      margin-bottom: 2px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0;
-      margin-right: 34px;
-    }
-  }
 
   @media (min-width: $tabled-width) {
     text-align: left;
@@ -71,13 +60,70 @@
 
     text-align: center;
   }
+
+  &:not(:last-child) {
+    margin-bottom: 1px;
+
+    @media (min-width: $tabled-width) {
+      margin-bottom: 2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      margin-right: 24px;
+    }
+  }
 }
 
 .menu__link {
+  overflow: hidden;
+
+  position: relative;
+
   display: block;
 
   @media (min-width: $desktop-width) {
     font-weight: 500;
+  }
+
+  &:hover {
+    color: $basic-yellow;
+
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba($basic-yellow, 0.3);
+  }
+}
+
+.menu__span {
+  display: inline-block;
+  width: 100%;
+  padding-right: 10px;
+
+  transition: transform 0.3s ease 0s;
+
+  &:hover {
+    transform: translateY(-100%);
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: attr(data-hover);
+
+      position: absolute;
+
+      padding-right: 10px;
+
+      font-weight: 700;
+      font-size: 19px;
+
+      width: 100%;
+      height: 100%;
+
+      top: 100%;
+    }
   }
 }
 
@@ -102,5 +148,14 @@
 /* Bottom menu in header */
 
 .menu--bottom-menu .menu__link {
+  font-weight: 500;
   color: $text-header-menu-bottom;
+
+  &:hover {
+    color: $basic-yellow;
+  }
+
+  &:active {
+    color: rgba($basic-yellow, 0.3);
+  }
 }

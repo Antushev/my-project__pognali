@@ -20,7 +20,7 @@
 }
 
 .map__wrapper {
-  padding-top: 57px;
+  padding-top: 56px;
   padding-bottom: 35px;
 
   color: $basic-blue-light;
@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 98px;
     padding-bottom: 83px;
   }
 
@@ -39,16 +39,31 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 114px;
+    padding-top: 109px;
     padding-right: 74px;
     padding-bottom: 59px;
-    padding-left: 343px;
+    padding-left: 187px;
+  }
+}
+
+.map__address-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+
+  @media (min-width: $tabled-width) {
+    align-self: flex-start;
+    margin-bottom: 44px;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .map__address {
-  margin-bottom: 33px;
-  padding-left: 61px;
+  padding-left: 16px;
 
   font-style: normal;
   font-size: $font-size-text-address-map-mobile;
@@ -57,19 +72,44 @@
   text-transform: uppercase;
 
   @media (min-width: $tabled-width) {
-    padding-left: 0;
-    margin-bottom: 67px;
-
     font-size: $font-size-address-tabled;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    padding-top: 25px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+}
+
+.map__address-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  background-color: #121936;
+
+  border-radius: 50%;
+
+  @media (min-width: $tabled-width) {
+    width: 68px;
+    height: 68px;
+    margin-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    width: 90px;
+    height: 90px;
+    margin-right: 34px;
+  }
+}
+
+.map__icon {
+  @media (min-width: $tabled-width) {
+    width: 23.8px;
+    height: 31.73px;
   }
 }
 
@@ -97,6 +137,19 @@
 
   @media (min-width: $desktop-width) {
     width: 325px;
+  }
+
+  &:hover {
+    color: $basic-white;
+
+    background-color: #192144;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+
+
+    background-color: #192144;
   }
 
   &::before {
@@ -132,17 +185,36 @@
 .map__geo {
   position: relative;
 
-  margin-top: -40px;
-  padding-bottom: 63px;
+
+  width: 100%;
+  height: 424px;
+  margin-top: -67px;
+  padding-bottom: 73px;
+
+  background: url("../../img/map.png") no-repeat;
+  background-size: 100% 424px;
+  background-position: 0 15px;
 
   z-index: 94;
 
   @media (min-width: $tabled-width) {
+    width: 100%;
     height: 581px;
+    margin-top: -20px;
+
+    background: url("../../img/map-tabled.png") no-repeat;
+    background-size: 100% 581px;
+    background-position: 0 -25px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 512px;
+    width: 100%;
+    height: 581px;
+    margin-top: -93px;
+
+    background: url("../../img/map-desktop.png") no-repeat;
+    background-size: 100% 581px;
+    background-position: 0 -25px;
   }
 }
 

@@ -16,7 +16,7 @@
 }
 
 .plans__wrapper {
-  padding-top: 23px;
+  padding-top: 24px;
   padding-bottom: 55px;
 
   @media (min-width: $tabled-width) {
@@ -163,10 +163,10 @@
 
   font-size: $font-size-button-plans;
   font-weight: 500;
-  color: $basic-black;
+  color: rgba($basic-black, 0.3);
   text-transform: uppercase;
 
-  opacity: 0.3;
+  cursor: pointer;
 
   @media (min-width: $tabled-width) {
     margin-left: auto;
@@ -179,5 +179,13 @@
     padding-top: 3px;
 
     letter-spacing: 1.5px;
+  }
+
+  &:hover {
+    color: rgba($basic-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($basic-black, 0.1);
   }
 }

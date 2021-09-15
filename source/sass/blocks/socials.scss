@@ -8,6 +8,14 @@
 /* Menu top */
 
 .socials--menu-top .socials__item {
+  &:hover .socials__icon {
+    opacity: 0.6;
+  }
+
+  &:active .socials__icon {
+    opacity: 0.3;
+  }
+
   &:not(:last-child) {
     margin-right: 27px;
 
@@ -60,6 +68,14 @@
   @media (min-width: $tabled-width) {
     width: 62px;
     height: 62px;
+  }
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active .socials__svg {
+    opacity: 0.3;
   }
 
   &--facebook {

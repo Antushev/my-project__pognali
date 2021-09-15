@@ -23,16 +23,16 @@
 
 .form-send__wrapper {
   padding-top: 94px;
-  padding-bottom: 42px;
+  padding-bottom: 29px;
 
   @media (min-width: $tabled-width) {
     padding-top: 120px;
-    padding-bottom: 78px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 157px;
-    padding-bottom: 96px;
+    padding-bottom: 103px;
   }
 }
 
@@ -82,17 +82,17 @@
   }
 
   &--after-form {
-    margin-bottom: 32px;
+    margin-bottom: 18px;
 
     @media (min-width: $tabled-width) {
-      margin-bottom: 66px;
+      margin-bottom: 46px;
       padding-left: 8px;
 
       letter-spacing: 0.01em;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 80px;
+      margin-bottom: 52px;
       padding-left: 0;
     }
   }
@@ -142,21 +142,28 @@
   width: 100%;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media (min-width: $tabled-width) {
     justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding-left: 0;
+    padding-left: 216px;
   }
 }
 
-.form-send__contacts-list {
-  @media (min-width: $desktop-width) {
-    min-width: 645px;
+.form-send__link {
+  color: $basic-yellow;
+  text-decoration: underline;
+
+  &:hover {
+    color: $special-orange;
+  }
+
+  &:active {
+    color: rgba($special-orange, 0.3);
   }
 }

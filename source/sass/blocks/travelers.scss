@@ -43,7 +43,7 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 185px;
-    padding-bottom: 88px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,6 +183,26 @@
 
 /* catalog.html */
 
+.travelers--catalog .travelers__wrapper {
+  padding-top: 28px;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    max-height: none;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 21px;
+  }
+}
+
 .travelers--catalog .travelers__travelers-list {
   margin-bottom: 23px;
 
@@ -204,24 +224,6 @@
 .travelers--catalog .travelers-list__item {
   @media (min-width: $tabled-width) {
     width: 100%;
-  }
-}
-
-.travelers--catalog .travelers__wrapper {
-  padding-top: 28px;
-
-  @media (min-width: $tabled-width) {
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-flow: nowrap;
-    flex-direction: column;
-    max-height: none;
-    padding-top: 0;
   }
 }
 
@@ -288,6 +290,14 @@
     margin-bottom: 33px;
     padding-left: 346px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .travelers--catalog .travelers__pag-icon {
@@ -342,6 +352,14 @@
     width: auto;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--left {
     @media (min-width: $tabled-width) {
       margin-right: 23px;
@@ -361,9 +379,7 @@
 }
 
 .travelers--catalog .travelers__number-pagination {
-  &--active {
-    background-color: $basic-yellow;
-  }
+  cursor: pointer;
 
   @media (min-width: $tabled-width) {
     display: flex;
@@ -378,5 +394,19 @@
     font-weight: 700;
 
     border-radius: 50%;
+  }
+
+  &:hover {
+    color: rgba(#1d2e5b, 0.6);
+  }
+
+  &:active {
+    background-color: $basic-yellow;
+
+    color: rgba(#1d2e5b, 1);
+  }
+
+  &--active {
+    background-color: $basic-yellow;
   }
 }

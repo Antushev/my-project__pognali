@@ -1,6 +1,6 @@
 .page-footer {
   position: relative;
-  margin-top: -74px;
+  margin-top: -95px;
 
   background-color: $basic-white;
 
@@ -78,6 +78,16 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 0;
+
+    border-top: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
