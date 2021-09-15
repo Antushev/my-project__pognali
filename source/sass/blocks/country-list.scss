@@ -308,7 +308,8 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 11px;
+    margin-bottom: 2px;
+    align-items: center;
 
     @media (min-width: $tabled-width) {
       margin-right: 31px;
@@ -317,8 +318,12 @@
 
     @media (min-width: $desktop-width) {
       margin-right: 0;
-      margin-bottom: 14px;
+      margin-bottom: 11px;
     }
+  }
+
+  &::before {
+    top: 0;
   }
 }
 

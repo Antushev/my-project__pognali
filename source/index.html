@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>HTML Academy: Погнали</title>
+    <title>Погнали: Главная страница</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" sizes="152x152" href="img/favicon_152X152.ico">
+    <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon_32x32.ico">
+    <link rel="icon" href="favicon.ico">
 
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -14,10 +17,10 @@
       <div class="page-header__menu-wrapper page-header__menu-wrapper--main">
         <div class="page-header__menu-inner page-header__menu-inner--main container">
           <div class="page-header__logo logo">
-            <a>
+            <a href="index.html">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/logo-full.svg">
-                <img class="logo__img" src="img/logo-mobile-white@1x.png" width="96" height="18" alt="Погнали">
+                <source class="logo__img-js" media="(min-width: 768px)" srcset="img/logo-full-blue-text.svg">
+                <img class="logo__img" src="img/logo-mobile-blue.svg" width="96" height="18" alt="Погнали">
               </picture>
             </a>
           </div>
@@ -30,13 +33,19 @@
             <nav class="page-header__menu menu__nav">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="menu__link">О сервисе</a>
+                  <a class="page-header__menu-link menu__link">
+                    <span class="menu__span" data-hover="О сервисе">О сервисе</span>
+                  </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link">Направления</a>
+                  <a class="page-header__menu-link menu__link">
+                    <span class="menu__span" data-hover="Направления">Направления</span>
+                  </a>
                 </li>
                 <li class="menu__item">
-                  <a  class="menu__link" href="catalog.html">Попутчики</a>
+                  <a  class="page-header__menu-link menu__link" href="catalog.html">
+                    <span class="menu__span" data-hover="Попутчики">Попутчики</span>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -196,7 +205,7 @@
       </div>
     </header>
 
-    <main class="page-content">
+    <main class="page-content page-content--no-js">
       <section class="about">
         <div class="about__wrapper-color">
           <div class="about__wrapper container">
@@ -551,7 +560,7 @@
 
           <p class="form-send__text form-send__text--after-form">
             Остались вопросы? <br class="form-send__br form-send__br--mobile">
-            Мы с радостью на них ответим!
+             Мы с радостью на них ответим!
           </p>
 
           <div class="form-send__contacts contacts contacts--yellow contacts--form-send">
@@ -594,7 +603,7 @@
                 </svg>
               </div>
 
-              <address class="map__address">Ул. Большая <br class="map__br"> конюшенная, 19/8</address>
+              <address class="map__address">Ул. Большая<br class="map__br"> конюшенная, 19/8</address>
             </div>
             <button class="map__button button button--only-border button--text-left">Проложить маршрут</button>
           </div>
@@ -607,10 +616,12 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/logo-full-blue-text.svg">
-            <img class="logo__img" src="img/logo-mobile-blue.png" width="96" height="15" alt="Погнали">
-          </picture>
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-full-blue-text.svg">
+              <img class="logo__img" src="img/logo-mobile-blue.svg" width="96" height="15" alt="Погнали">
+            </picture>
+          </a>
         </div>
 
         <div class="page-footer__socials socials socials--center socials--footer">

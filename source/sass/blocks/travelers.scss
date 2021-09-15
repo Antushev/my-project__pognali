@@ -43,7 +43,7 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 185px;
-    padding-bottom: 88px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -182,6 +182,13 @@
 }
 
 /* catalog.html */
+
+.travelers--catalog .travelers__wrapper {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-bottom: 21px;
+  }
+}
 
 .travelers--catalog .travelers__travelers-list {
   margin-bottom: 23px;

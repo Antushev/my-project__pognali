@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Погнали: Попутчики</title>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" sizes="152x152" href="img/favicon_152X152.ico">
+    <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon_32x32.ico">
+    <link rel="icon" href="favicon.ico">
+
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
@@ -13,10 +17,10 @@
       <div class="page-header__menu-wrapper page-header__menu-wrapper--main">
         <div class="page-header__menu-inner page-header__menu-inner--main container">
           <div class="page-header__logo logo">
-            <a>
+            <a href="index.html">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/logo-full.svg">
-                <img class="logo__img" src="img/logo-mobile-white@1x.png" width="96" height="18" alt="Погнали">
+                <source class="logo__img-js" media="(min-width: 768px)" srcset="img/logo-full-blue-text.svg">
+                <img class="logo__img" src="img/logo-mobile-blue.svg" width="96" height="18" alt="Погнали">
               </picture>
             </a>
           </div>
@@ -29,13 +33,13 @@
             <nav class="page-header__menu menu__nav">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="menu__link">О сервисе</a>
+                  <a class="page-header__menu-link menu__link">О сервисе</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link">Направления</a>
+                  <a class="page-header__menu-link menu__link">Направления</a>
                 </li>
                 <li class="menu__item">
-                  <a  class="menu__link" href="catalog.html">Попутчики</a>
+                  <a  class="page-header__menu-link menu__link" href="catalog.html">Попутчики</a>
                 </li>
               </ul>
             </nav>
@@ -112,7 +116,9 @@
       </div>
 
       <div class="page-header__wrapper page-header__wrapper--inner-page container">
-        <h1 class="page-header__header header header--orange-line">Попутчики</h1>
+        <h1 class="page-header__header header header--orange-line">
+          <span class="page-header__header-span">Попутчики</span>
+        </h1>
 
         <div class="page-header__return-button">
           <a class="page-header__button" href="index.html">На главную</a>
@@ -169,7 +175,7 @@
           <div class="countries-filter__wrapper-hidden">
             <div class="countries-filter__inner">
               <table class="countries-filter__table">
-                <tr class="countries-filter__tr">
+                <tr class="countries-filter__tr countries-filter__tr--1">
                   <td class="countries-filter__td countries-filter__td--active">
                     <span class="countries-filter__letter">А</span>
                     <ul class="countries-filter__list countries-filter__list--table countries-filter__list--countries">
@@ -247,7 +253,7 @@
                     </ul>
                   </td>
                 </tr>
-                <tr class="countries-filter__tr">
+                <tr class="countries-filter__tr countries-filter__tr--2">
                   <td class="countries-filter__td">
                     <span class="countries-filter__letter">Е</span>
                     <ul class="countries-filter__list countries-filter__list--table countries-filter__list--countries">
@@ -308,7 +314,7 @@
                     </ul>
                   </td>
                 </tr>
-                <tr class="countries-filter__tr">
+                <tr class="countries-filter__tr countries-filter__tr--3">
                   <td class="countries-filter__td">
                     <span class="countries-filter__letter">М</span>
                     <ul class="countries-filter__list countries-filter__list--table countries-filter__list--countries">
@@ -366,7 +372,7 @@
                     </ul>
                   </td>
                 </tr>
-                <tr class="countries-filter__tr">
+                <tr class="countries-filter__tr countries-filter__tr--4">
                   <td class="countries-filter__td">
                     <span class="countries-filter__letter">С</span>
                     <ul class="countries-filter__list countries-filter__list--table countries-filter__list--countries">
@@ -424,7 +430,7 @@
                     </ul>
                   </td>
                 </tr>
-                <tr class="countries-filter__tr">
+                <tr class="countries-filter__tr countries-filter__tr--5">
                   <td class="countries-filter__td">
                     <span class="countries-filter__letter">Ч</span>
                     <ul class="countries-filter__list countries-filter__list--table countries-filter__list--table countries-filter__list--countries">
@@ -835,7 +841,7 @@
                     <button class="traveler__button button button--yellow" type="button">Позвать!</button>
                   </div>
                 </li>
-                <li class="travelers-list__item traveler traveler--catalog">
+                <li class="travelers-list__item traveler traveler--catalog traveler--online">
                   <div class="traveler__img-wrapper">
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-catalog-desktop.webp">
@@ -950,10 +956,12 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/logo-full-blue-text.svg">
-            <img class="logo__img" src="img/logo-mobile-blue.png" width="96" height="15" alt="Погнали">
-          </picture>
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-full-blue-text.svg">
+              <img class="logo__img" src="img/logo-mobile-blue.png" width="96" height="15" alt="Погнали">
+            </picture>
+          </a>
         </div>
 
         <div class="page-footer__socials socials socials--center socials--footer">
@@ -997,8 +1005,6 @@
       </div>
     </footer>
 
-    <script src="js/no-js-state.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/countries-filter.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

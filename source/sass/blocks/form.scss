@@ -900,6 +900,8 @@
 }
 
 .form--add-plan .form__button {
+  position: relative;
+
   width: 100%;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -946,6 +948,24 @@
     color: rgba(#1d2e5b, 0.3);
   }
 
+  &::before {
+    @media (min-width: $tabled-width) {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      right: 35px;
+
+      width: 14px;
+      height: 14px;
+
+      background: url("../../img/icon-arrow-button.svg");
+      background-size: 14px 14px;
+
+      transform: translateY(-50%);
+    }
+  }
+
   &--first-button {
     @media (min-width: $tabled-width) {
       width: 284px;
@@ -978,6 +998,23 @@
 
     &:active {
       color: rgba(#1d2e5b, 0.3);
+    }
+
+    &::before {
+      @media (min-width: $tabled-width) {
+        content: "";
+
+        position: absolute;
+        top: 34%;
+        left: 100px;
+
+        width: 14px;
+        height: 14px;
+
+        background: url("../../img/icon-arrow-button.svg") no-repeat;
+
+        transform: rotate(-180deg);
+      }
     }
   }
 
@@ -1123,6 +1160,8 @@
 }
 
 .form--add-plan .form__text-textarea {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1130,6 +1169,32 @@
 
   @media (min-width: $tabled-width) {
     margin-bottom: 20px;
+  }
+
+  &:nth-child(1n + 2) {
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      display: none;
+      width: 2px;
+      height: 248px;
+
+      background-color: $basic-blue-light;
+
+      @media (min-width: $tabled-width) {
+        position: absolute;
+        top: -217px;
+        right: 6px;
+
+        display: block;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 221px;
+      }
+    }
   }
 }
 
@@ -1348,6 +1413,12 @@
 }
 
 /* Pixel Perfect for form.html */
+
+.form--add-plan .form__fieldset:nth-child(1) {
+  @media (min-width: $desktop-width) {
+    padding-top: 96px;
+  }
+}
 
 .form--add-plan .form__fieldset:nth-child(2) {
   @media (min-width: $tabled-width) {

@@ -27,11 +27,11 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 62px;
-  padding-left: 24px;
+  padding-left: 25px;
   padding-bottom: 38px;
 
   @media (min-width: $tabled-width) {
-    padding-top: 118px;
+    padding-top: 116px;
     padding-bottom: 3px;
     padding-left: 0;
   }

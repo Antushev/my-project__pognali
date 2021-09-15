@@ -17,19 +17,19 @@
 
 .add-plan__wrapper {
   padding-top: 26px;
-  padding-bottom: 117px;
+  padding-bottom: 137px;
 
   @media (min-width: $tabled-width) {
     padding-top: 46px;
     padding-right: 36px;
-    padding-bottom: 137px;
+    padding-bottom: 157px;
     padding-left: 36px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 51px;
     padding-right: 0;
-    padding-bottom: 147px;
+    padding-bottom: 166px;
     padding-left: 0;
   }
 }

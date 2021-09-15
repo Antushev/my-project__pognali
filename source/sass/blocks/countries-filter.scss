@@ -47,7 +47,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
-    padding-top: 15px;
+    margin-bottom: 36px;
+    padding-top: 11px;
     padding-left: 34px;
   }
 }
@@ -238,8 +239,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1320px;
-    margin-bottom: 79px;
+    width: 1254px;
+    margin-bottom: 0;
   }
 }
 
@@ -267,7 +268,38 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: auto;
     vertical-align: top;
+  }
+
+  &:nth-child(5n + 1) {
+    @media (min-width: $desktop-width) {
+      width: 190px;
+    }
+  }
+
+  &:nth-child(5n + 2) {
+    @media (min-width: $desktop-width) {
+      width: 190px;
+    }
+  }
+
+  &:nth-child(5n + 3) {
+    @media (min-width: $desktop-width) {
+      width: 190px;
+    }
+  }
+
+  &:nth-child(5n + 4) {
+    @media (min-width: $desktop-width) {
+      width: 190px;
+    }
+  }
+
+  &:nth-child(5n + 5) {
+    @media (min-width: $desktop-width) {
+      width: 190px;
+    }
   }
 
   &--active {
@@ -292,6 +324,38 @@
 
     color: fade-out(#192144, 0);
     text-align: left;
+  }
+}
+
+.countries-filter__tr {
+  &--2 .countries-filter__td {
+    @media (min-width: $desktop-width) {
+      padding-top: 18px;
+    }
+  }
+
+  &--3 .countries-filter__td {
+    @media (min-width: $desktop-width) {
+      padding-top: 18px;
+    }
+  }
+
+  &--4 .countries-filter__td {
+    @media (min-width: $desktop-width) {
+      padding-top: 56px;
+    }
+  }
+
+  &--5 .countries-filter__td {
+    @media (min-width: $desktop-width) {
+      padding-top: 15px;
+    }
+  }
+
+  &--5 .countries-filter__letter {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 40px;
+    }
   }
 }
 

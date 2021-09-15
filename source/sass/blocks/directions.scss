@@ -347,6 +347,12 @@
   }
 }
 
+.directions__count-number {
+  @media (min-width: $tabled-width) {
+    padding-left: 5px;
+  }
+}
+
 .direction__break {
   display: none;
 
