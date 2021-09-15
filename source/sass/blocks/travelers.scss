@@ -184,7 +184,20 @@
 /* catalog.html */
 
 .travelers--catalog .travelers__wrapper {
+  padding-top: 28px;
+
+  @media (min-width: $tabled-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 43px;
+  }
+
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    max-height: none;
+    padding-top: 0;
     padding-left: 0;
     padding-bottom: 21px;
   }
@@ -211,24 +224,6 @@
 .travelers--catalog .travelers-list__item {
   @media (min-width: $tabled-width) {
     width: 100%;
-  }
-}
-
-.travelers--catalog .travelers__wrapper {
-  padding-top: 28px;
-
-  @media (min-width: $tabled-width) {
-    display: flex;
-    flex-direction: column;
-    padding-top: 43px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-flow: nowrap;
-    flex-direction: column;
-    max-height: none;
-    padding-top: 0;
   }
 }
 

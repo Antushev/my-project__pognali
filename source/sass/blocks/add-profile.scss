@@ -155,7 +155,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 77px
+    padding-left: 77px;
   }
 
   &:hover .add-profile__button {
@@ -165,9 +165,6 @@
   &:hover .add-profile__circle {
     opacity: 0.7;
   }
-
-  &:active .add-profile__icon {}
-  opacity: 0.7;
 
   &:active .add-profile__button {
     color: rgba(#132576, 0.3);

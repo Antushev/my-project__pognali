@@ -64,8 +64,8 @@
     width: 16px;
     height: 10px;
 
-    background-size: 16px;
-    background: url("../../img/icon-tooltip.svg");
+    background-image: url("../../img/icon-tooltip.svg");
+    background-size: 16px 10px;
 
     transform: translateX(-50%);
   }
@@ -105,7 +105,7 @@
   }
 
   &:hover {
-    filter: drop-shadow(0px 2px 6px rgba(22, 28, 53, 0.17));
+    filter: drop-shadow(0 2px 6px rgba(#161c35, 0.17));
   }
 
   &:hover .transport__icon-plane {
@@ -250,7 +250,7 @@
   }
 
   &:hover {
-    filter: drop-shadow(0px 2px 6px rgba(22, 28, 53, 0.17));
+    filter: drop-shadow(0 2px 6px rgba(#161c35, 0.17));
   }
 
   &:hover .transport__icon {
