@@ -331,7 +331,7 @@
   height: 30.71px;
   margin-right: 5px;
 
-  background: #e2e5f2 url("../../img/icon-heart.svg") no-repeat 9.4px 10px;
+  background: #e2e5f2 url("../../img/icons/icon-heart.svg") no-repeat 9.4px 10px;
   background-size: 12.26px 10.53px;
 
   border-radius: 50%;
@@ -353,7 +353,7 @@
     height: 30.71px;
     margin-right: 5px;
 
-    background: #f9eaea url("../../img/icon-heart-active.svg") no-repeat 9.4px 10px;
+    background: #f9eaea url("../../img/icons/icon-heart-active.svg") no-repeat 9.4px 10px;
     background-size: 12.26px 10.53px;
 
     border-radius: 50%;
@@ -526,7 +526,7 @@
       width: 45px;
       height: 45px;
 
-      background: url("../../img/icon-level-99.svg") no-repeat;
+      background: url("../../img/icons/icon-level-99.svg") no-repeat;
 
       @media (min-width: $tabled-width) {
         width: 70px;
@@ -554,7 +554,7 @@
       width: 45px;
       height: 45px;
 
-      background: url("../../img/icon-level-80.svg") no-repeat;
+      background: url("../../img/icons/icon-level-80.svg") no-repeat;
 
       @media (min-width: $tabled-width) {
         width: 70px;
@@ -575,7 +575,7 @@
       width: 25px;
       height: 46px;
 
-      background: url("../../img/icon-level-50.svg") no-repeat;
+      background: url("../../img/icons/icon-level-50.svg") no-repeat;
 
       @media (min-width: $tabled-width) {
         width: 80px;
@@ -603,7 +603,7 @@
       width: 25px;
       height: 46px;
 
-      background: url("../../img/icon-level-25.svg") no-repeat;
+      background: url("../../img/icons/icon-level-25.svg") no-repeat;
 
       @media (min-width: $tabled-width) {
         width: 60px;
@@ -915,7 +915,7 @@
     width: 150px;
     height: 100px;
 
-    background: url("../../img/icon-light-level.svg") no-repeat;
+    background: url("../../img/icons/icon-light-level.svg") no-repeat;
     background-position: 16px 0;
     background-size: 100px 100px;
 
@@ -1194,6 +1194,12 @@
 
 .traveler--form .traveler__transport {
   width: 200px;
+}
+
+.traveler--form .traveler__transport-form {
+  position: relative;
+
+  z-index: 1;
 }
 
 .traveler--form .traveler__input {

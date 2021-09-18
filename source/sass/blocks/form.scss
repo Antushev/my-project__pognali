@@ -375,10 +375,10 @@
 
     border-radius: 4px;
 
-    background: $basic-white url("../../img/icon-check.svg") no-repeat center center;
+    background: $basic-white url("../../img/icons/icon-check.svg") no-repeat center center;
 
     @media (min-width: $tabled-width) {
-      background: $basic-white url("../../img/icon-check.svg") no-repeat 8px 5px;
+      background: $basic-white url("../../img/icons/icon-check.svg") no-repeat 8px 5px;
       background-size: 11px 11.27px;
     }
   }
@@ -770,7 +770,7 @@
       width: 14px;
       height: 1px;
 
-      background: url("../../img/icon-minus.svg");
+      background: url("../../img/icons/icon-minus.svg");
       background-size: 14px 1px;
 
       transform: translateY(-50%);
@@ -959,7 +959,7 @@
       width: 14px;
       height: 14px;
 
-      background: url("../../img/icon-arrow-button.svg");
+      background: url("../../img/icons/icon-arrow-button.svg");
       background-size: 14px 14px;
 
       transform: translateY(-50%);
@@ -1011,7 +1011,7 @@
         width: 14px;
         height: 14px;
 
-        background: url("../../img/icon-arrow-button.svg") no-repeat;
+        background: url("../../img/icons/icon-arrow-button.svg") no-repeat;
 
         transform: rotate(-180deg);
       }

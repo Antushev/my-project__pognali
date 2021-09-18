@@ -110,6 +110,15 @@
   @media (min-width: $tabled-width) {
     width: 23.8px;
     height: 31.73px;
+    padding-top: 4px;
+    padding-left: 2px;
+  }
+}
+
+.map__use {
+  @media (min-width: $tabled-width) {
+    width: 23.8px;
+    height: 31.73px;
   }
 }
 
@@ -162,7 +171,7 @@
     width: 14px;
     height: 14px;
 
-    background: url("../../img/icon-arrow-button.svg") no-repeat;
+    background: url("../../img/icons/icon-arrow-button.svg") no-repeat;
 
     transform: translateY(-50%);
 
@@ -185,7 +194,6 @@
 .map__geo {
   position: relative;
 
-
   width: 100%;
   height: 424px;
   margin-top: -67px;
@@ -193,18 +201,27 @@
 
   z-index: 94;
 
+  background: url("../../img/icons/icon-map-point.svg") no-repeat 57% 33%,
+    #ffd74b url("../../img/map.png") no-repeat center center/cover;
+
   @media (min-width: $tabled-width) {
     width: 100%;
     height: 581px;
     margin-top: -20px;
     margin-bottom: 0;
     padding-bottom: 0;
+
+    background: url("../../img/icons/icon-map-point.svg") no-repeat 49% 45%,
+      #ffd74b url("../../img/map-tabled.png") no-repeat center center/cover;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     height: 581px;
     margin-top: -93px;
+
+    background: url("../../img/icons/icon-map-point.svg") no-repeat 46.5% 47%,
+     #ffd74b url("../../img/map-desktop.png") no-repeat center center/cover;
   }
 }
 

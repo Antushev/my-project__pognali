@@ -64,16 +64,19 @@
     width: 16px;
     height: 10px;
 
-    background-image: url("../../img/icon-tooltip.svg");
+    background-image: url("../../img/icons/icon-tooltip.svg");
     background-size: 16px 10px;
 
     transform: translateX(-50%);
   }
 }
 
-.transport__item--active .transport__icon-path {
-  opacity: 1;
-  fill: #101d41;
+.transport__icon-use {
+  fill: rgba(#1d2e5b, 0.15);
+}
+
+.transport__item--active .transport__icon-use {
+  fill: rgba(#1d2e5b, 1);
 }
 
 /* Catalog.html */
