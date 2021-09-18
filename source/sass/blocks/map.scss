@@ -191,30 +191,20 @@
   margin-top: -67px;
   padding-bottom: 73px;
 
-  background: url("../../img/map.png") no-repeat;
-  background-size: 100% 424px;
-  background-position: 0 15px;
-
   z-index: 94;
 
   @media (min-width: $tabled-width) {
     width: 100%;
     height: 581px;
     margin-top: -20px;
-
-    background: url("../../img/map-tabled.png") no-repeat;
-    background-size: 100% 581px;
-    background-position: 0 -25px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     height: 581px;
     margin-top: -93px;
-
-    background: url("../../img/map-desktop.png") no-repeat;
-    background-size: 100% 581px;
-    background-position: 0 -25px;
   }
 }
 

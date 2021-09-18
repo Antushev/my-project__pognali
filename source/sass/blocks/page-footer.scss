@@ -10,6 +10,8 @@
   z-index: 96;
 
   @media (min-width: $tabled-width) {
+    margin-top: -66px;
+
     border-top-right-radius: $border-radius-section-tabled;
     border-top-left-radius: $border-radius-section-tabled;
   }
@@ -17,6 +19,14 @@
   @media (min-width: $desktop-width) {
     border-top-right-radius: $border-radius-section-desktop;
     border-top-left-radius: $border-radius-section-desktop;
+  }
+}
+
+.page-footer--index {
+  margin-top: -137px;
+
+  @media (min-width: $tabled-width) {
+    margin-top: -66px;
   }
 }
 

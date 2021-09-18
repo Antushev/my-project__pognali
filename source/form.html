@@ -8,6 +8,7 @@
     <link rel="icon" type="image/ico" sizes="152x152" href="img/favicon_152X152.ico">
     <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon_32x32.ico">
     <link rel="icon" href="favicon.ico">
+    <link rel="preload" type="font/woff2" href="fonts/bloggersans.woff2">
 
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -33,13 +34,19 @@
             <nav class="page-header__menu menu__nav">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="page-header__menu-link menu__link">О сервисе</a>
+                  <a class="page-header__menu-link menu__link">
+                    <span class="menu__span" data-hover="О сервисе">О сервисе</span>
+                  </a>
                 </li>
                 <li class="menu__item">
-                  <a class="page-header__menu-link menu__link">Направления</a>
+                  <a class="page-header__menu-link menu__link">
+                    <span class="menu__span" data-hover="Направления">Направления</span>
+                  </a>
                 </li>
                 <li class="menu__item">
-                  <a  class="page-header__menu-link menu__link" href="catalog.html">Попутчики</a>
+                  <a href="catalog.html"  class="page-header__menu-link menu__link" href="catalog.html">
+                    <span class="menu__span" data-hover="Попутчики">Попутчики</span>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -137,9 +144,10 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-form-desktop.webp">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-form-tabled.webp">
-                <source media="(min-width: 1440px)" srcset="img/demin-form-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/demin-form-tabled.png">
-                <img class="traveler__img" src="img/demin-form-mobile.png" width="100" height="100" alt="Петя Демин">
+                <source type="image/webp" srcset="img/demin-form-mobile.png 1x, img/demin-form-mobile@2x.png 2x">
+                <source media="(min-width: 1440px)" srcset="img/demin-form-desktop.png 1x, img/demin-form-tabled@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-form-tabled.png 1x, img/demin-form-desktop@2x.png 2x">
+                <img class="traveler__img" src="img/demin-form-mobile.png" srcset="img/demin-form-mobile@2x.png 2x" width="100" height="100" alt="Петя Демин">
               </picture>
             </div>
 

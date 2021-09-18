@@ -25,6 +25,18 @@
     border-bottom-right-radius: $border-radius-section-desktop;
     border-bottom-left-radius: $border-radius-section-desktop;
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../../img/about-tabled.png") no-repeat 384px 49px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) and (min-width: $tabled-width) {
+    background: url("../../img/about-tabled@2x.png") no-repeat 749px -6px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) and (min-width: $desktop-width) {
+    background: url("../../img/about-desktop@2x.png") no-repeat 749px -6px;
+  }
 }
 
 .about__wrapper {

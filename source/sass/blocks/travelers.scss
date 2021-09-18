@@ -30,6 +30,18 @@
     border-bottom-left-radius: $border-radius-section-desktop;
   }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) and (min-width: $tabled-width) {
+    background: url("../../img/smolov-back@2x.png") no-repeat 151px 60px,
+      url("../../img/travelers-back-background.png") no-repeat 0 60px,
+      $background-section-dark url("../../img/rogovaya-back@2x.png") no-repeat 0 332px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) and (min-width: $tabled-width) {
+    background: url("../../img/smolov-back-desktop@2x.png") no-repeat 548px 173px,
+      url("../../img/back-travelers-desktop.png") no-repeat 59px 109px,
+      $background-section-dark url("../../img/rogovaya-back-desktop@2x.png") no-repeat 191px 425px;
+  }
+
   &--catalog {
     background: none;
     background-color: $background-section-light;
@@ -43,7 +55,7 @@
 
   @media (min-width: $tabled-width) {
     padding-top: 185px;
-    padding-bottom: 68px;
+    padding-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {

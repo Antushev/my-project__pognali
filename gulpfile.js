@@ -86,8 +86,9 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
+    "source/img/*.ico",
     "source/img/**/*.svg",
-    "!source/img/icons/*.svg",
+    "source/img/icons/*.svg",
   ], {
     base: "source"
   })
@@ -151,7 +152,6 @@ const build = gulp.series(
 exports.build = build;
 
 // Default
-
 
 exports.default = gulp.series(
   clean,

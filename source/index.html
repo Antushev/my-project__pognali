@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/ico" sizes="152x152" href="img/favicon_152X152.ico">
+    <link rel="icon" type="image/ico" sizes="152x152" href="img/favicon_152x152.ico">
     <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon_32x32.ico">
     <link rel="icon" href="favicon.ico">
+    <link rel="preload" type="font/woff2" href="fonts/bloggersans.woff2">
 
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -38,12 +39,12 @@
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="page-header__menu-link menu__link">
+                  <a href="form.html" class="page-header__menu-link menu__link">
                     <span class="menu__span" data-hover="Направления">Направления</span>
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a  class="page-header__menu-link menu__link" href="catalog.html">
+                  <a href="catalog.html" class="page-header__menu-link menu__link" href="catalog.html">
                     <span class="menu__span" data-hover="Попутчики">Попутчики</span>
                   </a>
                 </li>
@@ -245,9 +246,10 @@
               <li class="directions__item">
                 <div class="directions__img-wrapper">
                   <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop.webp">
-                    <source media="(min-width: 768px)" srcset="img/thailand-desktop.png">
-                    <img class="directions__img" src="img/thailand-mobile.png" width="270" height="110" alt="Таиланд">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop.webp 1x, img/thailand-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/thailand-mobile.webp 1x, img/thailand-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/thailand-desktop.png 1x, img/thailand-desktop@2x.png 2x">
+                    <img class="directions__img" src="img/thailand-mobile.png" srcset="img/thailand-mobile@2x.png 2x" width="270" height="110" alt="Таиланд">
                   </picture>
                 </div>
 
@@ -268,9 +270,10 @@
               <li class="directions__item">
                 <div class="directions__img-wrapper">
                   <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/france-desktop.webp">
-                    <source media="(min-width: 768px)" srcset="img/france-desktop.png">
-                    <img class="directions__img" src="img/france-mobile.png" width="270" height="110" alt="Франция">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/france-desktop.webp 1x, img/france-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/france-mobile.webp 1x, img/france-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/thailand-desktop.png 1x, img/france-desktop@2x.png 2x">
+                    <img class="directions__img" src="img/france-mobile.png" srcset="img/france-mobile@2x.png 2x" width="270" height="110" alt="Таиланд">
                   </picture>
                 </div>
 
@@ -291,9 +294,10 @@
               <li class="directions__item">
                 <div class="directions__img-wrapper">
                   <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop.webp">
-                    <source media="(min-width: 768px)" srcset="img/czech-desktop.png">
-                    <img class="directions__img" src="img/czech-mobile.png" width="270" height="110" alt="Чехия">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop.webp 1x, img/czech-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/czech-mobile.webp 1x, img/czech-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/czech-desktop.png 1x, img/czech-desktop@2x.png 2x">
+                    <img class="directions__img" src="img/czech-mobile.png" srcset="img/czech-mobile@2x.png 2x" width="270" height="110" alt="Таиланд">
                   </picture>
                 </div>
 
@@ -315,7 +319,7 @@
           </div>
 
           <div class="directions__button-wrapper">
-            <button class="directions__button button button--yellow" type="button">Показать все</button>
+            <a href="form.html" class="directions__button button button--yellow" type="button">Показать все</a>
           </div>
         </div>
       </section>
@@ -336,7 +340,12 @@
           <ul class="travelers__travelers-list travelers-list">
             <li class="travelers-list__item traveler traveler--index">
               <div class="traveler__img-wrapper">
-                <img class="traveler__img" src="img/firsova-desktop.png" width="270" height="270" alt="Таня Фирсова">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/firsova-desktop.png 1x, img/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/firsova-mobile.webp 1x, img/firsova-mobile@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/firsova-desktop.png 1x, img/firsova-desktop@2x.png 2x">
+                  <img class="traveler__img" src="img/firsova-mobile.png" srcset="img/firsova-mobile@2x.png 2x" width="270" height="270" alt="Таня Фирсова">
+                </picture>
               </div>
 
               <div class="traveler__text-wrapper">
@@ -399,8 +408,14 @@
 
             <li class="travelers-list__item traveler traveler--index">
               <div class="traveler__img-wrapper traveler__img-wrapper">
-                <img class="traveler__img traveler__img" src="img/demin-desktop.png" width="270" height="270" alt="Петя Дёмин">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/demin-desktop.png 1x, img/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/demin-mobile.webp 1x, img/demin-mobile@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/demin-desktop.png 1x, img/demin-desktop@2x.png 2x">
+                  <img class="traveler__img" src="img/demin-mobile.png" srcset="img/demin-mobile@2x.png 2x" width="270" height="270" alt="Таня Фирсова">
+                </picture>
               </div>
+
               <div class="traveler__text-wrapper">
 
                 <ul class="traveler__country-list country-list country-list--index">
@@ -462,7 +477,7 @@
           </ul>
 
           <div class="travelers__button-wrapper">
-            <button class="travelers__button button button--yellow" type="button">Показать всех</button>
+            <a href="catalog.html" class="travelers__button button button--yellow" type="button">Показать всех</a>
           </div>
         </div>
       </section>
@@ -543,7 +558,7 @@
             Зарегестрируйтесь, <br class="form-send__br form-send__br--mobile">
             это быстро и бесплатно!<br class="form-send__br form-send__br--mobile form-send__br--tabled form-send__br--desktop">
             Уже зарегестрированы? Тогда
-            скорее <a class="form-send__link link" href="#">авторизуйтесь</a>.
+            скорее <a class="form-send__link link" href="auth.html">авторизуйтесь</a>.
           </p>
 
           <div class="form-send__form-email form-email">
@@ -609,11 +624,19 @@
           </div>
         </div>
 
-        <div class="map__geo"></div>
+        <div class="map__geo page-content__section-top">
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.147740426239!2d30.315810779264464!3d59.96863812098166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc48a26c9%3A0x8a49e1486716f5b1!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDXQnywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzAyMg!5e0!3m2!1sru!2sru!4v1631887379802!5m2!1sru!2sru"
+                  width="100%"
+                  height="100%"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy">
+          </iframe>
+        </div>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo logo">
           <a href="index.html">
